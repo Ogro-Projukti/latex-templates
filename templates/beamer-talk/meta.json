@@ -1,0 +1,15 @@
+{
+  "id": "beamer-talk",
+  "version": "1.0.0",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "CTAN Beamer",
+    "github": "lat-mini"
+  },
+  "description": "Slide deck template with title slide, agenda, blocks, and references.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ]
+}

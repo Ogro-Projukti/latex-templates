@@ -1,0 +1,15 @@
+{
+  "id": "thesis-chaptered",
+  "version": "1.0.0",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Overleaf community",
+    "github": "lat-mini"
+  },
+  "description": "Long-form thesis structure with chapters, front matter, and bibliography.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ]
+}

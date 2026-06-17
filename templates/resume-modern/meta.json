@@ -1,0 +1,15 @@
+{
+  "id": "resume-modern",
+  "version": "1.0.0",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "lat-mini",
+    "github": "lat-mini"
+  },
+  "description": "One-page CV/resume with focused sections and compact spacing.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ]
+}

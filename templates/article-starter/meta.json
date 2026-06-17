@@ -1,0 +1,15 @@
+{
+  "id": "article-starter",
+  "version": "1.0.0",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "lat-mini",
+    "github": "lat-mini"
+  },
+  "description": "Clean article with math, figures, citations, and section scaffolding.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ]
+}

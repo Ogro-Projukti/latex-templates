@@ -1,0 +1,15 @@
+{
+  "id": "ieee-conference",
+  "version": "1.0.0",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "IEEE",
+    "github": "lat-mini"
+  },
+  "description": "Two-column conference paper layout with abstract and keyword blocks.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ]
+}
