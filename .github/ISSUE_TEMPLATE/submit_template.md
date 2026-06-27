@@ -62,6 +62,10 @@ Example:
     "name": "Overleaf community",
     "github": "lat-mini"
   },
+  "contributor" : {
+    "name": "contributor name",
+    "github": "github account link"
+  },
   "description": "Long-form thesis structure with chapters, front matter, and bibliography.",
   "compatibleWith": [
     "tectonic",
