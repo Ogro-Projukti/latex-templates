@@ -1,4 +1,3 @@
-````md
 ---
 name: Submit a Template
 about: Propose a new LaTeX template for the latium template library
@@ -75,7 +74,7 @@ Example:
     "biblatex"
   ]
 }
-````
+```
 
 ### meta.json field rules
 
@@ -103,6 +102,3 @@ Example:
 ## Additional notes
 
 <!-- Anything else reviewers should know -->
-
-```
-```
