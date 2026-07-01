@@ -1,8 +1,17 @@
 {
   "id": "thesis-chaptered",
+  "name": "Chaptered Thesis",
+  "category": "Thesis",
+  "license": "MIT",
   "version": "1.0.0",
+  "preview": false,
+  "previewImagePath": "preview.png",
   "lastUpdated": "Built in",
   "author": {
+    "name": "Overleaf community",
+    "github": "overleaf"
+  },
+  "contributor": {
     "name": "Overleaf community",
     "github": "lat-mini"
   },
@@ -11,5 +20,18 @@
     "tectonic",
     "pdflatex",
     "xelatex"
+  ],
+  "packages": [
+    "report",
+    "geometry",
+    "amsmath",
+    "amssymb",
+    "graphicx",
+    "hyperref"
+  ],
+  "tags": [
+    "thesis",
+    "book",
+    "chapters"
   ]
 }

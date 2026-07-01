@@ -1,0 +1,30 @@
+name: Registry
+
+on:
+  pull_request:
+    paths:
+      - "templates/**"
+      - "scripts/build_registry.py"
+      - "registry.json"
+      - "scripts/badge-*.json"
+  push:
+    branches:
+      - main
+    paths:
+      - "templates/**"
+      - "scripts/build_registry.py"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify registry artifacts are up to date
+        run: python scripts/build_registry.py --check

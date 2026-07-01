@@ -1,9 +1,18 @@
 {
   "id": "article-starter",
+  "name": "Article Starter",
+  "category": "Academic",
+  "license": "MIT",
   "version": "1.0.0",
+  "preview": false,
+  "previewImagePath": "preview.png",
   "lastUpdated": "Built in",
   "author": {
-    "name": "lat-mini",
+    "name": "LATIUM",
+    "github": "LATIUM"
+  },
+  "contributor": {
+    "name": "LATIUM",
     "github": "lat-mini"
   },
   "description": "Clean article with math, figures, citations, and section scaffolding.",
@@ -11,5 +20,18 @@
     "tectonic",
     "pdflatex",
     "xelatex"
+  ],
+  "packages": [
+    "geometry",
+    "amsmath",
+    "amssymb",
+    "graphicx",
+    "hyperref",
+    "natbib"
+  ],
+  "tags": [
+    "article",
+    "paper",
+    "math"
   ]
 }

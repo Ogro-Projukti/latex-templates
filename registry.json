@@ -1,19 +1,13 @@
 {
   "version": "1",
-  "updated": "2026-06-17",
+  "updated": "2026-07-01",
   "templates": [
     {
       "id": "article-starter",
       "name": "Article Starter",
       "shortDescription": "Clean article with math, figures, citations, and section scaffolding.",
       "category": "Academic",
-      "tags": [
-        "article",
-        "paper",
-        "math"
-      ],
-      "contributor": "lat-mini",
-      "identifier": "latmini.article-starter",
+      "contributor": "LATIUM",
       "version": "1.0.0",
       "lastUpdated": "Built in",
       "license": "MIT",
@@ -32,25 +26,55 @@
       "hasPreview": false,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/article-starter",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/article-starter",
-      "details": [
-        "Includes common packages for academic articles.",
-        "Uses BibTeX with a starter references.bib file.",
-        "Good default for essays, reports, and short papers."
+      "size": "790B",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
       ],
-      "size": "7.4KB"
+      "tags": [
+        "article",
+        "paper",
+        "math"
+      ]
+    },
+    {
+      "id": "beamer-talk",
+      "name": "Beamer Presentation",
+      "shortDescription": "Slide deck template with title slide, agenda, blocks, and references.",
+      "category": "Presentation",
+      "contributor": "CTAN Beamer",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "MIT",
+      "packages": [
+        "beamer",
+        "Madrid theme"
+      ],
+      "files": [
+        "main.tex"
+      ],
+      "hasPreview": false,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/beamer-talk",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/beamer-talk",
+      "size": "796B",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "slides",
+        "presentation",
+        "beamer"
+      ]
     },
     {
       "id": "ieee-conference",
       "name": "IEEE Conference Paper",
       "shortDescription": "Two-column conference paper layout with abstract and keyword blocks.",
       "category": "Conference",
-      "tags": [
-        "conference",
-        "ieee",
-        "two-column"
-      ],
       "contributor": "IEEE",
-      "identifier": "ieee.conference-paper",
       "version": "1.0.0",
       "lastUpdated": "Built in",
       "license": "MIT",
@@ -68,57 +92,24 @@
       "hasPreview": false,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-conference",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-conference",
-      "details": [
-        "Uses the IEEEtran class in conference mode.",
-        "Includes standard abstract and keywords sections.",
-        "Best for technical papers that need a compact two-column format."
+      "size": "822B",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
       ],
-      "size": "6.8KB"
-    },
-    {
-      "id": "beamer-talk",
-      "name": "Beamer Presentation",
-      "shortDescription": "Slide deck template with title slide, agenda, blocks, and references.",
-      "category": "Presentation",
       "tags": [
-        "slides",
-        "presentation",
-        "beamer"
-      ],
-      "contributor": "CTAN Beamer",
-      "identifier": "ctan.beamer-talk",
-      "version": "1.0.0",
-      "lastUpdated": "Built in",
-      "license": "MIT",
-      "packages": [
-        "beamer",
-        "Madrid theme"
-      ],
-      "files": [
-        "main.tex"
-      ],
-      "hasPreview": false,
-      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/beamer-talk",
-      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/beamer-talk",
-      "details": [
-        "Uses Beamer with a widely supported theme.",
-        "Includes a title slide, agenda, and structured sections.",
-        "Good for class talks, seminars, and project presentations."
-      ],
-      "size": "5.6KB"
+        "conference",
+        "ieee",
+        "two-column"
+      ]
     },
     {
       "id": "resume-modern",
       "name": "Modern Resume",
       "shortDescription": "One-page CV/resume with focused sections and compact spacing.",
       "category": "Resume",
-      "tags": [
-        "resume",
-        "cv",
-        "career"
-      ],
-      "contributor": "lat-mini",
-      "identifier": "latmini.modern-resume",
+      "contributor": "LATIUM",
       "version": "1.0.0",
       "lastUpdated": "Built in",
       "license": "MIT",
@@ -133,25 +124,24 @@
       "hasPreview": false,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/resume-modern",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/resume-modern",
-      "details": [
-        "Compact one-page resume structure.",
-        "Uses simple packages that compile reliably.",
-        "Designed for quick editing and role-specific customization."
+      "size": "864B",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
       ],
-      "size": "4.9KB"
+      "tags": [
+        "resume",
+        "cv",
+        "career"
+      ]
     },
     {
       "id": "thesis-chaptered",
       "name": "Chaptered Thesis",
       "shortDescription": "Long-form thesis structure with chapters, front matter, and bibliography.",
       "category": "Thesis",
-      "tags": [
-        "thesis",
-        "book",
-        "chapters"
-      ],
       "contributor": "Overleaf community",
-      "identifier": "overleaf.chaptered-thesis",
       "version": "1.0.0",
       "lastUpdated": "Built in",
       "license": "MIT",
@@ -170,12 +160,17 @@
       "hasPreview": false,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/thesis-chaptered",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/thesis-chaptered",
-      "details": [
-        "Report-class structure for multi-chapter documents.",
-        "Includes table of contents and bibliography setup.",
-        "Good starting point for thesis, dissertation, and book-style drafts."
+      "size": "641B",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
       ],
-      "size": "6.1KB"
+      "tags": [
+        "thesis",
+        "book",
+        "chapters"
+      ]
     }
   ]
 }

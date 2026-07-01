@@ -1,8 +1,17 @@
 {
   "id": "beamer-talk",
+  "name": "Beamer Presentation",
+  "category": "Presentation",
+  "license": "MIT",
   "version": "1.0.0",
+  "preview": false,
+  "previewImagePath": "preview.png",
   "lastUpdated": "Built in",
   "author": {
+    "name": "CTAN Beamer",
+    "github": "CTAN"
+  },
+  "contributor": {
     "name": "CTAN Beamer",
     "github": "lat-mini"
   },
@@ -11,5 +20,14 @@
     "tectonic",
     "pdflatex",
     "xelatex"
+  ],
+  "packages": [
+    "beamer",
+    "Madrid theme"
+  ],
+  "tags": [
+    "slides",
+    "presentation",
+    "beamer"
   ]
 }

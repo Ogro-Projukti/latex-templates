@@ -7,9 +7,9 @@ How to publish contributor templates from GitHub issues into the [latex-template
 | Role | Responsibility |
 |------|----------------|
 | **Contributor** | Opens an issue with a public folder link and a valid `meta.json` inside that folder |
-| **Maintainer** | Reviews, validates, compiles, lands files on `main`, updates `registry.json` |
+| **Maintainer** | Reviews, validates, compiles, lands files on `main`, runs `build_registry.py` |
 
-> **Important:** LATIUM only reads `registry.json` and raw files on `main`. Issues alone do not publish a template.
+> **Important:** LATIUM only reads `registry.json` and raw files on `main`. Issues alone do not publish a template. **Never edit `registry.json` by hand** — use `scripts/build_registry.py`.
 
 ---
 
@@ -17,15 +17,21 @@ How to publish contributor templates from GitHub issues into the [latex-template
 
 ```
 latex-templates/
-├── registry.json              # Catalog (maintainer-maintained)
+├── registry.json              # Generated — do not edit by hand
 ├── README.md
 ├── MAINTAINER.md              # This file
+├── scripts/
+│   ├── build_registry.py      # Builds registry.json from meta.json
+│   ├── badge-templates.json   # Shields.io badge (auto-generated)
+│   └── badge-updated.json     # Shields.io badge (auto-generated)
 ├── .github/
-│   └── ISSUE_TEMPLATE/
-│       └── submit_template.md
+│   ├── ISSUE_TEMPLATE/
+│   │   └── submit_template.md
+│   └── workflows/
+│       └── registry.yml       # CI: fails if registry is stale
 └── templates/
     └── {template-id}/
-        ├── meta.json          # Contributor-provided (required)
+        ├── meta.json          # Contributor + maintainer metadata
         ├── main.tex
         ├── references.bib
         ├── figures/...
@@ -65,6 +71,25 @@ Contributors must include this file at the **root** of their template folder.
   ]
 }
 ```
+
+### Maintainer-only fields (add when landing the template)
+
+When copying a contributor folder into `templates/{id}/`, the maintainer must ensure these fields are present in `meta.json` (they may come from the issue body):
+
+| Field | Source |
+|-------|--------|
+| `name` | Issue → Template name |
+| `category` | Issue → Category |
+| `license` | Issue → License |
+
+Optional maintainer fields (only if you have real data):
+
+| Field | Purpose |
+|-------|---------|
+| `tags` | Search/filter tags in LATIUM |
+| `details` | Extra bullet points in the detail panel |
+
+Do **not** add `identifier` or fabricated `details`/`tags`.
 
 ### Field rules
 
@@ -251,57 +276,119 @@ templates/{meta.json.id}/
 
 ---
 
-## Step 6 — Update `registry.json` (maintainer only)
+## Step 6 — Generate `registry.json` with `build_registry.py`
 
-Contributors **never** edit `registry.json`.
+Contributors **never** edit `registry.json`. Maintainers **never** edit it by hand either.
 
-Add one entry to the `templates` array:
+After `templates/{id}/` is in place with a complete `meta.json`, run from the repo root:
 
-```json
-{
-  "id": "<from meta.json>",
-  "name": "<from issue: Template name>",
-  "shortDescription": "<from meta.json description>",
-  "category": "<from issue: Category>",
-  "contributor": "<meta.contributor.name>",
-  "version": "<from meta.json>",
-  "lastUpdated": "<from meta.json>",
-  "license": "<from issue: License>",
-  "packages": ["<from meta.json packages>"],
-  "files": ["main.tex", "references.bib"],
-  "hasPreview": false,
-  "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/<id>",
-  "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/<id>"
-}
+```bash
+python scripts/build_registry.py
 ```
 
-### Building the `files` array
+This command:
 
-Include every file under `templates/{id}/` **except**:
+- Reads every `templates/*/meta.json`
+- Validates `id` matches the folder name
+- Scans the folder for downloadable files (skips `meta.json`, preview image, hidden paths like `.kb/`)
+- Computes `size`, `hasPreview`, `baseUrl`, and `sourceUrl`
+- Writes `registry.json`
+- Updates `scripts/badge-templates.json` and `scripts/badge-updated.json` for README badges
 
-- `meta.json`
-- `preview.png` (handled via `hasPreview`)
+### Verify before committing
 
-Use relative paths for subfolders, e.g. `figures/logo.pdf`.
+```bash
+python scripts/build_registry.py --check
+```
 
-### `hasPreview`
+`--check` exits with code `1` if `registry.json` or badge files are stale. CI runs this on every PR that touches `templates/`.
+
+### What lands in `registry.json`
+
+| Registry field | Source |
+|----------------|--------|
+| `id` | `meta.json` → `id` |
+| `name` | `meta.json` → `name` (or derived from `id`) |
+| `shortDescription` | `meta.json` → `description` |
+| `category` | `meta.json` → `category` |
+| `contributor` | `meta.json` → `contributor.name` or `author.name` |
+| `version` | `meta.json` → `version` |
+| `lastUpdated` | `meta.json` → `lastUpdated` |
+| `license` | `meta.json` → `license` |
+| `packages` | `meta.json` → `packages` |
+| `compatibleWith` | `meta.json` → `compatibleWith` (if present) |
+| `tags` | `meta.json` → `tags` (only if present) |
+| `details` | `meta.json` → `details` (only if present) |
+| `files` | Scanned from folder |
+| `hasPreview` | `meta.preview` + preview file exists |
+| `size` | Sum of downloadable file bytes |
+| `baseUrl` / `sourceUrl` | Computed from repo + branch + `id` |
+| `updated` (top-level) | Today's date when the script runs |
+
+Fields **not** generated (no fabricated data): `identifier`.
+
+### Common script errors
+
+| Error | Fix |
+|-------|-----|
+| `missing category` | Add `"category"` to `meta.json` from the issue |
+| `missing license` | Add `"license"` to `meta.json` from the issue |
+| `id does not match folder name` | Rename folder or fix `meta.json` → `id` |
+| `preview is true but preview file not found` | Add image or set `"preview": false` |
+| `Registry artifacts are out of date` | Run `python scripts/build_registry.py` and commit outputs |
+
+### Commit generated files together
+
+```bash
+git add templates/<id>/ registry.json scripts/badge-templates.json scripts/badge-updated.json
+```
+
+---
+
+## Using `build_registry.py` (reference)
+
+### Commands
+
+```bash
+# Regenerate registry.json and badge files
+python scripts/build_registry.py
+
+# CI / pre-PR check (no writes)
+python scripts/build_registry.py --check
+
+# Custom repo (forks)
+python scripts/build_registry.py --github-repo YOUR_ORG/latex-templates --branch main
+```
+
+### Options
+
+| Flag | Default | Purpose |
+|------|---------|---------|
+| `--root` | repo root | Path containing `templates/` |
+| `--github-repo` | `Ogro-Projukti/latex-templates` | Used in `baseUrl` / `sourceUrl` |
+| `--branch` | `main` | Git branch in URLs |
+| `--check` | off | Fail if outputs are stale |
+| `--quiet` | off | Only print errors |
+
+### Workflow when publishing from an issue
 
 ```text
-hasPreview = (meta.preview === true) AND (preview file exists)
+1. Copy contributor folder → templates/{id}/
+2. Add maintainer fields to meta.json (name, category, license)
+3. python scripts/build_registry.py
+4. python scripts/build_registry.py --check   # optional local verify
+5. git commit templates/{id}/ registry.json scripts/badge-*.json
+6. Open PR → CI must pass → merge to main
 ```
 
-### Fields to omit (unless you have a real source)
+### README badges
 
-Do **not** add fabricated data:
+The README uses [Shields.io endpoint badges](https://shields.io/badges/endpoint-badge) that read the generated JSON files on `main`:
 
-- `identifier`
-- `details`
-- `tags`
-- `size` (compute later or omit)
+- `scripts/badge-templates.json` — template count
+- `scripts/badge-updated.json` — registry date
 
-### Update catalog date
-
-Set top-level `"updated": "YYYY-MM-DD"` in `registry.json`.
+After adding templates, run `build_registry.py` so badge counts stay accurate.
 
 ---
 
@@ -328,11 +415,11 @@ Add template: <Template name> (<id>)
 - Reviewed from: <folder link from issue>
 
 ## Checklist
-- [ ] meta.json validated
+- [ ] `meta.json` validated (including maintainer fields)
 - [ ] Compiles with: tectonic / pdflatex / xelatex
 - [ ] License confirmed: <license>
-- [ ] registry.json entry added
-- [ ] `files` list matches folder contents
+- [ ] `python scripts/build_registry.py` run
+- [ ] `registry.json` and badge files committed
 - [ ] `hasPreview` matches preview file
 
 ## Maintainer notes
@@ -343,7 +430,7 @@ Add template: <Template name> (<id>)
 
 - [ ] `templates/{id}/` matches issue submission
 - [ ] `meta.json.id` equals folder name
-- [ ] `registry.json` entry is correct
+- [ ] `python scripts/build_registry.py --check` passes
 - [ ] No secrets or personal data in files
 - [ ] License allows redistribution
 
@@ -419,7 +506,7 @@ Issue opened
 | 3 | Validate `meta.json` | Schema + unique `id` |
 | 4 | Compile test | Builds on listed compilers |
 | 5 | Copy to `templates/{id}/` | Repo-ready |
-| 6 | Update `registry.json` | Catalog entry added |
+| 6 | Run `build_registry.py` | Catalog + badges updated |
 | 7 | PR + merge | On `main` |
 | 8 | Verify URLs + LATIUM | Download works |
 | 9 | Close issue | Contributor notified |
@@ -434,7 +521,8 @@ Issue opened
 | Provide folder link | Yes | — |
 | Write `meta.json` | Yes | Validate only |
 | Fix compile errors | If asked | Initial test |
-| Edit `registry.json` | **No** | **Yes** |
+| Edit `registry.json` by hand | **No** | **No** — use `build_registry.py` |
+| Run `build_registry.py` | **No** | **Yes** |
 | Set `baseUrl` / `sourceUrl` | **No** | **Yes** |
 | Build `files` list | **No** | **Yes** |
 | Appears in LATIUM | **No** | After merge to `main` |
@@ -446,7 +534,7 @@ Issue opened
 1. **Triage all issues first** — sort into ready / needs-info / duplicate / reject.
 2. **Prefer contributor PRs** — skip external downloads when possible.
 3. **Merge in batches** — 5–10 templates per week for review quality.
-4. **Automate registry** — use `scripts/build_registry.py` when available.
+4. **Automate registry** — always run `python scripts/build_registry.py` before merge; CI enforces with `--check`.
 5. **Never publish from issues alone** — always land on `main`.
 
 ---
@@ -455,4 +543,5 @@ Issue opened
 
 - [latex-templates repository](https://github.com/Ogro-Projukti/latex-templates)
 - Issue template: `.github/ISSUE_TEMPLATE/submit_template.md`
+- Registry builder: `scripts/build_registry.py`
 - Live registry: `https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/registry.json`
