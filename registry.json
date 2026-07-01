@@ -36,7 +36,15 @@
         "article",
         "paper",
         "math"
-      ]
+      ],
+      "author": {
+        "name": "LATIUM",
+        "github": "LATIUM"
+      },
+      "contributorProfile": {
+        "name": "LATIUM",
+        "github": "lat-mini"
+      }
     },
     {
       "id": "beamer-talk",
@@ -67,7 +75,15 @@
         "slides",
         "presentation",
         "beamer"
-      ]
+      ],
+      "author": {
+        "name": "CTAN Beamer",
+        "github": "CTAN"
+      },
+      "contributorProfile": {
+        "name": "CTAN Beamer",
+        "github": "lat-mini"
+      }
     },
     {
       "id": "icsm5-submission-template",
@@ -97,7 +113,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/icsm5-submission-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/icsm5-submission-template",
-      "size": "144.9KB",
+      "size": "150.8KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -107,7 +123,15 @@
         "conference",
         "submission",
         "template"
-      ]
+      ],
+      "author": {
+        "name": "Elsevier Ltd",
+        "github": "elsevier"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
     },
     {
       "id": "ieee-conference",
@@ -142,7 +166,15 @@
         "conference",
         "ieee",
         "two-column"
-      ]
+      ],
+      "author": {
+        "name": "IEEE",
+        "github": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "IEEE",
+        "github": "lat-mini"
+      }
     },
     {
       "id": "mom-2026-challenge-template",
@@ -178,7 +210,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/mom-2026-challenge-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/mom-2026-challenge-template",
-      "size": "709.5KB",
+      "size": "718.5KB",
       "compatibleWith": [
         "tectonic"
       ],
@@ -187,7 +219,14 @@
         "Model Management Challenge",
         "MoM Challenge",
         "Conference Paper Template"
-      ]
+      ],
+      "author": {
+        "name": "Moussa Amrani, Rakshit Mittal"
+      },
+      "contributorProfile": {
+        "name": "Mutasim Fuad Rafi",
+        "github": "https://github.com/mfbhai10"
+      }
     },
     {
       "id": "resume-modern",
@@ -219,7 +258,15 @@
         "resume",
         "cv",
         "career"
-      ]
+      ],
+      "author": {
+        "name": "LATIUM",
+        "github": "lat-mini"
+      },
+      "contributorProfile": {
+        "name": "LATIUM",
+        "github": "lat-mini"
+      }
     },
     {
       "id": "thesis-chaptered",
@@ -255,7 +302,15 @@
         "thesis",
         "book",
         "chapters"
-      ]
+      ],
+      "author": {
+        "name": "Overleaf community",
+        "github": "overleaf"
+      },
+      "contributorProfile": {
+        "name": "Overleaf community",
+        "github": "lat-mini"
+      }
     }
   ]
 }

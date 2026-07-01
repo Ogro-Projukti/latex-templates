@@ -35,6 +35,19 @@ def person_name(value: object) -> str | None:
     return None
 
 
+def person_profile(value: object) -> dict | None:
+    if not isinstance(value, dict):
+        return None
+    name = str(value.get("name", "")).strip()
+    if not name:
+        return None
+    profile = {"name": name}
+    github = str(value.get("github", "")).strip()
+    if github:
+        profile["github"] = github
+    return profile
+
+
 def format_size(num_bytes: int) -> str:
     if num_bytes < 1024:
         return f"{num_bytes}B"
@@ -149,6 +162,14 @@ def build_entry(
     details = meta.get("details")
     if isinstance(details, list) and details:
         entry["details"] = details
+
+    author = person_profile(meta.get("author"))
+    if author:
+        entry["author"] = author
+
+    contributor_profile = person_profile(meta.get("contributor"))
+    if contributor_profile:
+        entry["contributorProfile"] = contributor_profile
 
     return entry
 
