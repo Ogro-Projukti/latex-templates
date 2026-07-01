@@ -1,0 +1,223 @@
+\usepackage{xfp}
+\makeatletter
+
+\usepackage{xcolor}
+\iftemplate
+  \newcommand{\note}[1]{\textcolor{blue}{\textit{#1}}}
+\else
+  \newcommand{\note}[1]{}
+\fi
+
+% ============================================================
+% CONFIGURATION
+% ============================================================
+
+% Total number of MTs
+\def\MoM@mtcount{5}
+
+% Number of questions per MT
+\expandafter\def\csname MT@numq@1\endcsname{7}
+\expandafter\def\csname MT@numq@2\endcsname{7}
+\expandafter\def\csname MT@numq@3\endcsname{6}
+\expandafter\def\csname MT@numq@4\endcsname{4}
+\expandafter\def\csname MT@numq@5\endcsname{5}
+
+% ============================================================
+% NC / PC / FC  mappings
+% ============================================================
+
+% Numeric values (used for the radar average)
+\expandafter\def\csname MT@val@NC\endcsname{0}
+\expandafter\def\csname MT@val@PC\endcsname{0.5}
+\expandafter\def\csname MT@val@FC\endcsname{1}
+
+% Full text labels (used in the per-MT score table)
+\expandafter\def\csname MT@text@NC\endcsname{Not covered}
+\expandafter\def\csname MT@text@PC\endcsname{Partially covered}
+\expandafter\def\csname MT@text@FC\endcsname{Fully covered}
+
+% \MT@MapVal{NC|PC|FC} -> 0 / 0.5 / 1
+\newcommand{\MT@MapVal}[1]{%
+  \ifcsname MT@val@#1\endcsname
+    \csname MT@val@#1\endcsname
+  \else
+    0%
+  \fi
+}
+
+% \MT@MapText{NC|PC|FC} -> "Not covered" / "Partially covered" / "Fully covered"
+\newcommand{\MT@MapText}[1]{%
+  \ifcsname MT@text@#1\endcsname
+    \csname MT@text@#1\endcsname
+  \else
+    \textit{(unset)}%
+  \fi
+}
+
+% ============================================================
+% INTERNALS 
+% ============================================================
+
+% \MTNumQ{n} -- expands to the number of questions for MT n
+\newcommand{\MTNumQ}[1]{\csname MT@numq@#1\endcsname}
+
+% \MT{<mt>}{<q>}{<coverage>}
+% - if <coverage> is non-empty: store the symbolic value (NC/PC/FC)
+% - if <coverage> is empty: retrieve it (undefined entries read as NC)
+\newcommand{\MT}[3]{%
+  \if\relax\detokenize{#3}\relax
+    \ifcsname MT@#1@#2\endcsname
+      \csname MT@#1@#2\endcsname
+    \else
+      NC%
+    \fi
+  \else
+    \expandafter\gdef\csname MT@#1@#2\endcsname{#3}%
+  \fi
+}
+
+% --- Loop counters (two to avoid conflicts in nested loops) ---
+\newcount\MT@ctrA
+\newcount\MT@ctrB
+
+% ============================================================
+% PER-MT AVERAGE (for radar)
+% ============================================================
+
+% \MT@BuildAvgExpr{mt} -- builds \MT@avgexpr as an fpeval-ready expression
+%   that evaluates to the average mapped value for MT <mt>.
+\newcommand{\MT@BuildAvgExpr}[1]{%
+  \global\MT@ctrB=0\relax
+  \gdef\MT@avgexpr{0}%
+  \loop
+    \global\advance\MT@ctrB by 1
+    \ifnum\MT@ctrB<\numexpr\MTNumQ{#1}+1\relax
+      \xdef\MT@avgexpr{%
+        \unexpanded\expandafter{\MT@avgexpr}%
+        +\noexpand\MT@MapVal{\noexpand\MT{#1}{\the\MT@ctrB}{}}}%
+  \repeat
+  % divide by number of questions
+  \xdef\MT@avgexpr{(\unexpanded\expandafter{\MT@avgexpr})/\MTNumQ{#1}}%
+}
+
+% ============================================================
+% TABLE ROW BUILDER (3 columns: MT | Question | Coverage)
+% ============================================================
+
+\newcommand{\MT@Row}[2]{%
+  & \textbf{#2} & \textsf{\MT@MapText{\MT{#1}{#2}{}}} \\
+}
+
+\newcommand{\MT@BuildRows}[1]{%
+  \global\MT@ctrB=1\relax
+  \gdef\MT@builtrows{}%
+  \loop
+    \global\advance\MT@ctrB by 1
+    \ifnum\MT@ctrB<\numexpr\MTNumQ{#1}+1\relax
+      \xdef\MT@builtrows{%
+        \unexpanded\expandafter{\MT@builtrows}%
+        \noexpand\MT@Row{#1}{\the\MT@ctrB}}%
+  \repeat
+}
+
+% Full multirow block for MT #1
+\newcommand{\MT@Block}[1]{%
+  \MT@BuildRows{#1}%
+  \multirow{\MTNumQ{#1}}{4em}{\textsf{\textbf{MT.#1}}}%
+  & \textbf{1} & \textsf{\MT@MapText{\MT{#1}{1}{}}} \\
+  \MT@builtrows
+  \hline
+}
+
+% ============================================================
+% RADAR BUILDER
+% ============================================================
+
+% Build radar axes + coverage path covering ALL configured MTs
+% (1..\MoM@mtcount), regardless of whether \MTScoreTable was called
+% for them.  Omitted MTs simply contribute an average of 0 (NC).
+%
+% \MT@radaraxes -- TikZ \draw / \node commands for the spokes + labels
+% \MT@radarpath -- sequence of  (<angle>:<r>) --  coordinates
+
+% Per-MT step.  Lives outside the outer \loop so it can safely use its
+% own \loop (via \MT@BuildAvgExpr) -- plain TeX's \loop\repeat is not
+% nestable, so we collect a list of \MT@RadarStep calls during the
+% outer loop and execute them afterwards.
+\newcommand{\MT@RadarStep}[1]{%
+  % angle = 90 - 360*(i-1)/N  (clockwise from top, first axis on top)
+  \edef\MT@angle{\fpeval{90 - 360*(#1-1)/\MoM@mtcount}}%
+  \MT@BuildAvgExpr{#1}%
+  \edef\MT@avg{\fpeval{\MT@avgexpr}}%
+  \xdef\MT@radaraxes{%
+    \unexpanded\expandafter{\MT@radaraxes}%
+    \noexpand\draw[gray!60] (0,0) -- (\MT@angle:1);
+    \noexpand\node[font=\noexpand\small\noexpand\sffamily]
+      at (\MT@angle:1.18) {MT.#1};
+  }%
+  \xdef\MT@radarpath{%
+    \unexpanded\expandafter{\MT@radarpath}%
+    (\MT@angle:\MT@avg) --
+  }%
+  \xdef\MT@radarframe{%
+    \unexpanded\expandafter{\MT@radarframe}%
+    (\MT@angle:1) --
+  }%
+}
+
+\newcommand{\MT@BuildRadarPath}{%
+  % Phase 1: queue one \MT@RadarStep call per MT (no nested \loop yet).
+  \gdef\MT@radarcalls{}%
+  \global\MT@ctrA=0\relax
+  \loop
+    \global\advance\MT@ctrA by 1
+    \ifnum\MT@ctrA<\numexpr\MoM@mtcount+1\relax
+      \xdef\MT@radarcalls{%
+        \unexpanded\expandafter{\MT@radarcalls}%
+        \noexpand\MT@RadarStep{\the\MT@ctrA}}%
+  \repeat
+  % Phase 2: execute the queued calls (each may safely use \loop).
+  \gdef\MT@radaraxes{}%
+  \gdef\MT@radarpath{}%
+  \gdef\MT@radarframe{}%
+  \MT@radarcalls
+}
+
+% ============================================================
+% PUBLIC INTERFACE
+% ============================================================
+
+% \MTScoreTable{n} -- insert a coverage table for MT n
+\newcommand{\MTScoreTable}[1]{%
+  \medskip
+  \begin{center}
+  \begin{tabular}{ |c|c|c| }
+  \cline{2-3}
+  \multicolumn{1}{c|}{} & \textbf{Question} & \textbf{Coverage} \\
+  \hline
+  \MT@Block{#1}%
+  \end{tabular}
+  \end{center}
+}
+
+% \MTRadar -- draw a radar / spider diagram of per-MT average coverage
+\newcommand{\MTRadar}{%
+  \MT@BuildRadarPath
+  \begin{center}
+  \begin{tikzpicture}[scale=3]
+    % Concentric reference polygons (NC=0, PC=0.5, FC=1 levels)
+    \foreach \r in {0.25,0.5,0.75,1.0}{%
+      \begin{scope}[scale=\r]
+        \draw[gray!25, thin] \MT@radarframe cycle;
+      \end{scope}%
+    }
+    % Spokes and MT labels
+    \MT@radaraxes
+    % Coverage polygon
+    \draw[gray!60!black, thick, fill=gray!40, fill opacity=0.55]
+      \MT@radarpath cycle;
+  \end{tikzpicture}
+  \end{center}
+}
+
+\makeatother

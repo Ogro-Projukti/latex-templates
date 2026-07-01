@@ -1,0 +1,34 @@
+{
+  "id": "mom-2026-challenge-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Moussa Amrani, Rakshit Mittal",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Mutasim Fuad Rafi",
+    "github": "https://github.com/mfbhai10"
+  },
+  "description": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
+  "compatibleWith": [
+    "tectonic"
+  ],
+  "packages": [
+    "mom-template",
+    "multirow",
+    "here",
+    "tikz",
+    "xcolor"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "category": "Conference Paper",
+  "tags": [
+    "LaTeX",
+    "Model Management Challenge",
+    "MoM Challenge",
+    "Conference Paper Template"
+  ]
+}
