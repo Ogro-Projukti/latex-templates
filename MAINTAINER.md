@@ -22,6 +22,7 @@ latex-templates/
 ├── MAINTAINER.md              # This file
 ├── scripts/
 │   ├── build_registry.py      # Builds registry.json from meta.json
+│   ├── remove_template.py     # Removes templates/{id}/ and regenerates catalog
 │   ├── badge-templates.json   # Shields.io badge (auto-generated)
 │   └── badge-updated.json     # Shields.io badge (auto-generated)
 ├── .github/
@@ -395,6 +396,47 @@ After adding templates, run `build_registry.py` so badge counts stay accurate.
 
 ---
 
+## Removing a template with `remove_template.py`
+
+Use this when retiring a template from the public library (duplicate, deprecated, or seeded built-ins).
+
+```bash
+# Preview removal
+python scripts/remove_template.py <template-id> --dry-run
+
+# Remove one template
+python scripts/remove_template.py <template-id>
+
+# Remove several at once
+python scripts/remove_template.py id-one id-two id-three
+```
+
+The script:
+
+1. Deletes `templates/{id}/` (refuses if the folder is missing)
+2. Runs `build_registry.py` to update `registry.json` and badge files
+
+### Options
+
+| Flag | Purpose |
+|------|---------|
+| `--dry-run` | Show what would be removed without changing files |
+| `--skip-registry` | Delete folders only; skip catalog regeneration |
+| `--root` | Repo root (default: parent of `scripts/`) |
+
+### After removal
+
+```bash
+python scripts/build_registry.py --check
+git add -A templates/ registry.json scripts/badge-*.json
+git commit -m "Remove template: <id>"
+git push
+```
+
+LATIUM users who already downloaded a removed template keep files in `.latium/templates/{id}/` locally until they remove them in the app.
+
+---
+
 ## Step 7 — Open PR and merge
 
 ### Branch name
@@ -547,4 +589,5 @@ Issue opened
 - [latex-templates repository](https://github.com/Ogro-Projukti/latex-templates)
 - Issue template: `.github/ISSUE_TEMPLATE/submit_template.md`
 - Registry builder: `scripts/build_registry.py`
+- Template removal: `scripts/remove_template.py`
 - Live registry: `https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/registry.json`

@@ -31,7 +31,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/acm-mile-high-video-conference-2023-abstract",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/acm-mile-high-video-conference-2023-abstract",
-      "size": "210.3KB",
+      "size": "217.2KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -43,89 +43,13 @@
         "abstract",
         "short paper",
         "ACM Mile-High Video Conference 2023"
-      ]
-    },
-    {
-      "id": "article-starter",
-      "name": "Article Starter",
-      "shortDescription": "Clean article with math, figures, citations, and section scaffolding.",
-      "category": "Academic",
-      "contributor": "LATIUM",
-      "version": "1.0.0",
-      "lastUpdated": "Built in",
-      "license": "MIT",
-      "packages": [
-        "geometry",
-        "amsmath",
-        "amssymb",
-        "graphicx",
-        "hyperref",
-        "natbib"
-      ],
-      "files": [
-        "main.tex",
-        "references.bib"
-      ],
-      "hasPreview": false,
-      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/article-starter",
-      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/article-starter",
-      "size": "790B",
-      "compatibleWith": [
-        "tectonic",
-        "pdflatex",
-        "xelatex"
-      ],
-      "tags": [
-        "article",
-        "paper",
-        "math"
       ],
       "author": {
-        "name": "LATIUM",
-        "github": "LATIUM"
+        "name": "Ekrem Cetinkaya, Minh Nguyen"
       },
       "contributorProfile": {
-        "name": "LATIUM",
-        "github": "lat-mini"
-      }
-    },
-    {
-      "id": "beamer-talk",
-      "name": "Beamer Presentation",
-      "shortDescription": "Slide deck template with title slide, agenda, blocks, and references.",
-      "category": "Presentation",
-      "contributor": "CTAN Beamer",
-      "version": "1.0.0",
-      "lastUpdated": "Built in",
-      "license": "MIT",
-      "packages": [
-        "beamer",
-        "Madrid theme"
-      ],
-      "files": [
-        "main.tex"
-      ],
-      "hasPreview": false,
-      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/beamer-talk",
-      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/beamer-talk",
-      "size": "796B",
-      "compatibleWith": [
-        "tectonic",
-        "pdflatex",
-        "xelatex"
-      ],
-      "tags": [
-        "slides",
-        "presentation",
-        "beamer"
-      ],
-      "author": {
-        "name": "CTAN Beamer",
-        "github": "CTAN"
-      },
-      "contributorProfile": {
-        "name": "CTAN Beamer",
-        "github": "lat-mini"
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
       }
     },
     {
@@ -174,49 +98,6 @@
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",
         "github": "https://github.com/Siddhatho"
-      }
-    },
-    {
-      "id": "ieee-conference",
-      "name": "IEEE Conference Paper",
-      "shortDescription": "Two-column conference paper layout with abstract and keyword blocks.",
-      "category": "Conference",
-      "contributor": "IEEE",
-      "version": "1.0.0",
-      "lastUpdated": "Built in",
-      "license": "MIT",
-      "packages": [
-        "IEEEtran",
-        "amsmath",
-        "amssymb",
-        "graphicx",
-        "cite"
-      ],
-      "files": [
-        "main.tex",
-        "references.bib"
-      ],
-      "hasPreview": false,
-      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-conference",
-      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-conference",
-      "size": "822B",
-      "compatibleWith": [
-        "tectonic",
-        "pdflatex",
-        "xelatex"
-      ],
-      "tags": [
-        "conference",
-        "ieee",
-        "two-column"
-      ],
-      "author": {
-        "name": "IEEE",
-        "github": "IEEE"
-      },
-      "contributorProfile": {
-        "name": "IEEE",
-        "github": "lat-mini"
       }
     },
     {
@@ -269,90 +150,6 @@
       "contributorProfile": {
         "name": "Mutasim Fuad Rafi",
         "github": "https://github.com/mfbhai10"
-      }
-    },
-    {
-      "id": "resume-modern",
-      "name": "Modern Resume",
-      "shortDescription": "One-page CV/resume with focused sections and compact spacing.",
-      "category": "Resume",
-      "contributor": "LATIUM",
-      "version": "1.0.0",
-      "lastUpdated": "Built in",
-      "license": "MIT",
-      "packages": [
-        "geometry",
-        "hyperref",
-        "enumitem"
-      ],
-      "files": [
-        "main.tex"
-      ],
-      "hasPreview": false,
-      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/resume-modern",
-      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/resume-modern",
-      "size": "864B",
-      "compatibleWith": [
-        "tectonic",
-        "pdflatex",
-        "xelatex"
-      ],
-      "tags": [
-        "resume",
-        "cv",
-        "career"
-      ],
-      "author": {
-        "name": "LATIUM",
-        "github": "lat-mini"
-      },
-      "contributorProfile": {
-        "name": "LATIUM",
-        "github": "lat-mini"
-      }
-    },
-    {
-      "id": "thesis-chaptered",
-      "name": "Chaptered Thesis",
-      "shortDescription": "Long-form thesis structure with chapters, front matter, and bibliography.",
-      "category": "Thesis",
-      "contributor": "Overleaf community",
-      "version": "1.0.0",
-      "lastUpdated": "Built in",
-      "license": "MIT",
-      "packages": [
-        "report",
-        "geometry",
-        "amsmath",
-        "amssymb",
-        "graphicx",
-        "hyperref"
-      ],
-      "files": [
-        "main.tex",
-        "references.bib"
-      ],
-      "hasPreview": false,
-      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/thesis-chaptered",
-      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/thesis-chaptered",
-      "size": "641B",
-      "compatibleWith": [
-        "tectonic",
-        "pdflatex",
-        "xelatex"
-      ],
-      "tags": [
-        "thesis",
-        "book",
-        "chapters"
-      ],
-      "author": {
-        "name": "Overleaf community",
-        "github": "overleaf"
-      },
-      "contributorProfile": {
-        "name": "Overleaf community",
-        "github": "lat-mini"
       }
     }
   ]
