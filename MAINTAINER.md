@@ -166,12 +166,15 @@ Please update the issue and we'll continue review.
 
 | Label | Meaning |
 |-------|---------|
+| `template-submission` | Auto-applied on new issues from the submit form |
 | `triage:needs-info` | Waiting on contributor |
 | `triage:in-review` | Maintainer reviewing |
 | `triage:compile-failed` | Does not compile |
 | `triage:accepted` | Ready to land |
 | `triage:rejected` | Will not publish |
 | `published` | Live on main |
+
+Full workflow and recreate commands: [`.github/LABELS.md`](.github/LABELS.md).
 
 Assign yourself and comment **Review started** when you begin.
 
