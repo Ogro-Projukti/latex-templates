@@ -3,6 +3,49 @@
   "updated": "2026-07-01",
   "templates": [
     {
+      "id": "acm-mile-high-video-conference-2023-abstract",
+      "name": "Acm Mile High Video Conference 2023 Abstract",
+      "shortDescription": "ACM acmart-based short paper and abstract template for the Mile-High Video Conference 2023, including MHV 2023 metadata, CCS concepts, keywords, acknowledgments, and ACM reference formatting.",
+      "category": "conference",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "3 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "acmart",
+        "graphicx",
+        "url",
+        "subcaption",
+        "balance"
+      ],
+      "files": [
+        "ACM-Reference-Format.bbx",
+        "ACM-Reference-Format.bst",
+        "ACM-Reference-Format.cbx",
+        "ACM-Reference-Format.dbx",
+        "acmart.cls",
+        "info.json",
+        "main.tex",
+        "refs.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/acm-mile-high-video-conference-2023-abstract",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/acm-mile-high-video-conference-2023-abstract",
+      "size": "210.3KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "acmart",
+        "conference",
+        "abstract",
+        "short paper",
+        "ACM Mile-High Video Conference 2023"
+      ]
+    },
+    {
       "id": "article-starter",
       "name": "Article Starter",
       "shortDescription": "Clean article with math, figures, citations, and section scaffolding.",
