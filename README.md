@@ -63,7 +63,3 @@ python scripts/build_registry.py --check
 ## Preview images
 
 Add `preview.png` (≈300×400), set `"preview": true` and `"previewImagePath": "preview.png"` in `meta.json`, then run `build_registry.py`. Until then, the app shows a placeholder graphic.
-
-## Legacy note
-
-The main LATIUM repo also has `backend/latex/templates/generate_registry.py` for bootstrapping this library from built-in templates. Day-to-day publishing in **this** repo uses `scripts/build_registry.py` only.
