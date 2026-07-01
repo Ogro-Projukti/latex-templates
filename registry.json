@@ -70,6 +70,46 @@
       ]
     },
     {
+      "id": "icsm5-submission-template",
+      "name": "Icsm5 Submission Template",
+      "shortDescription": "ICSM-5 conference submission template adapted from Elsevier's elsarticle numbered-style bundle (3p, 11pt, final). Provides title/author/address blocks with corresponding-author and email handling, structured abstract and keywords, numbered theorem/lemma/definition/remark environments, example figures, tables, equations, and a numbered bibliography via elsarticle-num-names.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "graphicx",
+        "amssymb",
+        "amsthm",
+        "lineno"
+      ],
+      "files": [
+        "elsarticle-harv.bst",
+        "elsarticle-num-names.bst",
+        "elsarticle-num.bst",
+        "ICSM-5_elsarticle-template.tex",
+        "info.json",
+        "model1-num-names.bst",
+        "placeholder.jpg",
+        "sample.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/icsm5-submission-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/icsm5-submission-template",
+      "size": "144.9KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "conference",
+        "submission",
+        "template"
+      ]
+    },
+    {
       "id": "ieee-conference",
       "name": "IEEE Conference Paper",
       "shortDescription": "Two-column conference paper layout with abstract and keyword blocks.",

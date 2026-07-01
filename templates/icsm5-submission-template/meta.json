@@ -1,0 +1,38 @@
+{
+  "id": "icsm5-submission-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Elsevier Ltd",
+    "github": "elsevier"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "ICSM-5 conference submission template adapted from Elsevier's elsarticle numbered-style bundle (3p, 11pt, final). Provides title/author/address blocks with corresponding-author and email handling, structured abstract and keywords, numbered theorem/lemma/definition/remark environments, example figures, tables, equations, and a numbered bibliography via elsarticle-num-names.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "graphicx",
+    "amssymb",
+    "amsthm",
+    "lineno"
+  ],
+  "license": "LaTeX Project Public License 1.3c",
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "submission",
+    "template"
+  ]
+}
