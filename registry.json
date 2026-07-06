@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-01",
+  "updated": "2026-07-06",
   "templates": [
     {
       "id": "acm-mile-high-video-conference-2023-abstract",
@@ -50,6 +50,58 @@
       "contributorProfile": {
         "name": "Toufiq Ahmed",
         "github": "https://github.com/ahmedtoufiq59"
+      }
+    },
+    {
+      "id": "bdletter",
+      "name": "Bdletter",
+      "shortDescription": "A LaTeX class for writing authentic Bangladeshi official letters. Supports government offices, schools, colleges, banks, NGOs, and general public use. Follows the standard Bangladeshi formal letter structure with বরাবর, বিষয়, and বিনীত নিবেদক blocks. Noto Serif Bengali font is bundled — no installation required.",
+      "category": "['letter', 'official', 'Bangla']",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2026-06-28",
+      "license": "{'name': 'MIT License', 'url': 'https://opensource.org/licenses/MIT'}",
+      "packages": [
+        "fontspec",
+        "polyglossia",
+        "geometry",
+        "setspace",
+        "parskip",
+        "etoolbox",
+        "keyval"
+      ],
+      "files": [
+        "bdletter.cls",
+        "examples/bank-request.tex",
+        "examples/job-application.tex",
+        "examples/school-leave.tex",
+        "fonts/NotoSerifBengali-Bold.ttf",
+        "fonts/NotoSerifBengali-Regular.ttf",
+        "LICENSE",
+        "main.tex",
+        "README.md"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/bdletter",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/bdletter",
+      "size": "511.1KB",
+      "compatibleWith": [
+        "tectonic",
+        "xelatex"
+      ],
+      "tags": [
+        "Bangladeshi",
+        "official letter",
+        "government",
+        "school",
+        "college",
+        "bank",
+        "NGO",
+        "formal letter"
+      ],
+      "author": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
       }
     },
     {
