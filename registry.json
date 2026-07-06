@@ -56,7 +56,7 @@
       "id": "bdletter",
       "name": "Bdletter",
       "shortDescription": "A LaTeX class for writing authentic Bangladeshi official letters. Supports government offices, schools, colleges, banks, NGOs, and general public use. Follows the standard Bangladeshi formal letter structure with বরাবর, বিষয়, and বিনীত নিবেদক blocks. Noto Serif Bengali font is bundled — no installation required.",
-      "category": "['letter', 'official', 'Bangla']",
+      "category": "Bangla",
       "contributor": "Siddartho Sarker Bipro",
       "version": "1.0.0",
       "lastUpdated": "2026-06-28",
