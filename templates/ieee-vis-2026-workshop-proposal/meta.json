@@ -1,0 +1,44 @@
+{
+  "id": "ieee-vis-2026-workshop-proposal",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "IEEE Visualization and Graphics Technical Community (VGTC)",
+    "github": "ieee-vgtc"
+  },
+  "contributor": {
+    "name": "Mutasim Fuad Rafi",
+    "github": "https://github.com/mfbhai10"
+  },
+  "description": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex"
+  ],
+  "packages": [
+    "graphicx",
+    "microtype",
+    "textcomp",
+    "mathptmx",
+    "times",
+    "cite",
+    "tabu",
+    "booktabs",
+    "enumitem",
+    "setspace"
+  ],
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "IEEE VIS",
+    "Workshop Proposal",
+    "LaTeX",
+    "Template"
+  ]
+}

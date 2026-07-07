@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-06",
+  "updated": "2026-07-07",
   "templates": [
     {
       "id": "acm-mile-high-video-conference-2023-abstract",
@@ -56,7 +56,7 @@
       "id": "bdletter",
       "name": "Bdletter",
       "shortDescription": "A LaTeX class for writing authentic Bangladeshi official letters. Supports government offices, schools, colleges, banks, NGOs, and general public use. Follows the standard Bangladeshi formal letter structure with বরাবর, বিষয়, and বিনীত নিবেদক blocks. Noto Serif Bengali font is bundled — no installation required.",
-      "category": "Bangla",
+      "category": "['Bangla']",
       "contributor": "Siddartho Sarker Bipro",
       "version": "1.0.0",
       "lastUpdated": "2026-06-28",
@@ -150,6 +150,79 @@
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",
         "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "ieee-vis-2026-workshop-proposal",
+      "name": "Ieee Vis 2026 Workshop Proposal",
+      "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",
+      "category": "conference",
+      "contributor": "Mutasim Fuad Rafi",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "packages": [
+        "graphicx",
+        "microtype",
+        "textcomp",
+        "mathptmx",
+        "times",
+        "cite",
+        "tabu",
+        "booktabs",
+        "enumitem",
+        "setspace"
+      ],
+      "files": [
+        "abbrv-doi-hyperref-narrow.bst",
+        "abbrv-doi-hyperref.bst",
+        "abbrv-doi-narrow.bst",
+        "abbrv-doi.bst",
+        "figures/CypressView.eps",
+        "figures/CypressView.jpg",
+        "figures/sample-eps-converted-to.pdf",
+        "figures/sample.eps",
+        "figures/sample.pdf",
+        "info.json",
+        "makefile",
+        "README",
+        "sections/2024WorkshopStats.tex",
+        "sections/abstract.tex",
+        "sections/activities.tex",
+        "sections/metricOfSuccessAndBackupPlan.tex",
+        "sections/motivation.tex",
+        "sections/process.tex",
+        "sections/qualificationAndBackground.tex",
+        "sections/uncertaintyVis2024Notes.tex",
+        "sections/workshopGoals.tex",
+        "sections/workshopImpact.tex",
+        "sections/workshopRequirements.tex",
+        "sections/workshopSetting.tex",
+        "template.bib",
+        "template.tex",
+        "vgtc.cls"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-vis-2026-workshop-proposal",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-vis-2026-workshop-proposal",
+      "size": "4.5MB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex"
+      ],
+      "tags": [
+        "IEEE VIS",
+        "Workshop Proposal",
+        "LaTeX",
+        "Template"
+      ],
+      "author": {
+        "name": "IEEE Visualization and Graphics Technical Community (VGTC)",
+        "github": "ieee-vgtc"
+      },
+      "contributorProfile": {
+        "name": "Mutasim Fuad Rafi",
+        "github": "https://github.com/mfbhai10"
       }
     },
     {
