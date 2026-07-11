@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-07",
+  "updated": "2026-07-11",
   "templates": [
     {
       "id": "acm-mile-high-video-conference-2023-abstract",
@@ -46,6 +46,54 @@
       ],
       "author": {
         "name": "Ekrem Cetinkaya, Minh Nguyen"
+      },
+      "contributorProfile": {
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
+      }
+    },
+    {
+      "id": "ai4treat-2023-abstract",
+      "name": "Ai4treat 2023 Abstract",
+      "shortDescription": "Compact academic abstract template for AI4Treat 2023 with title, author affiliation, section headings, figure support, footer label, and bibliography.",
+      "category": "Academic",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "AI4Treat 2023 template",
+      "license": "Conference-provided template",
+      "packages": [
+        "inputenc",
+        "geometry",
+        "hyperref",
+        "amsmath",
+        "amsfonts",
+        "amssymb",
+        "graphicx",
+        "fancyhdr",
+        "amsthm"
+      ],
+      "files": [
+        "info.json",
+        "main.tex",
+        "refs.bib"
+      ],
+      "hasPreview": false,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ai4treat-2023-abstract",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ai4treat-2023-abstract",
+      "size": "4.4KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "AI4Treat",
+        "Abstract",
+        "LaTeX",
+        "Template"
+      ],
+      "author": {
+        "name": "AI4Treat 2023"
       },
       "contributorProfile": {
         "name": "Toufiq Ahmed",

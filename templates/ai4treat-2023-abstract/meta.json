@@ -1,0 +1,40 @@
+{
+  "id": "ai4treat-2023-abstract",
+  "version": "1.0.0",
+  "preview": false,
+  "previewImagePath": "",
+  "lastUpdated": "AI4Treat 2023 template",
+  "author": {
+    "name": "AI4Treat 2023",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Toufiq Ahmed",
+    "github": "https://github.com/ahmedtoufiq59"
+  },
+  "description": "Compact academic abstract template for AI4Treat 2023 with title, author affiliation, section headings, figure support, footer label, and bibliography.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "inputenc",
+    "geometry",
+    "hyperref",
+    "amsmath",
+    "amsfonts",
+    "amssymb",
+    "graphicx",
+    "fancyhdr",
+    "amsthm"
+  ],
+  "license": "Conference-provided template",
+  "category": "Academic",
+  "tags": [
+    "AI4Treat",
+    "Abstract",
+    "LaTeX",
+    "Template"
+  ]
+}
