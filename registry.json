@@ -383,6 +383,46 @@
       }
     },
     {
+      "id": "imampc2024-abstract-template",
+      "name": "Imampc2024 Abstract Template",
+      "shortDescription": "Official one-page abstract template for the 13th International Meeting on Atomic and Molecular Physics and Chemistry (IMAMPC 2024). Designed for conference abstract submissions with support for author affiliations, figures, acknowledgments, and references.",
+      "category": "Conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "newtxtext",
+        "newtxmath",
+        "amsmath",
+        "geometry",
+        "graphicx",
+        "setspace",
+        "hyperref"
+      ],
+      "files": [
+        "IMAMPC2024-abstract.tex",
+        "images/Figure.png",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/imampc2024-abstract-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/imampc2024-abstract-template",
+      "size": "660.5KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Dariusz Piekarski, Piotr Wegrzyn"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
@@ -428,6 +468,69 @@
       ],
       "author": {
         "name": "Moussa Amrani, Rakshit Mittal"
+      },
+      "contributorProfile": {
+        "name": "Mutasim Fuad Rafi",
+        "github": "https://github.com/mfbhai10"
+      }
+    },
+    {
+      "id": "pdc-2025-abstract-template",
+      "name": "Pdc 2025 Abstract Template",
+      "shortDescription": "Official abstract submission template for the 2025 Planetary Defense Conference (PDC), featuring the Elsevier elsarticle class, structured front matter, bibliography management, and support for figures and keywords.",
+      "category": "Conference",
+      "contributor": "Mutasim Fuad Rafi",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "CMIT, LPPL, proprietary with redistribution permission, etc.",
+      "packages": [
+        "pifont",
+        "natbib",
+        "geometry",
+        "graphicx",
+        "txfonts",
+        "subfigure",
+        "wrapfig",
+        "color",
+        "booktabs",
+        "caption",
+        "amsmath",
+        "amssymb",
+        "url",
+        "colortbl",
+        "multirow",
+        "fnbreak",
+        "helvet",
+        "hyperref",
+        "xcolor"
+      ],
+      "files": [
+        "Makefile",
+        "body.tex",
+        "driver.tex",
+        "elsarticle.cls",
+        "figs/placeholder_fig.pdf",
+        "info.json",
+        "keywords.tex",
+        "model1-num-names.bst",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/pdc-2025-abstract-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/pdc-2025-abstract-template",
+      "size": "70.7KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "abstract",
+        "template",
+        "LaTeX"
+      ],
+      "author": {
+        "name": "Brent W. Barbee"
       },
       "contributorProfile": {
         "name": "Mutasim Fuad Rafi",
