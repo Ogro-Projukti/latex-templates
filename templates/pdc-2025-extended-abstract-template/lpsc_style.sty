@@ -1,0 +1,162 @@
+% This work (LPSC_example.tex, LPSC_abstract.sty and LPSCshort_url.bst)
+%     was created by Seth Humphries 13-Nov-2009 Copyright (C) 2009
+%
+% This work is licensed under the Creative Commons
+% Attribution-Noncommercial-Share Alike 3.0 License. To view a copy
+% of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/;
+% or, (b) send a letter to Creative Commons, 171 2nd Street, Suite
+% 300, San Francisco, California, 94105, USA.
+%
+%
+% This (LPSC_template.tex and LPSC_abstract.sty) borrows, with permission,
+%    the titlearea and figure spacing commands from the lpscabs.tex and
+%    lpscabs.sty files which were authored by Ross A. Beyer and
+%    Moses P. Milazzo Copyright (C) 2005,2007,2008 and can be found at:
+%    http://rossbeyer.net/software/lpsc_template/
+%
+%
+
+%
+
+%\NeedsTeXFormat{LaTeX2e}
+%\ProvidesPackage{lpsc_style}[2009/11/13 LPSC Style]
+
+%%%%%%%%%%%%        IDENTIFICATION        %%%%%%%%%%%%
+\newcommand{\LPSCstyleversion}{1.1}% current version number
+\newcommand{\LPSCstyleupdated}{2011/01/04}% date of last change(s)
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{LPSCstyle}
+        [\LPSCstyleupdated\space\LPSCstyleversion\space (LPSC Style by Seth Humphries)]%
+
+
+
+\RequirePackage{paralist}
+\RequirePackage{geometry}
+\RequirePackage{hyperref}
+\usepackage{url} % to make URLs in the text look nice
+\usepackage{graphicx}   % so you can use jpg, tif, gif, png, etc instead of just eps
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% setup margins and indentation lengths, etc
+\geometry{letterpaper,tmargin=1.0in,bmargin=1.0in,lmargin=1.0in,rmargin=1.0in,headheight=0in,headsep=0in,footskip=0.0in}
+\setlength{\parindent}{0.1in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+\setlength{\columnsep}{0.35in}
+
+
+\raggedbottom %makes bottom of page not exactly 1in margins
+\sloppy %sloppy tells latex to not have words extend into column space
+\widowpenalty=19999 % No widows at bottom of page
+\clubpenalty=19999 % No orphans at top of page
+\tolerance=1000 %adjust to make the above penalties tighter or looser
+
+
+%% The alteration of the treatment of figures was indlucded in a style
+%%    guide created by Ross A. Beyer under the Creative Commons
+%%    Attribution-Noncommercial-Share Alike 3.0 License and used with
+%%    permission herein. He, in turn, had borrowed it from the source
+%%    cited below.
+
+% Alter some LaTeX defaults for better treatment of figures:
+% See p.105 of "TeX Unbound" for suggested values.
+% See pp. 199-200 of Lamport's "LaTeX" book for details.
+%   General parameters, for ALL pages:
+\renewcommand{\topfraction}{0.98}    % max fraction of floats at top
+\renewcommand{\bottomfraction}{0.99} % max fraction of floats at bottom
+%   Parameters for TEXT pages (not float pages):
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}     % 2 may work better
+\setcounter{dbltopnumber}{2}    % for 2-column pages
+\renewcommand{\dbltopfraction}{0.95} % fit big float above 2-col. text
+\renewcommand{\textfraction}{0.07}  % allow minimal text w. figs
+%   Parameters for FLOAT pages (not text pages):
+\renewcommand{\floatpagefraction}{0.95}      % require fuller float pages
+% N.B.: floatpagefraction MUST be less than topfraction !!
+\renewcommand{\dblfloatpagefraction}{0.99}   % require fuller float pages
+
+
+%%%%%%%%   %%%%%%%%   %%%%%%%%   %%%%%%%%   %%%%%%%%   %%%%%%%%   %%%%%%%%
+%% define commands, environments and redefinitions
+
+
+%% The \titlearea command is taken from a  style guide created by
+%%    Ross A. Beyer under the Creative Commons
+%%    Attribution-Noncommercial-Share Alike 3.0 License and used with
+%%    permission herein.
+\newcommand{\titlearea}[2]{%
+%\thispagestyle{empty}
+\twocolumn[{\textbf{\MakeUppercase{#1}}}\space #2\newline]
+}
+
+
+
+%% a few new commands for putting meta data into your PDF
+\newcommand{\name}[1]%
+{\ifx\empty#1\empty\else\gdef\name{#1}\fi} %name
+
+\newcommand{\ownemail}[1]%
+{\ifx\empty#1\empty\else\gdef\ownemail{#1}\fi} %name
+
+\newcommand{\keys}[1]%
+{\ifx\empty#1\empty\else\gdef\keys{#1}\fi} %name
+
+\newcommand{\DocTitle}[1]%
+{\ifx\empty#1\empty\else\gdef\DocTitle{#1}\fi} %name
+
+\newcommand{\OWNwebpage}[1]%
+{\ifx\empty#1\empty\else\gdef\OWNwebpage{#1}\fi} %name
+
+
+
+
+%% a few formatting changes
+\setcounter{secnumdepth}{0} %Turn off section numbering
+
+% redefine how section headings look
+\renewcommand{\section}{%
+  \@startsection{section}{1}{.2in}%
+{0.60ex\@plus -1ex \@minus -.2ex}%{-1.25ex\@plus -1ex \@minus -.2ex}%
+{0ex}%
+{\normalfont\normalsize}
+}
+%% to get the right look, I re-redefine how sections look. It can look odd
+%%   but it works rather well.
+\newcommand{\tmpsection}[1]{}
+\let\tmpsection=\section
+\renewcommand{\section}[1]{\tmpsection{\normalfont\normalsize\textbf{#1}}\textbf{:}}
+
+
+
+%% define name given when bibiliogprahy prints out
+\renewcommand{\refname}{References}
+
+%redefine bibliosgraphy so that the references are in one paragraph rather than each starting on a newline
+\renewenvironment{thebibliography}[1]
+{\begin{flushleft}
+\section{\refname}%
+\@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+\begin{inparaenum}%
+\list{\@biblabel{\@arabic\c@enumiv}}%
+{
+\leftmargin\labelwidth
+\@openbib@code
+\usecounter{enumiv}%
+\let\p@enumiv\@empty
+\renewcommand\theenumiv{\@arabic\c@enumiv}}%
+\sloppy
+\clubpenalty4000
+\@clubpenalty \clubpenalty
+\widowpenalty4000%
+\sfcode`\.\@m}
+{\def\@noitemerr
+{\@latex@warning{Empty `thebibliography' environment}}%
+\endlist\end{inparaenum}
+\end{flushleft}
+}
