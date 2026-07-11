@@ -1,0 +1,29 @@
+{
+  "id": "12th-iccp-proceedings-template",
+  "version": "1.0.0",
+  "category": "Conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Armen Amirkhanian"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official proceedings template for the 12th International Congress on Cementitious Composites and Sustainable Construction Materials (ICCP). Designed for two-column academic conference papers with support for abstracts, figures, tables, equations, citations, and acknowledgements.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "natbib",
+    "graphicx",
+    "booktabs",
+    "url",
+    "ifthen"
+  ],
+  "license": "LaTeX Project Public License 1.3c"
+}

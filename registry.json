@@ -54,6 +54,49 @@
       }
     },
     {
+      "id": "12th-iccp-proceedings-template",
+      "name": "12th Iccp Proceedings Template",
+      "shortDescription": "Official proceedings template for the 12th International Congress on Cementitious Composites and Sustainable Construction Materials (ICCP). Designed for two-column academic conference papers with support for abstracts, figures, tables, equations, citations, and acknowledgements.",
+      "category": "Conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "natbib",
+        "graphicx",
+        "booktabs",
+        "url",
+        "ifthen"
+      ],
+      "files": [
+        "export.bib",
+        "fig1.png",
+        "fig2.png",
+        "info.json",
+        "iscp.bst",
+        "iscp.cls",
+        "iscpproceeding.sty",
+        "main.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/12th-iccp-proceedings-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/12th-iccp-proceedings-template",
+      "size": "694.9KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Armen Amirkhanian"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "24th-central-european-conference-on-cryptology-submission-template",
       "name": "24th Central European Conference On Cryptology Submission Template",
       "shortDescription": "Official LaTeX template for submitting extended abstracts to the 24th Central European Conference on Cryptology (CECC 24), featuring author affiliations, ORCID support, configurable headers, keyword metadata, and BibTeX bibliography.",
