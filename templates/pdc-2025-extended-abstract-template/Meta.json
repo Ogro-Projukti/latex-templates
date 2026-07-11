@@ -1,0 +1,38 @@
+{
+  "id": "pdc-2025-extended-abstract-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Brent W. Barbee",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Mutasim Fuad Rafi",
+    "github": "https://github.com/mfbhai10"
+  },
+  "description": "Official extended abstract template for the 9th IAA Planetary Defense Conference (PDC 2025), featuring modular document sections, custom conference styling, bibliography support, and figure management.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex"
+  ],
+  "license": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 (CC BY-NC-SA 3.0)",
+  "category": "Conference",
+  "tags": [
+    "conference",
+    "extended abstract",
+    "template",
+    "LaTeX"
+  ],
+  "packages": [
+    "lpsc_style",
+    "times",
+    "fancyhdr",
+    "color",
+    "booktabs",
+    "xcolor",
+    "caption",
+    "helvet"
+  ]
+}

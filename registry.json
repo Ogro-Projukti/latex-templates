@@ -435,6 +435,63 @@
       }
     },
     {
+      "id": "pdc-2025-extended-abstract-template",
+      "name": "Pdc 2025 Extended Abstract Template",
+      "shortDescription": "Official extended abstract template for the 9th IAA Planetary Defense Conference (PDC 2025), featuring modular document sections, custom conference styling, bibliography support, and figure management.",
+      "category": "Conference",
+      "contributor": "Mutasim Fuad Rafi",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 (CC BY-NC-SA 3.0)",
+      "packages": [
+        "lpsc_style",
+        "times",
+        "fancyhdr",
+        "color",
+        "booktabs",
+        "xcolor",
+        "caption",
+        "helvet"
+      ],
+      "files": [
+        "LPSCshort_url.bst",
+        "Makefile",
+        "Meta.json",
+        "driver.tex",
+        "figs/placeholder_fig.pdf",
+        "info.json",
+        "jasa.bst",
+        "lpsc_style.sty",
+        "references.bib",
+        "s-conc.tex",
+        "s-intro.tex",
+        "s-sec1.tex",
+        "s-sec2.tex",
+        "s-sec3.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/pdc-2025-extended-abstract-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/pdc-2025-extended-abstract-template",
+      "size": "106.4KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "extended abstract",
+        "template",
+        "LaTeX"
+      ],
+      "author": {
+        "name": "Brent W. Barbee"
+      },
+      "contributorProfile": {
+        "name": "Mutasim Fuad Rafi",
+        "github": "https://github.com/mfbhai10"
+      }
+    },
+    {
       "id": "pdc-2025-paper-template",
       "name": "Pdc 2025 Paper Template",
       "shortDescription": "Official paper template for the 9th IAA Planetary Defense Conference (PDC 2025), featuring the Elsevier elsarticle class, modular document organization, bibliography management, and support for abstracts, acknowledgements, keywords, and figures.",
