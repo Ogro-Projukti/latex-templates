@@ -1,0 +1,49 @@
+{
+  "id": "pdc-2025-abstract-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Brent W. Barbee",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Mutasim Fuad Rafi",
+    "github": "https://github.com/mfbhai10"
+  },
+  "description": "Official abstract submission template for the 2025 Planetary Defense Conference (PDC), featuring the Elsevier elsarticle class, structured front matter, bibliography management, and support for figures and keywords.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex"
+  ],
+  "license": "CMIT, LPPL, proprietary with redistribution permission, etc.",
+  "category": "Conference",
+  "tags": [
+    "conference",
+    "abstract",
+    "template",
+    "LaTeX"
+  ],
+  "packages": [
+    "pifont",
+    "natbib",
+    "geometry",
+    "graphicx",
+    "txfonts",
+    "subfigure",
+    "wrapfig",
+    "color",
+    "booktabs",
+    "caption",
+    "amsmath",
+    "amssymb",
+    "url",
+    "colortbl",
+    "multirow",
+    "fnbreak",
+    "helvet",
+    "hyperref",
+    "xcolor"
+  ]
+}

@@ -384,6 +384,69 @@
       }
     },
     {
+      "id": "pdc-2025-abstract-template",
+      "name": "Pdc 2025 Abstract Template",
+      "shortDescription": "Official abstract submission template for the 2025 Planetary Defense Conference (PDC), featuring the Elsevier elsarticle class, structured front matter, bibliography management, and support for figures and keywords.",
+      "category": "Conference",
+      "contributor": "Mutasim Fuad Rafi",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "CMIT, LPPL, proprietary with redistribution permission, etc.",
+      "packages": [
+        "pifont",
+        "natbib",
+        "geometry",
+        "graphicx",
+        "txfonts",
+        "subfigure",
+        "wrapfig",
+        "color",
+        "booktabs",
+        "caption",
+        "amsmath",
+        "amssymb",
+        "url",
+        "colortbl",
+        "multirow",
+        "fnbreak",
+        "helvet",
+        "hyperref",
+        "xcolor"
+      ],
+      "files": [
+        "Makefile",
+        "body.tex",
+        "driver.tex",
+        "elsarticle.cls",
+        "figs/placeholder_fig.pdf",
+        "info.json",
+        "keywords.tex",
+        "model1-num-names.bst",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/pdc-2025-abstract-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/pdc-2025-abstract-template",
+      "size": "70.7KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "abstract",
+        "template",
+        "LaTeX"
+      ],
+      "author": {
+        "name": "Brent W. Barbee"
+      },
+      "contributorProfile": {
+        "name": "Mutasim Fuad Rafi",
+        "github": "https://github.com/mfbhai10"
+      }
+    },
+    {
       "id": "pdc-2025-extended-abstract-template",
       "name": "Pdc 2025 Extended Abstract Template",
       "shortDescription": "Official extended abstract template for the 9th IAA Planetary Defense Conference (PDC 2025), featuring modular document sections, custom conference styling, bibliography support, and figure management.",
