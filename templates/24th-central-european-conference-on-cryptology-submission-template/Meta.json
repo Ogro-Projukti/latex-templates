@@ -1,0 +1,33 @@
+{
+  "id": "24th-central-european-conference-on-cryptology-submission-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Piotr Jankowski, Maciej Wieszczyński, Jan Kowalski, Andrzej Jaworski",
+    "github": "ogro-projukti"
+  },
+  "contributor": {
+    "name": "Mutasim Fuad Rafi",
+    "github": "https://github.com/mfbhai10"
+  },
+  "category": "Conference",
+  "license": "MIT, LPPL, proprietary with redistribution permission, etc.",
+  "tags": [
+    "conference",
+    "extended abstract",
+    "template",
+    "LaTeX"
+  ],
+  "description": "Official LaTeX template for submitting extended abstracts to the 24th Central European Conference on Cryptology (CECC 24), featuring author affiliations, ORCID support, configurable headers, keyword metadata, and BibTeX bibliography.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex"
+  ],
+  "packages": [
+    "amsmath",
+    "amssymb",
+    "listings"
+  ]
+}
