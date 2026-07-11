@@ -382,6 +382,73 @@
         "name": "Mutasim Fuad Rafi",
         "github": "https://github.com/mfbhai10"
       }
+    },
+    {
+      "id": "pdc-2025-paper-template",
+      "name": "Pdc 2025 Paper Template",
+      "shortDescription": "Official paper template for the 9th IAA Planetary Defense Conference (PDC 2025), featuring the Elsevier elsarticle class, modular document organization, bibliography management, and support for abstracts, acknowledgements, keywords, and figures.",
+      "category": "Conference",
+      "contributor": "Mutasim Fuad Rafi",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Copyright © International Academy of Astronautics (IAA). Template distributed by the conference organizers. No explicit open-source license specified.",
+      "packages": [
+        "pifont",
+        "natbib",
+        "geometry",
+        "graphicx",
+        "txfonts",
+        "subfigure",
+        "wrapfig",
+        "color",
+        "booktabs",
+        "caption",
+        "amsmath",
+        "amssymb",
+        "url",
+        "colortbl",
+        "multirow",
+        "fnbreak",
+        "helvet"
+      ],
+      "files": [
+        "Makefile",
+        "abs.tex",
+        "ack.tex",
+        "driver.tex",
+        "elsarticle.cls",
+        "figs/placeholder_fig.pdf",
+        "info.json",
+        "keywords.tex",
+        "model1-num-names.bst",
+        "references.bib",
+        "s-conc.tex",
+        "s-intro.tex",
+        "s-sec1.tex",
+        "s-sec2.tex",
+        "s-sec3.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/pdc-2025-paper-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/pdc-2025-paper-template",
+      "size": "76.2KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "paper",
+        "template",
+        "LaTeX"
+      ],
+      "author": {
+        "name": "Brent W. Barbee"
+      },
+      "contributorProfile": {
+        "name": "Mutasim Fuad Rafi",
+        "github": "https://github.com/mfbhai10"
+      }
     }
   ]
 }
