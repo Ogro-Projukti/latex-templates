@@ -1,0 +1,32 @@
+{
+  "id": "11th-workshop-space-engineering-technology",
+  "version": "1.0.0",
+  "category": "Conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Italo Pinto Rodrigues, Aline Castilho Rodrigues-Siqueli, Yuri Matheus Dias Pereira",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official paper template for the 11th Workshop on Space Engineering and Technology (WETE). Designed for academic conference papers with support for abstracts, figures, tables, references, and IEEE-style formatting.",
+  "compatibleWith": ["tectonic", "pdflatex", "xelatex"],
+  "packages": [
+    "babel",
+    "graphicx",
+    "url",
+    "multirow",
+    "supertabular",
+    "tabularx",
+    "longtable",
+    "gensymb",
+    "color",
+    "fancyhdr",
+    "ifthen"
+  ],
+  "license": "LPPL-1.3c"
+}

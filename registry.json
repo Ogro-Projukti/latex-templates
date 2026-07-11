@@ -3,6 +3,57 @@
   "updated": "2026-07-12",
   "templates": [
     {
+      "id": "11th-workshop-space-engineering-technology",
+      "name": "11th Workshop Space Engineering Technology",
+      "shortDescription": "Official paper template for the 11th Workshop on Space Engineering and Technology (WETE). Designed for academic conference papers with support for abstracts, figures, tables, references, and IEEE-style formatting.",
+      "category": "Conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LPPL-1.3c",
+      "packages": [
+        "babel",
+        "graphicx",
+        "url",
+        "multirow",
+        "supertabular",
+        "tabularx",
+        "longtable",
+        "gensymb",
+        "color",
+        "fancyhdr",
+        "ifthen"
+      ],
+      "files": [
+        "IEEEtran.cls",
+        "caption2.sty",
+        "figura.jpg",
+        "info.json",
+        "logo_template.png",
+        "ref_wete.bst",
+        "referencias.bib",
+        "template_wete.pdf",
+        "template_wete.sty",
+        "template_wete.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/11th-workshop-space-engineering-technology",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/11th-workshop-space-engineering-technology",
+      "size": "549.4KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Italo Pinto Rodrigues, Aline Castilho Rodrigues-Siqueli, Yuri Matheus Dias Pereira"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "acm-mile-high-video-conference-2023-abstract",
       "name": "Acm Mile High Video Conference 2023 Abstract",
       "shortDescription": "ACM acmart-based short paper and abstract template for the Mile-High Video Conference 2023, including MHV 2023 metadata, CCS concepts, keywords, acknowledgments, and ACM reference formatting.",
