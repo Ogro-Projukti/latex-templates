@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-11",
+  "updated": "2026-07-12",
   "templates": [
     {
       "id": "acm-mile-high-video-conference-2023-abstract",
@@ -31,7 +31,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/acm-mile-high-video-conference-2023-abstract",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/acm-mile-high-video-conference-2023-abstract",
-      "size": "217.2KB",
+      "size": "210.2KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -101,6 +101,64 @@
       }
     },
     {
+      "id": "annsim-2026-conference-paper",
+      "name": "Annsim 2026 Conference Paper",
+      "shortDescription": "Official ANNSIM 2026 conference proceedings LaTeX template featuring the SCS conference class, bibliography style, sample assets, and paper formatting guidelines.",
+      "category": "Conference",
+      "contributor": "Mutasim Fuad Rafi",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Proprietary (Original SCS ANNSIM 2026 Author Kit; redistributed with the original conference template for authoring purposes.)",
+      "packages": [
+        "latexsym",
+        "graphicx",
+        "mathptmx",
+        "amsmath",
+        "amsfonts",
+        "amssymb",
+        "amsbsy",
+        "amsthm",
+        "hyperref",
+        "hyphenat",
+        "babel"
+      ],
+      "files": [
+        "assets/EmbeddingFonts4LaTex.pdf",
+        "assets/MathExpandExpression.jpg",
+        "assets/demobib.bib",
+        "assets/puzzle.png",
+        "assets/puzzle_1.png",
+        "assets/puzzle_2.png",
+        "info.json",
+        "readme.txt",
+        "scs24paper.tex",
+        "scspaperproc.cls",
+        "scsproc.bst",
+        "scsproc.sty"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/annsim-2026-conference-paper",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/annsim-2026-conference-paper",
+      "size": "335.2KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "paper",
+        "template",
+        "LaTeX"
+      ],
+      "author": {
+        "name": "The Society for Modeling & Simulation International (SCS)"
+      },
+      "contributorProfile": {
+        "name": "Mutasim Fuad Rafi",
+        "github": "https://github.com/mfbhai10"
+      }
+    },
+    {
       "id": "bdletter",
       "name": "Bdletter",
       "shortDescription": "A LaTeX class for writing authentic Bangladeshi official letters. Supports government offices, schools, colleges, banks, NGOs, and general public use. Follows the standard Bangladeshi formal letter structure with বরাবর, বিষয়, and বিনীত নিবেদক blocks. Noto Serif Bengali font is bundled — no installation required.",
@@ -119,20 +177,20 @@
         "keyval"
       ],
       "files": [
+        "LICENSE",
+        "README.md",
         "bdletter.cls",
         "examples/bank-request.tex",
         "examples/job-application.tex",
         "examples/school-leave.tex",
         "fonts/NotoSerifBengali-Bold.ttf",
         "fonts/NotoSerifBengali-Regular.ttf",
-        "LICENSE",
-        "main.tex",
-        "README.md"
+        "main.tex"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/bdletter",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/bdletter",
-      "size": "511.1KB",
+      "size": "510.5KB",
       "compatibleWith": [
         "tectonic",
         "xelatex"
@@ -168,10 +226,10 @@
         "lineno"
       ],
       "files": [
+        "ICSM-5_elsarticle-template.tex",
         "elsarticle-harv.bst",
         "elsarticle-num-names.bst",
         "elsarticle-num.bst",
-        "ICSM-5_elsarticle-template.tex",
         "info.json",
         "model1-num-names.bst",
         "placeholder.jpg",
@@ -180,7 +238,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/icsm5-submission-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/icsm5-submission-template",
-      "size": "150.8KB",
+      "size": "144.6KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -222,6 +280,7 @@
         "setspace"
       ],
       "files": [
+        "README",
         "abbrv-doi-hyperref-narrow.bst",
         "abbrv-doi-hyperref.bst",
         "abbrv-doi-narrow.bst",
@@ -233,7 +292,6 @@
         "figures/sample.pdf",
         "info.json",
         "makefile",
-        "README",
         "sections/2024WorkshopStats.tex",
         "sections/abstract.tex",
         "sections/activities.tex",
@@ -291,6 +349,7 @@
       ],
       "files": [
         "ACM-Reference-Format.bst",
+        "README.txt",
         "acmart.cls",
         "acmdatamodel.dbx",
         "acmguide.pdf",
@@ -299,7 +358,6 @@
         "info.json",
         "macros.tex",
         "mom-template.sty",
-        "README.txt",
         "sample-base.bib",
         "sample-sigconf.tex",
         "score-tables.tex"
@@ -307,7 +365,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/mom-2026-challenge-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/mom-2026-challenge-template",
-      "size": "718.5KB",
+      "size": "709.5KB",
       "compatibleWith": [
         "tectonic"
       ],

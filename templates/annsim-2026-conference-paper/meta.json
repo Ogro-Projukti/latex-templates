@@ -1,0 +1,41 @@
+{
+  "id": "annsim-2026-conference-paper",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "The Society for Modeling & Simulation International (SCS)",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Mutasim Fuad Rafi",
+    "github": "https://github.com/mfbhai10"
+  },
+  "description": "Official ANNSIM 2026 conference proceedings LaTeX template featuring the SCS conference class, bibliography style, sample assets, and paper formatting guidelines.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex"
+  ],
+  "license": "Proprietary (Original SCS ANNSIM 2026 Author Kit; redistributed with the original conference template for authoring purposes.)",
+  "category": "Conference",
+  "tags": [
+    "conference",
+    "paper",
+    "template",
+    "LaTeX"
+  ],
+  "packages": [
+    "latexsym",
+    "graphicx",
+    "mathptmx",
+    "amsmath",
+    "amsfonts",
+    "amssymb",
+    "amsbsy",
+    "amsthm",
+    "hyperref",
+    "hyphenat",
+    "babel"
+  ]
+}
