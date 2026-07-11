@@ -54,6 +54,50 @@
       }
     },
     {
+      "id": "24th-central-european-conference-on-cryptology-submission-template",
+      "name": "24th Central European Conference On Cryptology Submission Template",
+      "shortDescription": "Official LaTeX template for submitting extended abstracts to the 24th Central European Conference on Cryptology (CECC 24), featuring author affiliations, ORCID support, configurable headers, keyword metadata, and BibTeX bibliography.",
+      "category": "Conference",
+      "contributor": "Mutasim Fuad Rafi",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "MIT, LPPL, proprietary with redistribution permission, etc.",
+      "packages": [
+        "amsmath",
+        "amssymb",
+        "listings"
+      ],
+      "files": [
+        "Meta.json",
+        "bibliography.bib",
+        "ceccsub.cls",
+        "info.json",
+        "main.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/24th-central-european-conference-on-cryptology-submission-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/24th-central-european-conference-on-cryptology-submission-template",
+      "size": "18.4KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "extended abstract",
+        "template",
+        "LaTeX"
+      ],
+      "author": {
+        "name": "Piotr Jankowski, Maciej Wieszczyński, Jan Kowalski, Andrzej Jaworski",
+        "github": "ogro-projukti"
+      },
+      "contributorProfile": {
+        "name": "Mutasim Fuad Rafi",
+        "github": "https://github.com/mfbhai10"
+      }
+    },
+    {
       "id": "acm-mile-high-video-conference-2023-abstract",
       "name": "Acm Mile High Video Conference 2023 Abstract",
       "shortDescription": "ACM acmart-based short paper and abstract template for the Mile-High Video Conference 2023, including MHV 2023 metadata, CCS concepts, keywords, acknowledgments, and ACM reference formatting.",
