@@ -635,6 +635,63 @@
       }
     },
     {
+      "id": "ieee-transactions-latex2e-templates",
+      "name": "Ieee Transactions Latex2e Templates",
+      "shortDescription": "Official IEEE Transactions LaTeX2e template bundle by Michael Shell. Includes 7 skeleton templates covering journal, conference, Computer Society, ComSoc, and Transactions on Magnetics formats, with full IEEEtran.cls, BibTeX style files, and detailed formatting instructions.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "cite",
+        "graphicx",
+        "hyperref",
+        "IEEEtran"
+      ],
+      "files": [
+        "IEEEtran/IEEEtran.cls",
+        "IEEEtran/IEEEtran_HOWTO.pdf",
+        "IEEEtran/README",
+        "IEEEtran/bare_adv.tex",
+        "IEEEtran/bare_conf.tex",
+        "IEEEtran/bare_conf_compsoc.tex",
+        "IEEEtran/bare_jrnl.tex",
+        "IEEEtran/bare_jrnl_compsoc.tex",
+        "IEEEtran/bare_jrnl_comsoc.tex",
+        "IEEEtran/bare_jrnl_transmag.tex",
+        "IEEEtran/changelog.txt",
+        "Transactions-Bibliography/IEEEabrv.bib",
+        "Transactions-Bibliography/IEEEexample.bib",
+        "Transactions-Bibliography/IEEEfull.bib",
+        "Transactions-Bibliography/IEEEtran.bst",
+        "Transactions-Bibliography/IEEEtranN.bst",
+        "Transactions-Bibliography/IEEEtranS.bst",
+        "Transactions-Bibliography/IEEEtranSA.bst",
+        "Transactions-Bibliography/IEEEtranSN.bst",
+        "Transactions-Bibliography/IEEEtran_bst_HOWTO.pdf",
+        "Transactions-Bibliography/README",
+        "Transactions-instructions-only.pdf",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-transactions-latex2e-templates",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-transactions-latex2e-templates",
+      "size": "2.5MB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "D. Amendola"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-vis-2026-workshop-proposal",
       "name": "Ieee Vis 2026 Workshop Proposal",
       "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",

@@ -1,0 +1,29 @@
+{
+  "id": "ieee-transactions-latex2e-templates",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "D. Amendola",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official IEEE Transactions LaTeX2e template bundle by Michael Shell. Includes 7 skeleton templates covering journal, conference, Computer Society, ComSoc, and Transactions on Magnetics formats, with full IEEEtran.cls, BibTeX style files, and detailed formatting instructions.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "cite",
+    "graphicx",
+    "hyperref",
+    "IEEEtran"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
