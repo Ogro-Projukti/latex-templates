@@ -232,6 +232,45 @@
       }
     },
     {
+      "id": "abstract-template-sst2022",
+      "name": "Abstract Template Sst2022",
+      "shortDescription": "Official one-page abstract template for SST 2022 (Australasian International Conference on Speech Science and Technology), Canberra, ACT, Australia. Supports single and multiple authors, tables, figures, equations, and IEEE-style bibliography with anonymous review compliance.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "amssymb",
+        "amsmath",
+        "epsfig",
+        "hyperref"
+      ],
+      "files": [
+        "figure.pdf",
+        "info.json",
+        "sst2022.sty",
+        "sst2022_latex_abstract_template.pdf",
+        "sst2022_latex_abstract_template.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/abstract-template-sst2022",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/abstract-template-sst2022",
+      "size": "147.7KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "SST 2022 Organizing Committee"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "acm-mile-high-video-conference-2023-abstract",
       "name": "Acm Mile High Video Conference 2023 Abstract",
       "shortDescription": "ACM acmart-based short paper and abstract template for the Mile-High Video Conference 2023, including MHV 2023 metadata, CCS concepts, keywords, acknowledgments, and ACM reference formatting.",

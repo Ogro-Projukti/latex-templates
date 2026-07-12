@@ -1,0 +1,28 @@
+{
+  "id": "abstract-template-sst2022",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "SST 2022 Organizing Committee"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official one-page abstract template for SST 2022 (Australasian International Conference on Speech Science and Technology), Canberra, ACT, Australia. Supports single and multiple authors, tables, figures, equations, and IEEE-style bibliography with anonymous review compliance.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "amssymb",
+    "amsmath",
+    "epsfig",
+    "hyperref"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
