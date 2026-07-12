@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage{newtxtext,newtxmath}
+\usepackage{amsmath}%,amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+% Packages for Polish language and character encoding
+\usepackage[utf8]{inputenc} % For UTF-8 encoding
+\usepackage[T1]{fontenc} % For proper hyphenation and accents in Polish
+
+\thispagestyle{empty} 
+
+\geometry{a4paper, left=15mm, right=15mm, top=20mm, bottom=10mm} % please to not change the margins
+
+\usepackage[
+   colorlinks,
+   linkcolor=blue,
+   urlcolor=blue,
+   citecolor=blue,
+   ]{hyperref}
+   
+\newcommand{\abstracttitle}[1]{
+\setstretch{1.15}	%increase the space between the two lines of the title
+ \begin{center}{\Large {\bf #1}}\end{center}
+\setstretch{1.0}
+}
+
+\newcommand{\authors}[1]{
+ \begin{center}{\bf #1} \end{center}
+ \setstretch{1.0}
+}
+
+\newcommand{\addresses}[1]{
+\setstretch{0.95}
+ \begin{center}{\small #1} \end{center}
+\setstretch{1}
+}
+
+
+\renewcommand\refname{\normalsize References }
+
+\begin{document}
+
+\abstracttitle{The title of your contribution to the SMCBS'2025}
+\authors{
+Piyush Sindhu Sharma $^{1,~\dag}$,
+\underline{Mihai Suster $^{1,2}$},
+Włodzimierz Kutner $^{1}$
+} 
+
+\addresses{%Affiliation with laboratory and/or university name, city, zip code,  country
+$^{1}$ Institute of Physical Chemistry, Polish Academy of Sciences, Kasprzaka 44/52, 01-224, Warszawa, Poland \\
+$^{2}$Candela Foundation, ul.~Grochowska 357/513, 03-822 Warszawa, Poland \\
+\dag corresponding author's email:  \href{mailto:smcbs@ichf.edu.pl}{smcbs@ichf.edu.pl}
+}
+
+
+	Please consider the following rules to ensure the happiness of the organizers and the beauty of the book of abstracts:
+\begin{itemize}	
+\item the contribution should be written in Times New Roman (11pt);
+\item the name of the presenting author should be underlined;
+\item the first line of each paragraph should be indented;
+\item the contribution can't exceed \textbf{\underline{1 page}};
+\item including figures in the text is allowed (max. 2MB size);
+\item figure captions should be written outside of the figure frame (please see Figure~\ref{fig:Figure} as an example);
+\item insert your references using \textbackslash bibitem and cite as~\cite{AuthorsAB2024} and~\cite{AuthorsCDE2023};
+\item submit your contribution following the procedure described at \url{www.smcbs.pl}.
+\end{itemize}
+
+We cordially invite researchers to participate in the 12th International Workshop on Surface Modification for Chemical and Biochemical Sensing, an interdisciplinary forum dedicated to advancing the understanding and application of surface science and technology. The workshop will feature presentations on a diverse array of topics, including chemo- and biosensing, chemical and biochemical surface modification, polymer film coating, inorganic, organic, and biomaterials for catalysis, electric energy generation, and storage, charge transport in surface films, novel techniques and instrumentation for surface examination, signal transduction and processing, detection techniques and protocols, system miniaturization, and nanotechnology use. This workshop provides a unique opportunity for experts from various disciplines to share their research findings, engage in meaningful discussions, and foster collaborations!
+
+Join us at the SMCBS'2025 Workshop to explore the latest developments and future directions in this dynamic field. 
+
+    \begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{images/Figure.png}
+        \caption{\label{fig:Figure}
+        Caption of your figure: also Times New Roman, 11 points.}
+    \end{center}    
+    \end{figure}
+
+\section*{\fontsize{11}{14}\selectfont Acknowledgments}
+\vspace{-0.25cm}
+\begin{flushleft}
+\fontsize{11}{14}\selectfont % Adjust the line spacing if needed
+Please type your acknowledgment texts here. Kindly note that this section is optional.
+\end{flushleft}
+
+
+\begin{thebibliography}{1}
+%insert your references here using \bibitem
+\small
+\vspace{-0.25cm}
+
+\bibitem{AuthorsAB2024} N. White  and G. Black, {\em Nature Materials} {{\bf 6}, 9 (2024).} 
+\vspace{-0.25cm} % Use this between every \bibitem to reduce the space between cited articles
+\bibitem{AuthorsCDE2023} F. Bennett,  X.Y. Harrison, and  F. Foster, {\em Optica} {{\bf 15}, 11220 (2023).}
+
+\end{thebibliography}
+%\endgroup
+
+
+
+\end{document}

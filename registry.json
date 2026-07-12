@@ -141,6 +141,48 @@
       }
     },
     {
+      "id": "abstract-template-smcbs2025",
+      "name": "Abstract Template Smcbs2025",
+      "shortDescription": "Official one-page abstract template for the 12th International Workshop on Surface Modification for Chemical and Biochemical Sensing (SMCBS'2025). Supports multiple author affiliations, presenting author underline, figures, acknowledgments, and bibliography.",
+      "category": "Conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "newtxtext",
+        "newtxmath",
+        "amsmath",
+        "geometry",
+        "graphicx",
+        "setspace",
+        "inputenc",
+        "fontenc",
+        "hyperref"
+      ],
+      "files": [
+        "abstract.tex",
+        "images/Figure.png",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/abstract-template-smcbs2025",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/abstract-template-smcbs2025",
+      "size": "178.9KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Candela Foundation"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "acm-mile-high-video-conference-2023-abstract",
       "name": "Acm Mile High Video Conference 2023 Abstract",
       "shortDescription": "ACM acmart-based short paper and abstract template for the Mile-High Video Conference 2023, including MHV 2023 metadata, CCS concepts, keywords, acknowledgments, and ACM reference formatting.",
