@@ -439,6 +439,50 @@
       }
     },
     {
+      "id": "ieee-conference-template",
+      "name": "Ieee Conference Template",
+      "shortDescription": "Official IEEE conference paper template (conference_101719.tex) using IEEEtran.cls. Standard two-column conference layout with abstract, IEEEkeywords, sections, figures, tables, equations, acknowledgment, and numbered bibliography. Includes detailed in-source authoring guidance and common formatting pitfalls.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "cite",
+        "amsmath",
+        "amssymb",
+        "amsfonts",
+        "algorithmic",
+        "graphicx",
+        "textcomp",
+        "xcolor"
+      ],
+      "files": [
+        "IEEEtran.cls",
+        "IEEEtran_HOWTO.pdf",
+        "conference_101719.pdf",
+        "conference_101719.tex",
+        "fig1.png",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-conference-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-conference-template",
+      "size": "1.0MB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-vis-2026-workshop-proposal",
       "name": "Ieee Vis 2026 Workshop Proposal",
       "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",

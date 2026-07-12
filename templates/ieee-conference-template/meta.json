@@ -1,0 +1,32 @@
+{
+  "id": "ieee-conference-template",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "IEEE"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official IEEE conference paper template (conference_101719.tex) using IEEEtran.cls. Standard two-column conference layout with abstract, IEEEkeywords, sections, figures, tables, equations, acknowledgment, and numbered bibliography. Includes detailed in-source authoring guidance and common formatting pitfalls.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "cite",
+    "amsmath",
+    "amssymb",
+    "amsfonts",
+    "algorithmic",
+    "graphicx",
+    "textcomp",
+    "xcolor"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
