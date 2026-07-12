@@ -1,0 +1,30 @@
+{
+  "id": "ieee-data-compression-conference-template",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "IEEE Data Compression Conference (DCC)"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official manuscript template for the Data Compression Conference (DCC), using the custom dccpaper.cls document class. Single-column, 12pt format with title/author block, abstract, sections/subsections, figures, tables, and IEEE-style bibliography via IEEEbib.bst.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "graphicx",
+    "citesort",
+    "amsmath",
+    "amssymb",
+    "color",
+    "url"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}

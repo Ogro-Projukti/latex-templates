@@ -539,6 +539,57 @@
       }
     },
     {
+      "id": "ieee-data-compression-conference-template",
+      "name": "Ieee Data Compression Conference Template",
+      "shortDescription": "Official manuscript template for the Data Compression Conference (DCC), using the custom dccpaper.cls document class. Single-column, 12pt format with title/author block, abstract, sections/subsections, figures, tables, and IEEE-style bibliography via IEEEbib.bst.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "graphicx",
+        "citesort",
+        "amsmath",
+        "amssymb",
+        "color",
+        "url"
+      ],
+      "files": [
+        "Figures/image1.pdf",
+        "Figures/image3.pdf",
+        "Figures/image4.pdf",
+        "IEEEbib.bst",
+        "Makefile",
+        "README.txt",
+        "citesort.sty",
+        "dcc_paper.pdf",
+        "dccpaper.cls",
+        "image1.pdf",
+        "image3.pdf",
+        "image4.pdf",
+        "info.json",
+        "main.tex",
+        "refs.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-data-compression-conference-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-data-compression-conference-template",
+      "size": "120.5KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "IEEE Data Compression Conference (DCC)"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-vis-2026-workshop-proposal",
       "name": "Ieee Vis 2026 Workshop Proposal",
       "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",
