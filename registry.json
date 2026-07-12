@@ -483,6 +483,51 @@
       }
     },
     {
+      "id": "ieee-conference-template-ancs-2019",
+      "name": "Ieee Conference Template Ancs 2019",
+      "shortDescription": "Official conference paper template for ANCS 2019 (ACM/IEEE Symposium on Architectures for Networking and Communications Systems), built on IEEEtran.cls. Adds fancyhdr-based running header with conference name and configurable copyright/footer notice. Includes abstract, IEEEkeywords, sections, figures, tables, equations, acknowledgment, and numbered bibliography.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "cite",
+        "amsmath",
+        "amssymb",
+        "amsfonts",
+        "algorithmic",
+        "graphicx",
+        "textcomp",
+        "xcolor",
+        "fancyhdr"
+      ],
+      "files": [
+        "IEEEtran.cls",
+        "IEEEtran_HOWTO.pdf",
+        "conference.pdf",
+        "conference.tex",
+        "fig1.png",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-conference-template-ancs-2019",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-conference-template-ancs-2019",
+      "size": "1.1MB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Muhamamd Shahbaz"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-conference-template-reykjavik-university",
       "name": "Ieee Conference Template Reykjavik University",
       "shortDescription": "IEEE conference-style lab/project report template customized for Reykjavík University's course use, based on IEEEtran.cls. Offers two interchangeable report structures (IMRAD and Design Paper) with extensive instructional scaffolding, Icelandic-character (T1/UTF-8) support, Axiomatic Design guidance, SI units, subfigures, and an instructional appendix.",
