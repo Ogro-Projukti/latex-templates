@@ -653,6 +653,50 @@
       }
     },
     {
+      "id": "ieee-computational-intelligence-letters",
+      "name": "Ieee Computational Intelligence Letters",
+      "shortDescription": "Official IEEE LaTeX template bundle for IEEE Computational Intelligence Letters submissions. Includes the standard IEEEtran.cls class file, sample article structure, and comprehensive formatting guidelines.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "graphicx"
+      ],
+      "files": [
+        "IEEEtran.cls",
+        "New_IEEEtran_how-to.pdf",
+        "New_IEEEtran_how-to.tex",
+        "bare_jrnl_new_sample4.pdf",
+        "bare_jrnl_new_sample4.tex",
+        "fig1.png",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-computational-intelligence-letters",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-computational-intelligence-letters",
+      "size": "855.9KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-conference-template",
       "name": "Ieee Conference Template",
       "shortDescription": "Official IEEE conference paper template (conference_101719.tex) using IEEEtran.cls. Standard two-column conference layout with abstract, IEEEkeywords, sections, figures, tables, equations, acknowledgment, and numbered bibliography. Includes detailed in-source authoring guidance and common formatting pitfalls.",

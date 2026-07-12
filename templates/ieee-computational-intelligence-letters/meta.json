@@ -1,0 +1,38 @@
+{
+  "id": "ieee-computational-intelligence-letters",
+  "version": "1.0.0",
+  "category": "journal",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "IEEE",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official IEEE LaTeX template bundle for IEEE Computational Intelligence Letters submissions. Includes the standard IEEEtran.cls class file, sample article structure, and comprehensive formatting guidelines.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "graphicx"
+  ],
+  "license": "LaTeX Project Public License 1.3c",
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "journal",
+  "tags": [
+    "journal",
+    "submission",
+    "template",
+    "ieee"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
