@@ -635,6 +635,42 @@
       }
     },
     {
+      "id": "ieee-demo-template-compsoc-conferences",
+      "name": "Ieee Demo Template Compsoc Conferences",
+      "shortDescription": "Official IEEEtran.cls demo template for IEEE Computer Society conferences. Demonstrates two-column compsoc format with multiple author affiliations, abstract, sections, figures, tables, equations, acknowledgments, and bibliography.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "cite",
+        "graphicx",
+        "IEEEtran"
+      ],
+      "files": [
+        "bare_conf_compsoc.tex",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-demo-template-compsoc-conferences",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-demo-template-compsoc-conferences",
+      "size": "22.8KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Michael Shell",
+        "github": "michaelshell"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-isec-2022-posters",
       "name": "Ieee Isec 2022 Posters",
       "shortDescription": "Poster abstract template for IEEE ISEC 2022 (Integrated STEM Education Conference). Single-column one-page layout using IEEEtran.cls in journal mode. Supports up to three authors with institutional affiliations and a structured abstract.",

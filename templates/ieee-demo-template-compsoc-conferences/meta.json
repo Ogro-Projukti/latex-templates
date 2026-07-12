@@ -1,0 +1,28 @@
+{
+  "id": "ieee-demo-template-compsoc-conferences",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Michael Shell",
+    "github": "michaelshell"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official IEEEtran.cls demo template for IEEE Computer Society conferences. Demonstrates two-column compsoc format with multiple author affiliations, abstract, sections, figures, tables, equations, acknowledgments, and bibliography.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "cite",
+    "graphicx",
+    "IEEEtran"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
