@@ -1,0 +1,33 @@
+{
+  "id": "ffk2025-abstract-template",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Candela Foundation"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official one-page abstract template for the 10th International Conference on Precision Physics and Fundamental Physical Constants (FFK 2025). Designed for conference abstract submissions with support for author affiliations, figures, acknowledgments, and references.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "newtxtext",
+    "newtxmath",
+    "amsmath",
+    "geometry",
+    "graphicx",
+    "setspace",
+    "inputenc",
+    "fontenc",
+    "hyperref"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}

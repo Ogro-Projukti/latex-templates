@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage{newtxtext,newtxmath}
+\usepackage{amsmath}%,amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+% Packages for Polish language and character encoding
+\usepackage[utf8]{inputenc} % For UTF-8 encoding
+\usepackage[T1]{fontenc} % For proper hyphenation and accents in Polish
+
+\thispagestyle{empty} 
+
+\geometry{a4paper, left=15mm, right=15mm, top=20mm, bottom=10mm} % please to not change the margins
+
+\usepackage[
+   colorlinks,
+   linkcolor=blue,
+   urlcolor=blue,
+   citecolor=blue,
+   ]{hyperref}
+   
+\newcommand{\abstracttitle}[1]{
+\setstretch{1.15}	%increase the space between the two lines of the title
+ \begin{center}{\Large {\bf #1}}\end{center}
+\setstretch{1.0}
+}
+
+\newcommand{\authors}[1]{
+ \begin{center}{\bf #1} \end{center}
+ \setstretch{1.0}
+}
+
+\newcommand{\addresses}[1]{
+\setstretch{0.95}
+ \begin{center}{\small #1} \end{center}
+\setstretch{1}
+}
+
+
+\renewcommand\refname{\normalsize References }
+
+\begin{document}
+
+\abstracttitle{The title of your contribution to the FFK 2025}
+\authors{
+Krzysztof Pachucki $^{1,~\dag}$,
+Michał Tomza $^{1}$,
+\underline{Mihai Suster $^{1,2}$},
+Mieczysław Wolfke $^{1}$
+} 
+
+\addresses{%Affiliation with laboratory and/or university name, city, zip code,  country
+$^{1}$Faculty of Physics, University of Warsaw, ul.~Pasteura 5, 02-093 Warszawa, Poland \\
+$^{2}$Candela Foundation, ul.~Grochowska 357/513, 03-822 Warszawa, Poland \\
+\dag corresponding author's email:  \href{mailto:Krzysztof.Pachucki@fuw.edu.pl}{Krzysztof.Pachucki@fuw.edu.pl}
+}
+
+
+	Please consider the following rules to ensure the happiness of the organizers and the beauty of the FFK2025 book of abstracts:
+\begin{itemize}	
+\item the contribution should be written in Times New Roman (11pt);
+\item the name of the presenting author should be underlined;
+\item the first line of each paragraph should be indented;
+\item the contribution can't exceed \textbf{\underline{1 page}};
+\item including figures in the text is allowed (max. 2MB size);
+\item figure captions should be written outside of the figure frame (please see Figure~\ref{fig:Figure} as an example);
+\item insert your references using \textbackslash bibitem and cite as~\cite{AuthorsAB2024} and~\cite{AuthorsCDE2023};
+\item submit your contribution following the procedure described at \url{www.ffk2025.candela.org.pl}.
+\end{itemize}
+
+We are pleased to invite you to the 10th International Conference on Precision Physics and Fundamental Physical Constants, which will take place in Warsaw, Poland, from May 26 to 30, 2025. This edition is co-organized by the Candela Foundation and the University of Warsaw. The conference continues the tradition of workshops held between 2008 and 2014 in St. Petersburg (Russia), Stará Lesná (Slovakia), and Dubna (Russia), focusing on Precision Physics and Fundamental Physical Constants.
+
+We encourage you to stay updated about the event and important deadlines by leaving us your email through the form provided on our website. We look forward to welcoming you to this exceptional conference.
+
+    \begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{images/Figure.png}
+        \caption{\label{fig:Figure}
+        Caption of your figure: also Times New Roman, 11 points.}
+    \end{center}    
+    \end{figure}
+
+\section*{\fontsize{11}{14}\selectfont Acknowledgments}
+\vspace{-0.25cm}
+\begin{flushleft}
+\fontsize{11}{14}\selectfont % Adjust the line spacing if needed
+Please type your acknowledgment texts here. Kindly note that this section is optional.
+\end{flushleft}
+
+
+\begin{thebibliography}{1}
+%insert your references here using \bibitem
+\small
+\vspace{-0.25cm}
+
+\bibitem{AuthorsAB2024} N. White  and G. Black, {\em Nature Materials} {{\bf 6}, 9 (2024).} 
+\vspace{-0.25cm} % Use this between every \bibitem to reduce the space between cited articles
+\bibitem{AuthorsCDE2023} F. Bennett,  X.Y. Harrison, and  F. Foster, {\em Optica} {{\bf 15}, 11220 (2023).}
+
+\end{thebibliography}
+%\endgroup
+
+
+
+\end{document}

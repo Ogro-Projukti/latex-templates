@@ -521,6 +521,48 @@
       }
     },
     {
+      "id": "ffk2025-abstract-template",
+      "name": "Ffk2025 Abstract Template",
+      "shortDescription": "Official one-page abstract template for the 10th International Conference on Precision Physics and Fundamental Physical Constants (FFK 2025). Designed for conference abstract submissions with support for author affiliations, figures, acknowledgments, and references.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "newtxtext",
+        "newtxmath",
+        "amsmath",
+        "geometry",
+        "graphicx",
+        "setspace",
+        "inputenc",
+        "fontenc",
+        "hyperref"
+      ],
+      "files": [
+        "FFK2025-abstract.tex",
+        "images/Figure.png",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ffk2025-abstract-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ffk2025-abstract-template",
+      "size": "1.2MB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Candela Foundation"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "icsm5-submission-template",
       "name": "Icsm5 Submission Template",
       "shortDescription": "ICSM-5 conference submission template adapted from Elsevier's elsarticle numbered-style bundle (3p, 11pt, final). Provides title/author/address blocks with corresponding-author and email handling, structured abstract and keywords, numbered theorem/lemma/definition/remark environments, example figures, tables, equations, and a numbered bibliography via elsarticle-num-names.",
