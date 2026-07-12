@@ -483,6 +483,62 @@
       }
     },
     {
+      "id": "ieee-conference-template-reykjavik-university",
+      "name": "Ieee Conference Template Reykjavik University",
+      "shortDescription": "IEEE conference-style lab/project report template customized for Reykjavík University's course use, based on IEEEtran.cls. Offers two interchangeable report structures (IMRAD and Design Paper) with extensive instructional scaffolding, Icelandic-character (T1/UTF-8) support, Axiomatic Design guidance, SI units, subfigures, and an instructional appendix.",
+      "category": "Academic",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "fontenc",
+        "inputenc",
+        "cite",
+        "amsmath",
+        "amssymb",
+        "amsfonts",
+        "array",
+        "subfig",
+        "dblfloatfix",
+        "algorithmic",
+        "graphicx",
+        "booktabs",
+        "siunitx",
+        "textcomp",
+        "xcolor",
+        "url"
+      ],
+      "files": [
+        "IEEEtran.cls",
+        "IEEEtran_HOWTO.pdf",
+        "graphics/mddgraph.gv",
+        "graphics/mddgraph.pdf",
+        "graphics/ru-logo.pdf",
+        "graphics/scope1.png",
+        "info.json",
+        "references.bib",
+        "team00-conference.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-conference-template-reykjavik-university",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-conference-template-reykjavik-university",
+      "size": "1.0MB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Joseph Timothy Foley",
+        "github": "jtfoley"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-vis-2026-workshop-proposal",
       "name": "Ieee Vis 2026 Workshop Proposal",
       "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",

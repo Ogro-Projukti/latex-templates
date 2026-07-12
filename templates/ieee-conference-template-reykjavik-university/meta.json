@@ -1,0 +1,41 @@
+{
+  "id": "ieee-conference-template-reykjavik-university",
+  "version": "1.0.0",
+  "category": "Academic",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Joseph Timothy Foley",
+    "github": "jtfoley"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "IEEE conference-style lab/project report template customized for Reykjavík University's course use, based on IEEEtran.cls. Offers two interchangeable report structures (IMRAD and Design Paper) with extensive instructional scaffolding, Icelandic-character (T1/UTF-8) support, Axiomatic Design guidance, SI units, subfigures, and an instructional appendix.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "fontenc",
+    "inputenc",
+    "cite",
+    "amsmath",
+    "amssymb",
+    "amsfonts",
+    "array",
+    "subfig",
+    "dblfloatfix",
+    "algorithmic",
+    "graphicx",
+    "booktabs",
+    "siunitx",
+    "textcomp",
+    "xcolor",
+    "url"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
