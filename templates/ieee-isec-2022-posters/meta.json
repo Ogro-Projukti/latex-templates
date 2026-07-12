@@ -1,0 +1,25 @@
+{
+  "id": "ieee-isec-2022-posters",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Mithun Mukherjee"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Poster abstract template for IEEE ISEC 2022 (Integrated STEM Education Conference). Single-column one-page layout using IEEEtran.cls in journal mode. Supports up to three authors with institutional affiliations and a structured abstract.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "IEEEtran"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}

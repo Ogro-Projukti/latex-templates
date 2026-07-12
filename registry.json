@@ -635,6 +635,39 @@
       }
     },
     {
+      "id": "ieee-isec-2022-posters",
+      "name": "Ieee Isec 2022 Posters",
+      "shortDescription": "Poster abstract template for IEEE ISEC 2022 (Integrated STEM Education Conference). Single-column one-page layout using IEEEtran.cls in journal mode. Supports up to three authors with institutional affiliations and a structured abstract.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "IEEEtran"
+      ],
+      "files": [
+        "info.json",
+        "main.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-isec-2022-posters",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-isec-2022-posters",
+      "size": "4.2KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Mithun Mukherjee"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-transactions-latex2e-templates",
       "name": "Ieee Transactions Latex2e Templates",
       "shortDescription": "Official IEEE Transactions LaTeX2e template bundle by Michael Shell. Includes 7 skeleton templates covering journal, conference, Computer Society, ComSoc, and Transactions on Magnetics formats, with full IEEEtran.cls, BibTeX style files, and detailed formatting instructions.",
