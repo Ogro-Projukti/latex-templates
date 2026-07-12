@@ -1,0 +1,31 @@
+{
+  "id": "iepc-2022-template",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "Electric Rocket Propulsion Society (ERPS)"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official paper template for IEPC 2022 (37th International Electric Propulsion Conference), adapted from AIAA conference paper guidelines. Supports multiple authors with affiliations, nomenclature, figures, tables, equations with SI units, chemical formulas, appendix, acknowledgments, and bibliography.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "inputenc",
+    "amsmath",
+    "graphicx",
+    "mhchem",
+    "siunitx",
+    "longtable",
+    "tabularx"
+  ],
+  "license": "LaTeX Project Public License 1.3c"
+}

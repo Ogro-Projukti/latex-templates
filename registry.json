@@ -708,6 +708,51 @@
       }
     },
     {
+      "id": "iepc-2022-template",
+      "name": "Iepc 2022 Template",
+      "shortDescription": "Official paper template for IEPC 2022 (37th International Electric Propulsion Conference), adapted from AIAA conference paper guidelines. Supports multiple authors with affiliations, nomenclature, figures, tables, equations with SI units, chemical formulas, appendix, acknowledgments, and bibliography.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "inputenc",
+        "amsmath",
+        "graphicx",
+        "mhchem",
+        "siunitx",
+        "longtable",
+        "tabularx"
+      ],
+      "files": [
+        "IEPC-2022-000_LastName_Title.pdf",
+        "IEPC-2022-000_LastName_Title.tex",
+        "iepc2022.sty",
+        "iepc22_logo.png",
+        "info.json",
+        "new-aiaa.bst",
+        "new-aiaa.cls",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/iepc-2022-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/iepc-2022-template",
+      "size": "513.7KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Electric Rocket Propulsion Society (ERPS)"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "imampc2024-abstract-template",
       "name": "Imampc2024 Abstract Template",
       "shortDescription": "Official one-page abstract template for the 13th International Meeting on Atomic and Molecular Physics and Chemistry (IMAMPC 2024). Designed for conference abstract submissions with support for author affiliations, figures, acknowledgments, and references.",

@@ -1,0 +1,78 @@
+%%
+%% This is file `iepc2022.sty',
+%%
+%%
+%% This file is meant to be used with the aiaa-tc.cls class
+%% to create a conference paper formatted for the
+%% International Electric Propulsion Conference
+%% Slightly modified for IEPC 2022 (June, 2022).
+%%
+
+\ProvidesPackage{iepc2022}%
+
+\newcommand*{\IEPCsubmissionnumber}[1]{\def\IEPC@submissionnumber{#1}}\IEPCsubmissionnumber{}
+
+%% Creates the IEPC style formatting between the title and the authors.
+%% Requires the input \IEPCsubmissionnumber{xxx}.
+
+\renewcommand\maketitle{\par
+   \begingroup
+     \renewcommand\thefootnote{\@fnsymbol\c@footnote}%
+     \renewcommand{\thefootnote}{\arabic{footnote}}
+    %  \def\@makefnmark{\rlap{\@textsuperscript{\normalfont\@thefnmark}}}%
+     \long\def\@makefntext##1{\parindent 1em\noindent
+             \hb@xt@1.8em{%
+                 \hss\@textsuperscript{\normalfont\@thefnmark}}##1}%
+     \newpage
+     \global\@topnum\z@   % Prevents figures from going at top of page.
+     \@maketitle
+     \@thanks
+   \endgroup
+   \setcounter{footnote}{0}%
+  \renewcommand\thefootnote{\@alph\c@footnote}% change to alpha style footnote
+%   \aiaa@makecopyright
+   \global\let\thanks\relax
+   \global\let\thanksibid\relax
+   \global\let\maketitle\relax
+   \global\let\@maketitle\relax
+   \global\let\@thanks\@empty
+   \global\let\@author\@empty
+   \global\let\@date\@empty
+   \global\let\@title\@empty
+   \global\let\title\relax
+   \global\let\author\relax
+   \global\let\date\relax
+   \global\let\and\relax
+}
+\def\@maketitle{%
+%   \newpage
+%   \null
+  \begin{center}%
+  \let \footnote \thanks
+     {\LARGE\bfseries \@title \par}%
+     \vskip 3em%
+     {\large \bf{IEPC-2022-\IEPC@submissionnumber}}\\
+     \vskip 1em%
+     {\normalsize\it{Presented at the 37th International Electric Propulsion Conference\\
+Massachusetts Institute of Technology, Cambridge, MA, USA}}\\
+     {\normalsize\it{June 19-23, 2022}}\\[1em]
+     {%\large
+      \lineskip 1em%
+      \begin{tabular}[t]{c}%
+         \@author
+      \end{tabular}\par}%
+  \end{center}%
+  \par
+  \vskip 1.5ex}
+
+%% Creates the IEPC footnote style
+
+% \cfoot{\footnotesize\normalfont
+%         \thepage\\%\ of \pageref{LastPage}\\
+%         %\rule[.2\baselineskip]{0.5in}{0.2pt}\\
+%          \it{The 36th International Electric Propulsion Conference, University of Vienna, Austria}\\
+%          \it{September 15-20, 2019}
+% }
+
+%% End of file `iepc2019.sty'.
+
