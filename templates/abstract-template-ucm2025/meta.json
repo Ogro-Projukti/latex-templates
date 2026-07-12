@@ -1,0 +1,33 @@
+{
+  "id": "abstract-template-ucm2025",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "WCandela Foundation"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official one-page abstract template for the Workshop on Ultracold Molecules 2025, Warsaw, Poland (June 24–27, 2025). Supports multiple author affiliations, presenting author underline, corresponding author email, figures, acknowledgments, and bibliography.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "newtxtext",
+    "newtxmath",
+    "amsmath",
+    "geometry",
+    "graphicx",
+    "setspace",
+    "inputenc",
+    "fontenc",
+    "hyperref"
+  ],
+  "license": "CCreative Commons CC BY 4.0"
+}

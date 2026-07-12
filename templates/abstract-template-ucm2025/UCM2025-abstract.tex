@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage{newtxtext,newtxmath}
+\usepackage{amsmath}%,amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+% Packages for Polish language and character encoding
+\usepackage[utf8]{inputenc} % For UTF-8 encoding
+\usepackage[T1]{fontenc} % For proper hyphenation and accents in Polish
+
+\thispagestyle{empty} 
+
+\geometry{a4paper, left=15mm, right=15mm, top=20mm, bottom=10mm} % please to not change the margins
+
+\usepackage[
+   colorlinks,
+   linkcolor=blue,
+   urlcolor=blue,
+   citecolor=blue,
+   ]{hyperref}
+   
+\newcommand{\abstracttitle}[1]{
+\setstretch{1.15}	%increase the space between the two lines of the title
+ \begin{center}{\Large {\bf #1}}\end{center}
+\setstretch{1.0}
+}
+
+\newcommand{\authors}[1]{
+ \begin{center}{\bf #1} \end{center}
+ \setstretch{1.0}
+}
+
+\newcommand{\addresses}[1]{
+\setstretch{0.95}
+ \begin{center}{\small #1} \end{center}
+\setstretch{1}
+}
+
+
+\renewcommand\refname{\normalsize References }
+
+\begin{document}
+
+\abstracttitle{The title of your contribution to Workshop on Ultracold Molecules 2025}
+\authors{
+Michał Tomza $^{1,~\dag}$,
+\underline{Mihai Suster $^{2}$},
+Mieczysław Wolfke $^{1}$
+} 
+
+\addresses{%Affiliation with laboratory and/or university name, city, zip code,  country
+$^{1}$Faculty of Physics, University of Warsaw, ul.~Pasteura 5, 02-093 Warszawa, Poland \\
+$^{2}$Candela Foundation, ul.~Grochowska 357/513, 03-822 Warszawa, Poland \\
+\dag corresponding author's email:  \href{mailto:michal.tomza@fuw.edu.pl}{michal.tomza@fuw.edu.pl}
+}
+
+
+	Please follow these rules to ensure the happiness of the organizers and the beauty of the book of abstract: 
+\begin{itemize}	
+\item write your abstract in Times New Roman 11pt
+\item underline name of the presenting author
+\item indent the first line of each paragraph
+\item do not exceed \textbf{\underline{1 page}}
+\item include figures in the text with max. 2MB size
+\item write the caption outside of the figure frame (see Figure~\ref{fig:Figure} as an example). 
+\item insert your references using \textbackslash bibitem and cite as~\cite{AuthorsAB2024} and ~\cite{AuthorsCDE2023}
+\item submit your abstract following procedure described at www.ultracold-molecules-2025.pl
+\end{itemize}
+
+The second edition of the Workshop on Ultracold Molecules 2025 is set to be held in the vibrant city of Warsaw, Poland, from June 24 to 27, 2025. This four-day event will convene leading international experts in the field of ultracold molecules to exchange ideas, share advancements, and explore new research directions. Topics covered will include cutting-edge techniques in the formation, manipulation, trapping, and laser cooling of ultracold molecules, alongside their  applications in areas such as quantum physics, cold chemistry, and precision measurement.
+
+Organized jointly by the University of Warsaw and the Candela Foundation, the workshop promises a rich  and intensive program. We look forward to seeing the latest developments in the field and to the new ideas that will emerge from this gathering of minds in Warsaw.
+
+
+    \begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{images/Figure.png}
+        \caption{\label{fig:Figure}
+        Caption of your figure: Times New Roman, 11 points.}
+    \end{center}    
+    \end{figure}
+
+\section*{\fontsize{11}{14}\selectfont Acknowledgments}
+\vspace{-0.25cm}
+\begin{flushleft}
+\fontsize{11}{14}\selectfont % Adjust the line spacing if needed
+Your acknowledgment text goes here. Kindly note that this section is optional.
+\end{flushleft}
+
+
+\begin{thebibliography}{1}
+%insert your references here using \bibitem
+\small
+\vspace{-0.25cm}
+
+\bibitem{AuthorsAB2024} N. White  and G. Black, {\em Nature Materials} {{\bf 6}, 9 (2024).} 
+\vspace{-0.25cm} % Use this between every \bibitem to reduce the space between cited articles
+\bibitem{AuthorsCDE2023} F. Bennett,  X.Y. Harrison, and  F. Foster, {\em Optica} {{\bf 15}, 11220 (2023).}
+
+\end{thebibliography}
+%\endgroup
+
+
+
+\end{document}

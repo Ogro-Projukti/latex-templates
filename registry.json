@@ -313,6 +313,48 @@
       }
     },
     {
+      "id": "abstract-template-ucm2025",
+      "name": "Abstract Template Ucm2025",
+      "shortDescription": "Official one-page abstract template for the Workshop on Ultracold Molecules 2025, Warsaw, Poland (June 24–27, 2025). Supports multiple author affiliations, presenting author underline, corresponding author email, figures, acknowledgments, and bibliography.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "CCreative Commons CC BY 4.0",
+      "packages": [
+        "newtxtext",
+        "newtxmath",
+        "amsmath",
+        "geometry",
+        "graphicx",
+        "setspace",
+        "inputenc",
+        "fontenc",
+        "hyperref"
+      ],
+      "files": [
+        "UCM2025-abstract.tex",
+        "images/Figure.png",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/abstract-template-ucm2025",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/abstract-template-ucm2025",
+      "size": "1.8MB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "WCandela Foundation"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "acm-mile-high-video-conference-2023-abstract",
       "name": "Acm Mile High Video Conference 2023 Abstract",
       "shortDescription": "ACM acmart-based short paper and abstract template for the Mile-High Video Conference 2023, including MHV 2023 metadata, CCS concepts, keywords, acknowledgments, and ACM reference formatting.",
