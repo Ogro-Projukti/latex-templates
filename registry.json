@@ -97,6 +97,55 @@
       }
     },
     {
+      "id": "2024-jadicc-template",
+      "name": "2024 Jadicc Template",
+      "shortDescription": "Official article template for JADICC 2024. Designed for Spanish-language academic papers with support for abstracts, keywords, figures, tables, citations, and bibliography in a single-column layout.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "CCreative Commons CC BY 4.0",
+      "packages": [
+        "inputenc",
+        "babel",
+        "amsmath",
+        "amssymb",
+        "graphicx",
+        "hyperref",
+        "fancyhdr",
+        "geometry",
+        "enumitem",
+        "titlesec",
+        "caption",
+        "float",
+        "cite",
+        "authblk",
+        "xpatch"
+      ],
+      "files": [
+        "bibliografia.bib",
+        "ejemplo.pdf",
+        "info.json",
+        "main.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/2024-jadicc-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/2024-jadicc-template",
+      "size": "15.0KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "JMatías López"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "24th-central-european-conference-on-cryptology-submission-template",
       "name": "24th Central European Conference On Cryptology Submission Template",
       "shortDescription": "Official LaTeX template for submitting extended abstracts to the 24th Central European Conference on Cryptology (CECC 24), featuring author affiliations, ORCID support, configurable headers, keyword metadata, and BibTeX bibliography.",

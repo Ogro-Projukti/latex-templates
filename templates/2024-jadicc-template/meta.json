@@ -1,0 +1,39 @@
+{
+  "id": "2024-jadicc-template",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "JMatías López"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Official article template for JADICC 2024. Designed for Spanish-language academic papers with support for abstracts, keywords, figures, tables, citations, and bibliography in a single-column layout.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "inputenc",
+    "babel",
+    "amsmath",
+    "amssymb",
+    "graphicx",
+    "hyperref",
+    "fancyhdr",
+    "geometry",
+    "enumitem",
+    "titlesec",
+    "caption",
+    "float",
+    "cite",
+    "authblk",
+    "xpatch"
+  ],
+  "license": "CCreative Commons CC BY 4.0"
+}
