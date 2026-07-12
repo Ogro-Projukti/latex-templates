@@ -798,6 +798,48 @@
       }
     },
     {
+      "id": "ieeeintelec2024-template",
+      "name": "Ieeeintelec2024 Template",
+      "shortDescription": "Official paper template for IEEE INTELEC 2024 (International Telecommunications Energy Conference). Supports double-blind digest and final paper modes, two-column IEEE layout, abstract, keywords, figures, tables, equations, acknowledgments, and numbered bibliography.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "cite",
+        "amsmath",
+        "amssymb",
+        "amsfonts",
+        "algorithmic",
+        "graphicx",
+        "textcomp",
+        "xcolor"
+      ],
+      "files": [
+        "IEEEtran.cls",
+        "fig1.png",
+        "info.json",
+        "main.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieeeintelec2024-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieeeintelec2024-template",
+      "size": "296.0KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Abhijit Kshirsagar"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "iepc-2022-template",
       "name": "Iepc 2022 Template",
       "shortDescription": "Official paper template for IEPC 2022 (37th International Electric Propulsion Conference), adapted from AIAA conference paper guidelines. Supports multiple authors with affiliations, nomenclature, figures, tables, equations with SI units, chemical formulas, appendix, acknowledgments, and bibliography.",
