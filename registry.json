@@ -1245,6 +1245,59 @@
       }
     },
     {
+      "id": "ieee-journal-of-indoor-and-seamless-positioning-and-navigation",
+      "name": "Ieee Journal Of Indoor And Seamless Positioning And Navigation",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Journal of Indoor and Seamless Positioning and Navigation on IEEE Xplore and replace this placeholder.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "algorithm",
+        "algorithmic",
+        "amsfonts",
+        "amsmath",
+        "amssymb",
+        "cite",
+        "generic",
+        "graphicx",
+        "hyperref",
+        "textcomp"
+      ],
+      "files": [
+        "a1.png",
+        "fig1.png",
+        "generic.sty",
+        "ieeecolor.cls",
+        "info.json",
+        "logo.png",
+        "main.pdf",
+        "main.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-journal-of-indoor-and-seamless-positioning-and-navigation",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-journal-of-indoor-and-seamless-positioning-and-navigation",
+      "size": "784.1KB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-transactions-latex2e-templates",
       "name": "Ieee Transactions Latex2e Templates",
       "shortDescription": "Official IEEE Transactions LaTeX2e template bundle by Michael Shell. Includes 7 skeleton templates covering journal, conference, Computer Society, ComSoc, and Transactions on Magnetics formats, with full IEEEtran.cls, BibTeX style files, and detailed formatting instructions.",

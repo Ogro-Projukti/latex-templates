@@ -1,0 +1,17 @@
+{
+  "title": "IEEE Journal of Indoor and Seamless Positioning and Navigation Template",
+  "author": "IEEE",
+  "last_updated": "2026",
+  "license": "LaTeX Project Public License 1.3c",
+  "abstract": "TODO: verify official Aims & Scope for IEEE Journal of Indoor and Seamless Positioning and Navigation on IEEE Xplore and replace this placeholder.",
+  "tags": [
+    "IEEE",
+    "Journal",
+    "Indoor",
+    "Seamless",
+    "Positioning",
+    "Navigation"
+  ],
+  "folder_name": "ieee-journal-of-indoor-and-seamless-positioning-and-navigation",
+  "template_url": "https://template-selector.ieee.org/"
+}
