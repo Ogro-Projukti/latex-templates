@@ -1,0 +1,121 @@
+\documentclass{IEEEoj-data}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx,color}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{balance}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\AtBeginDocument{\definecolor{ojcolor}{cmyk}{0.93,0.59,0.15,0.02}}
+
+\begin{document}
+%\receiveddate{00 April, 2024}
+%\reviseddate{11 April, 2024}
+%\accepteddate{00 April, 2024}
+%\publisheddate{00 May, 2024}
+%\currentdate{24 June, 2024}
+%\doiinfo{DD.2024.0916000}
+
+\title{\textcolor{black}{Collection:} \textcolor{ieeedata}{\textit{Datasets from IEEEXtreme 2023}}}
+
+\author{FIRST A. AUTHOR\authorrefmark{1} (FELLOW, IEEE), SECOND B.
+AUTHOR\authorrefmark{2}, AND THIRD C. AUTHOR,~JR.\authorrefmark{1,2}
+(MEMBER, IEEE)}
+\affil{National Institute of Standards and 
+Technology, Boulder, CO 80305 USA}
+\affil{Department of Physics, Colorado State University, Fort Collins, 
+CO 80523 USA}
+\corresp{CORRESPONDING AUTHOR: First A. Author (e-mail: author@boulder.nist.gov).}
+\authornote{The authors contributed equally to this article. This work was supported by the XYZ Research Council.}
+\markboth{COLLECTION: DATASETS FROM IEEEXTREME 2023}{AUTHOR NAME}
+
+\begin{abstract}
+\textit{IEEE Data Descriptions} (IEEE-DATA) Collections articles follow the lead and expectations of Descriptor articles. However, they focus on groups of (i.e., more than one) datasets collected. For example, datasets can be created during a competition, hackathon, or event; or simply the article will describe more than one dataset. These articles must have and only have the same sections in the same order as Descriptor articles. Additional information that describes these datasets as a whole must be added to any Collections article, along with statistics and metadata about the event in the Background and Collection Methods and Design sections. For Collections articles the abstract is considered the Introduction section in traditional articles. Authors can introduce the dataset by briefly introducing or describing it. Abstracts must be 150--250, and references/citations are not allowed. They cannot claim new scientific findings or experimental results. Articles have a recommended length of 4—8 pages. Any extra information can be submitted as supplementary information, which will be published alongside the article on IEEE Xplore. Author Biographies (in LaTeX the IEEEbiography) are not a part of any article type. Do not include these with your submission. Any submission that does include author biographies will be returned to the authors and will not be reviewed. Collections articles must have and only have the below sections (without numbering) in that order.\\ 
+ \\ 
+ {\textcolor{ieeedata}{\abstractheadfont\bfseries{IEEE SOCIETY/COUNCIL}}}     Power and Energy Society (PES)\\  
+ \\
+ {\textcolor{ieeedata}{\abstractheadfont\bfseries{DATA DOI/PID}}}     $<$add-your-DOI-here1$>$,  $<$add-your-DOI-here2$>$\\ 
+  
+ {\textcolor{ieeedata}{\abstractheadfont\bfseries{DATA TYPE/LOCATION}}}  Time-series; SFU Campuses, Metro Vancouver, Canada
+
+\end{abstract}
+
+
+
+\begin{IEEEkeywords}
+Enter, keywords/phrases, alphabetically, separated, by, commas
+\end{IEEEkeywords}
+
+\maketitle
+
+\section*{BACKGROUND} 
+
+Background must provide an overview of the data collected and discuss how it fits with other comparable, published datasets. Authors must make clear the data's value and how it can be reused. Authors must also summarize any previous publication made using this data with a brief summary and citation for each time used. \textbf{DO NOT} include a paragraph on how your article is organized; all articles of this type are organized the same way.
+
+
+\section*{COLLECTION METHODS AND DESIGN} 
+
+Collection Methods and Design must provide details on how that data was collected. This includes details on any hardware/system designs used to collect the data (i.e., data acquisition). In addition, the steps and procedures used to collect and process the data in its final form (i.e., computational processing). It is recommended that the authors provide diagrams that show the overall system/procedure used.
+
+\section*{VALIDATION AND QUALITY} 
+
+Validation and Quality must provide details that support the technical quality and/or accuracy of the data collected. For example, the error rate or accuracy of any hardware sensors used for collection. Authors should provide figures and tables to support this.
+
+\begin{figure}
+\centerline{\includegraphics[width=3.5in]{fig1}}
+\caption{Magnetization as a function of applied field. Note that ``FIG.'' 
+is abbreviated. There is a period after the figure number, followed by two 
+spaces. It is good practice to explain the significance of the figure in the 
+caption.\label{fig1}}
+\end{figure}
+
+\begin{table}
+\caption{Units for Magnetic Properties}
+\label{table}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|p{25pt}|p{75pt}|p{115pt}|}
+\hline
+Symbol& 
+Quantity& 
+Conversion from Gaussian and \par CGS EMU to SI $^{\mathrm{a}}$ \\
+\hline
+$\Phi $& 
+magnetic flux& 
+1 Mx $\to  10^{-8}$ Wb $= 10^{-8}$ V$\cdot $s \\
+$B$& 
+magnetic flux density, \par magnetic induction& 
+1 G $\to  10^{-4}$ T $= 10^{-4}$ Wb/m$^{2}$ \\
+$H$& 
+magnetic field strength& 
+1 Oe $\to  10^{3}/(4\pi )$ A/m \\
+\hline
+\end{tabular}
+\label{tab1}
+\end{table}
+
+\section*{RECORDS AND STORAGE} 
+
+Records and Storage must provide details on how the data files are structured and how the data is stored. A table that lists all files with summary details is recommended. For example, for CSV files, a description of the columns and rows of each file is needed. Additionally, details on how files relate to each other is needed, especially if there is some hierarchical structure. For example, file A is a summation of files B and C plus some error terms. The format of each data file should be sufficiently described.
+\balance
+\section*{INSIGHTS AND NOTES} 
+
+Insights and Notes must use this section to provide details on any caveats and special case usages with the data. Authors can also discuss how the data can be used in other ways that they themselves cannot experiment on.  For example, authors may have a dataset that has power meter readings and may want to point out that the data can also be used for general/theoretical time-series analysis.
+
+\section*{SOURCE CODE AND SCRIPTS} 
+
+Source Code and Scripts must provide details on any public source code repositories that contain code used to collect, clean, or process this data. Details on any third-party software used should also be listed (including software version numbers). URLs and links to these repositories should be listed in the reference section. It is recommended that these repositories have an associated DOI to ensure their permanence: \url{https://github.com/some-user/some-repo/}.
+
+\section*{ACKNOWLEDGEMENTS}
+Special thanks to Some Company or Some Person for there help on using their API.
+\\
+\text{\hspace{1em}} F.A., S.A., and T.A. curated and analysed the data, and wrote parts of the manuscript.
+S.A. reviewed the curation and wrote parts of the manuscript. All authors reviewed the manuscript.
+\\
+\text{\hspace{1em}} The article authors have declared no conflicts of interest.
+\\
+\bibliographystyle{IEEEtran}
+\section*{REFERENCES}
+References must follow the standard IEEE format and use numbered citations. Please refer to the IEEE Reference Guide.
+\end{document}

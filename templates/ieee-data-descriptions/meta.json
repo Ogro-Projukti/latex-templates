@@ -1,0 +1,44 @@
+{
+  "id": "ieee-data-descriptions",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "IEEE",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "TODO: verify official Aims & Scope for IEEE Data Descriptions on IEEE Xplore and replace this placeholder.",
+  "compatibleWith": [
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "algorithmic",
+    "amsfonts",
+    "amsmath",
+    "amssymb",
+    "balance",
+    "cite",
+    "color",
+    "graphicx",
+    "hyperref",
+    "textcomp"
+  ],
+  "license": "LaTeX Project Public License (LPPL)",
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "journal",
+  "tags": [
+    "journal",
+    "submission",
+    "template",
+    "ieee"
+  ]
+}
