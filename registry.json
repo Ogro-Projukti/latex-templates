@@ -1042,6 +1042,58 @@
       }
     },
     {
+      "id": "ieee-electron-devices-reviews",
+      "name": "Ieee Electron Devices Reviews",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Electron Devices Reviews on IEEE Xplore and replace this placeholder.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License (LPPL)",
+      "packages": [
+        "algorithm",
+        "algorithmic",
+        "amsfonts",
+        "amsmath",
+        "amssymb",
+        "cite",
+        "color",
+        "graphicx",
+        "hyperref",
+        "textcomp",
+        "xcolor"
+      ],
+      "files": [
+        "a1.png",
+        "fig1.png",
+        "ieeetj.cls",
+        "info.json",
+        "tj-template-ap.pdf",
+        "tj-template-ap.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-electron-devices-reviews",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-electron-devices-reviews",
+      "size": "725.6KB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-isec-2022-posters",
       "name": "Ieee Isec 2022 Posters",
       "shortDescription": "Poster abstract template for IEEE ISEC 2022 (Integrated STEM Education Conference). Single-column one-page layout using IEEEtran.cls in journal mode. Supports up to three authors with institutional affiliations and a structured abstract.",

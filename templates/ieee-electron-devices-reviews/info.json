@@ -1,0 +1,16 @@
+{
+  "title": "IEEE Electron Devices Reviews Template",
+  "author": "IEEE",
+  "last_updated": "2026",
+  "license": "LaTeX Project Public License (LPPL)",
+  "abstract": "TODO: verify official Aims & Scope for IEEE Electron Devices Reviews on IEEE Xplore and replace this placeholder.",
+  "tags": [
+    "IEEE",
+    "Electron",
+    "Devices",
+    "Reviews",
+    "Journal"
+  ],
+  "folder_name": "ieee-electron-devices-reviews",
+  "template_url": "https://template-selector.ieee.org/"
+}
