@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-13",
+  "updated": "2026-07-14",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -980,6 +980,61 @@
       "author": {
         "name": "Michael Shell",
         "github": "michaelshell"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "ieee-electron-device-letters",
+      "name": "Ieee Electron Device Letters",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Electron Device Letters on IEEE Xplore and replace this placeholder.",
+      "category": "letters",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "algorithmic",
+        "amsfonts",
+        "amsmath",
+        "amssymb",
+        "cite",
+        "generic",
+        "graphicx",
+        "textcomp"
+      ],
+      "files": [
+        "a1.png",
+        "a2.png",
+        "a3.png",
+        "fig1.png",
+        "generic-color-brief.pdf",
+        "generic-color-brief.tex",
+        "generic-color.pdf",
+        "generic-color.tex",
+        "generic.sty",
+        "ieeecolor.cls",
+        "info.json",
+        "LOGO-generic-web.pdf"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-electron-device-letters",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-electron-device-letters",
+      "size": "1.3MB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",
