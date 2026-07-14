@@ -1,0 +1,16 @@
+{
+  "title": "IEEE Transactions on Dielectrics and Electrical Insulation Template",
+  "author": "IEEE",
+  "last_updated": "2026",
+  "license": "LaTeX Project Public License 1.3c",
+  "abstract": "TODO: verify official Aims & Scope for IEEE Transactions on Dielectrics and Electrical Insulation on IEEE Xplore and replace this placeholder.",
+  "tags": [
+    "IEEE",
+    "Transactions",
+    "Dielectrics",
+    "Electrical",
+    "Insulation"
+  ],
+  "folder_name": "ieee-transactions-on-dielectrics-and-electrical-insulation",
+  "template_url": "https://template-selector.ieee.org/"
+}

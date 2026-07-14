@@ -1,0 +1,47 @@
+{
+  "id": "ieee-transactions-on-dielectrics-and-electrical-insulation",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "Built in",
+  "author": {
+    "name": "IEEE",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "TODO: verify official Aims & Scope for IEEE Transactions on Dielectrics and Electrical Insulation on IEEE Xplore and replace this placeholder.",
+  "compatibleWith": [
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "algorithm",
+    "algorithmic",
+    "amsfonts",
+    "amsmath",
+    "array",
+    "cite",
+    "graphicx",
+    "stfloats",
+    "subfig",
+    "tdei",
+    "textcomp",
+    "url",
+    "verbatim"
+  ],
+  "license": "LaTeX Project Public License 1.3c",
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "journal",
+  "tags": [
+    "journal",
+    "submission",
+    "template",
+    "ieee"
+  ]
+}

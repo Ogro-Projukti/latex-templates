@@ -1826,6 +1826,61 @@
       }
     },
     {
+      "id": "ieee-transactions-on-dielectrics-and-electrical-insulation",
+      "name": "Ieee Transactions On Dielectrics And Electrical Insulation",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Transactions on Dielectrics and Electrical Insulation on IEEE Xplore and replace this placeholder.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "algorithm",
+        "algorithmic",
+        "amsfonts",
+        "amsmath",
+        "array",
+        "cite",
+        "graphicx",
+        "stfloats",
+        "subfig",
+        "tdei",
+        "textcomp",
+        "url",
+        "verbatim"
+      ],
+      "files": [
+        "fig1.png",
+        "ieeecolor.cls",
+        "info.json",
+        "LOGO-tdei-web.pdf",
+        "tdei.pdf",
+        "tdei.sty",
+        "tdei.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-transactions-on-dielectrics-and-electrical-insulation",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-transactions-on-dielectrics-and-electrical-insulation",
+      "size": "565.3KB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-vis-2026-workshop-proposal",
       "name": "Ieee Vis 2026 Workshop Proposal",
       "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",
