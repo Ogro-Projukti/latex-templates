@@ -1,0 +1,45 @@
+{
+  "id": "ai-communications-journal-template",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "AI Communications journal template",
+  "author": {
+    "name": "Carville G. Bevans, Ph.D.",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Toufiq Ahmed",
+    "github": "https://github.com/ahmedtoufiq59"
+  },
+  "description": "Official AI Communications journal submission template featuring front matter, title, authors, abstract, keywords, section formatting, figures, acknowledgments, and references.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "srcltx",
+    "amsthm",
+    "amssymb",
+    "amsfonts",
+    "graphicx",
+    "epsfig",
+    "latexsym",
+    "colortbl",
+    "times",
+    "helvet",
+    "courier",
+    "caption",
+    "subfig",
+    "float",
+    "xcolor",
+    "pslatex",
+    "eso-pic",
+    "footmisc",
+    "url",
+    "etex"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}

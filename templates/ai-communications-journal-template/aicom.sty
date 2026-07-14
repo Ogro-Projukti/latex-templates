@@ -1,0 +1,1352 @@
+% Driver file for IOS PRESS style, LATEX 2.09
+% Journal: AI Communications
+% Journal type: A
+\def\times@typeface{}
+\def\ams@fonts{}
+\@twocolumntrue
+% Requires LATEX 2.09
+% Developed for IOS Press by VTeX Ltd.
+\def\fmt@name{IOS}
+\def\fmt@version{960718}
+%
+\def\@id@line{\journal@code\ \fmt@name:\ \fmt@version\hfill \TODAY;~\timenow\hfill
+File: \jobname.tex; VTEX/\@editor\ p.~\number\@@@sheetcount}
+\typeout{^^JIOS Press Style \fmt@name, version \fmt@version^^J}
+%
+% Definitions:
+\def\sectionname{Section}
+\def\refname{References}
+\def\figurename{Fig.}
+\def\tablename{Table}
+\def\abstractname{Abstract}
+\def\keywordsname{Keywords}
+\def\acknowledgementsname{Acknowledgements}
+%
+% Table of contents is suppressed:
+\def\addcontentsline#1#2#3{}
+%
+\newif\if@numreferences \@numreferencestrue
+\def\ds@numreferences{\@numreferencestrue}
+\def\ds@namedreferences{\@numreferencesfalse}
+\newif\if@seceqn          \def\ds@seceqn{\@seceqntrue}
+\newif\if@secthm          \def\ds@secthm{\@secthmtrue} %Z.K.
+%
+\@namedef{ds@10pt}{}
+\@namedef{ds@11pt}{\def\eleven@pt{}}
+\@namedef{ds@12pt}{\typeout{12pt Option neglected}}
+
+\@options
+
+%************************* FONTS
+\lineskip 1pt
+\normallineskip 1pt
+\def\baselinestretch{1}
+
+\@ifundefined{times@typeface}{}{
+\input times.sty
+%\input psgreek.sty\relax
+% Accents for PS fonts:
+\def\.#1{{\accent"C6 #1}}
+\def\H#1{{\accent"84 #1}}
+% Dollar in italic:
+\gdef\pdollar{{\ifdim \fontdimen\@ne\font >\z@ \it \fi\char`\$}}
+}
+%
+\@ifundefined{eleven@pt}{
+\typeout{Ten point}
+\def\@normalsize{\@setsize\normalsize{12pt}\xpt\@xpt
+\baselineskip=12pt plus.5pt minus.5pt%
+  \let\@listi\@listI}
+
+\def\small{\@setsize\small{11pt}\ixpt\@ixpt
+  \def\@listi{\leftmargin\leftmargini 
+    \topsep 5pt plus 2pt minus 2pt
+    \parsep 2pt plus 1pt minus 1pt
+    \itemsep \parsep}}
+
+\def\footnotesize{\@setsize\footnotesize{9.5pt}\viiipt\@viiipt
+  \def\@listi{\leftmargin\leftmargini 
+    \topsep 5pt plus 1pt minus 1pt
+    \parsep 2pt plus 1pt minus 1pt
+    \itemsep \parsep}}
+
+\def\scriptsize{\@setsize\scriptsize{8pt}\viipt\@viipt}
+\def\tiny{\@setsize\tiny{6pt}\vpt\@vpt}
+\def\large{\@setsize\large{13pt}\xipt\@xipt}
+\def\Large{\@setsize\Large{18pt}\xivpt\@xivpt}
+\def\LARGE{\@setsize\LARGE{22pt}\xviipt\@xviipt}
+\def\huge{\@setsize\huge{25pt}\xxpt\@xxpt}
+\def\Huge{\@setsize\Huge{30pt}\xxvpt\@xxvpt}
+
+%\@ifundefined{ams@fonts}{}{\input topfont.sty\relax}
+%\@ifundefined{@psfonts}{}{\font\bfit=ptmbi at 10pt}
+}{
+\typeout{Eleven point}
+ 
+\def\@normalsize{\@setsize\normalsize{13pt}\xipt\@xipt
+\baselineskip=13pt plus.5pt minus.5pt%
+ \let\@listi\@listI}
+
+\def\small{\@setsize\small{11pt}\xpt\@xpt
+  \def\@listi{\topsep 6pt plus 2pt minus 2pt
+    \parsep 3pt plus 2pt minus 1pt
+    \itemsep \parsep}}
+
+\def\footnotesize{\@setsize\footnotesize{10pt}\ixpt\@ixpt
+  \def\@listi{\topsep 6pt plus 2pt minus 2pt
+     \parsep 2pt plus 1pt minus 1pt
+     \itemsep \parsep}}
+
+
+\def\scriptsize{\@setsize\scriptsize{9.5pt}\viiipt\@viiipt}
+\def\tiny{\@setsize\tiny{7pt}\vipt\@vipt}
+\def\large{\@setsize\large{14pt}\xiipt\@xiipt}
+\def\Large{\@setsize\Large{18pt}\xivpt\@xivpt}
+\def\LARGE{\@setsize\LARGE{22pt}\xviipt\@xviipt}
+\def\huge{\@setsize\huge{25pt}\xxpt\@xxpt}
+\def\Huge{\@setsize\Huge{30pt}\xxvpt\@xxvpt}
+
+
+% Skliaustu parinkimo pritaikymas 11pt
+\def\big#1{{\hbox{$\left#1\vbox to9.31\p@{}\right.\n@space$}}}
+\def\Big#1{{\hbox{$\left#1\vbox to12.59\p@{}\right.\n@space$}}}
+\def\bigg#1{{\hbox{$\left#1\vbox to15.88\p@{}\right.\n@space$}}}
+\def\Bigg#1{{\hbox{$\left#1\vbox to19.16\p@{}\right.\n@space$}}}
+%
+\@ifundefined{ams@fonts}{}{\input topf11.sty}
+\@ifundefined{@psfonts}{}{
+% cmex pataisymas 11pt sriftui:
+\font\elvex=cmex10 scaled\magstephalf
+\def\xipt{\textfont\z@\elvrm 
+  \scriptfont\z@\egtrm \scriptscriptfont\z@\sixrm
+\textfont\@ne\elvmi \scriptfont\@ne\egtmi \scriptscriptfont\@ne\sixmi
+\textfont\tw@\elvsy \scriptfont\tw@\egtsy \scriptscriptfont\tw@\sixsy
+\textfont\thr@@\elvex \scriptfont\thr@@\tenex \scriptscriptfont\thr@@\tenex
+\def\unboldmath{\everymath{}\everydisplay{}\@nomath\unboldmath
+          \textfont\@ne\elvmi \textfont\tw@\elvsy 
+          \textfont\lyfam\elvly \@boldfalse}\@boldfalse
+\def\boldmath{\@ifundefined{elvmib}{\global\font\elvmib\@mbi\@halfmag 
+         \global\font\elvsyb\@mbsy\@halfmag
+         \global\font\elvlyb\@lasyb\@halfmag\relax\@addfontinfo\@xipt
+         {\def\boldmath{\everymath{\mit}\everydisplay{\mit}\@prtct\@nomathbold
+                \textfont\@ne\elvmib \textfont\tw@\elvsyb 
+                \textfont\lyfam\elvlyb\@prtct\@boldtrue}}}{}\@xipt\boldmath}%
+\@psfonts\@xipt{11}86%
+\@cmrset\elvrm\egtrm\sixrm%
+\def\ly{\fam\lyfam\elvly}\textfont\lyfam\elvly 
+   \scriptfont\lyfam\egtly \scriptscriptfont\lyfam\sixly 
+\@setstrut \rm}
+\font\bfit=ptmbi at11pt}
+}
+\@normalsize
+%***************************** SECTIONS
+\newcount\cur@count
+\def\@nopresecnum{}
+\def\@appresecnum{Appendix }
+\let\@presecnum=\@nopresecnum
+\def\@postsecnum{.\hskip 0.5em}
+
+\def\nohyphen{\pretolerance=10000 \tolerance=10000
+\hyphenpenalty=10000 \exhyphenpenalty=10000}
+
+
+\newskip\Bls@  \Bls@=24pt plus3pt minus3pt %  2 baselineskip
+\newskip\bls@  \bls@=12pt plus3pt minus3pt % approx. 1 baselineskip
+\newskip\bla@  \bla@=12pt plus3pt  minus3pt % after: approx. 1 baselineskip
+\newskip\eps@  \eps@=0.001pt                      % small positive skip
+
+\def\@startsection#1#2#3#4#5#6{\if@noskipsec \leavevmode \fi
+   \par \@tempskipa #4\relax
+   \@afterindenttrue
+   \ifdim \@tempskipa <\z@ \@tempskipa -\@tempskipa \@afterindentfalse\fi
+   \if@nobreak \everypar{}\else
+     \addpenalty{\@secpenalty}\addvspace{\@tempskipa}\fi
+   \@ifstar{\@dblarg{\@ssect{#1}{#2}{#3}{#4}{#5}{#6}}}
+           {\@dblarg{\@sect{#1}{#2}{#3}{#4}{#5}{#6}}}}
+
+\def\@sect#1#2#3#4#5#6[#7]#8{\ifnum #2>\c@secnumdepth
+  \cur@count=-1 \def\@svsec{}\else 
+   \refstepcounter{#1} \cur@count=\csname c@#1\endcsname
+   \edef\@svsec{\@presecnum\csname the#1\endcsname\@postsecnum}\fi
+   \@tempskipa #5\relax
+   \ifdim \@tempskipa>\z@ 
+     \begingroup #6\relax
+       \@hangfrom{\hskip #3\relax\@svsec}{\interlinepenalty\@M
+%                  \rightskip\z@ \@rightskip\rightskip
+     #8\par}%
+     \endgroup
+    \csname #1mark\endcsname{#7}\else
+    \def\@svsechd{#6\hskip #3\@svsec #8\csname #1mark\endcsname
+                  {#7}}\fi
+  \@xsect{#5}}
+
+\def\@ssect#1#2#3#4#5#6[#7]#8{\@tempskipa #5\relax \cur@count=-1
+ \addcontentsline{toc}{#1}{#7}
+  \ifdim \@tempskipa>\z@
+    \begingroup #6\@hangfrom{\hskip #3}{\interlinepenalty\@M 
+%                                        \rightskip\z@ \@rightskip\rightskip
+                                        #8\par}\endgroup
+  \else \def\@svsechd{#6\hskip #3\relax #8}\fi
+  \@xsect{#5}}
+
+
+\def\section{\@startsection{section}{1}
+  {\z@}{\Bls@}{\bla@}{\normalsize\bf\nohyphen\raggedright}}
+\def\subsection{\@startsection{subsection}{2}
+  {\z@}{\bls@}{\bla@}{\normalsize\em\nohyphen\raggedright}}
+\def\subsubsection{\@startsection{subsubsection}{3}
+  {\z@}{\bls@}{\eps@}{\normalsize\em\nohyphen\raggedright}}
+\def\paragraph{\@startsection{paragraph}{4}
+  {\z@}{\bls@}{-1em}{\normalsize\em}}
+\def\subparagraph{\@startsection{subparagraph}{4}
+  {\parindent}{\eps@}{-1em}{\normalsize\em}}
+%
+\def\appendix{\par
+   \section*{Appendix}
+   \setcounter{section}{0}%
+   \setcounter{subsection}{0}%
+   \def\thesection{\Alph{section}}}
+%
+\def\acknowledgements{\section*{\acknowledgementsname}%
+  \typeout{\acknowledgementsname}}
+%
+\def\notes{\section*{Notes}\footnotesize}
+\def\endnotes{\par \vskip 6pt plus12pt minus2pt\relax}
+
+\setcounter{secnumdepth}{3}
+% **********************************  LISTS
+%
+
+\leftmargini 2em
+\leftmarginii 2.2em
+\leftmarginiii 1.87em
+\leftmarginiv 1.7em
+\leftmarginv 1em
+\leftmarginvi 1em
+
+\leftmargin\leftmargini
+
+\labelsep .4em
+
+\labelwidth\leftmargini \advance\labelwidth-\labelsep
+
+\topsep 12pt plus 3pt minus 3pt
+%\partopsep 3pt plus 1pt minus 2pt
+\itemsep 1pt plus 0.5pt minus 1pt
+\parsep 0pt
+
+\def\@listI{\leftmargin\leftmargini
+  \topsep 9pt plus 3pt minus 3pt
+  \partopsep 3pt plus 1pt minus 2pt
+  \itemsep 1pt plus 0.5pt minus 1pt
+\parsep0pt}
+
+\let\@listi\@listI
+\@listi
+
+\def\@listii{\leftmargin\leftmarginii
+  \labelwidth\leftmarginii\advance\labelwidth-\labelsep
+  \topsep 4.5pt plus 2pt minus 1pt
+  \parsep \z@
+  \itemsep \parsep}
+
+\def\@listiii{\leftmargin\leftmarginiii
+  \labelwidth\leftmarginiii\advance\labelwidth-\labelsep
+  \topsep 2pt plus 1pt minus 1pt
+  \parsep \z@ 
+  \partopsep 1pt plus 0pt minus 1pt
+  \itemsep \topsep}
+
+\def\@listiv{\leftmargin\leftmarginiv
+  \labelwidth\leftmarginiv\advance\labelwidth-\labelsep}
+
+\def\@listv{\leftmargin\leftmarginv
+  \labelwidth\leftmarginv\advance\labelwidth-\labelsep}
+
+\def\@listvi{\leftmargin\leftmarginvi
+  \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
+ 
+
+
+%******* VERSE, QUOTE, DESCRIPTION, ITEMIZE
+\def\verse{\let\\=\@centercr
+  \list{}{\itemsep\z@ 
+	  \itemindent -1.5em
+	  \listparindent \itemindent
+	  \rightmargin\leftmargin\advance\leftmargin 1.5em}\item[]}
+\let\endverse\endlist
+
+\def\quotation{\list{}{\small\listparindent2mm
+  \leftmargin\parindent
+  \topsep .5ex plus 2pt minus 1pt 
+\itemindent0pt
+  \parsep 0pt plus 1pt}\item[]}
+\let\endquotation=\endlist
+
+\def\quote{\list{}{\leftmargin 1.5em 
+  \topsep .5ex plus 2pt minus 1pt}\item[]}
+\let\endquote=\endlist
+ 
+\def\descriptionlabel#1{\hspace\labelsep \bf #1}
+\def\description{\list{}{\labelwidth\z@ 
+   \itemindent-\leftmargin
+   \let\makelabel\descriptionlabel}}
+\let\enddescription\endlist
+%
+% ENUMERATE
+\def\labelenumi{{\theenumi.}}
+\def\theenumi{\arabic{enumi}}
+ 
+\def\labelenumii{(\theenumii)}
+\def\theenumii{\alph{enumii}}
+\def\p@enumii{\theenumi}
+
+\def\labelenumiii{\theenumiii.}
+\def\theenumiii{\roman{enumiii}}
+\def\p@enumiii{\theenumi(\theenumii)}
+
+\def\labelenumiv{\theenumiv.}
+\def\theenumiv{\Alph{enumiv}} 
+\def\p@enumiv{\p@enumiii\theenumiii}
+%
+\newdimen\e@labelwidth
+\def\setenumlabel#1{\setbox0=\hbox{#1}\e@labelwidth=\wd0}
+\setenumlabel{1.}
+%
+\def\enumerate{\ifnum \@enumdepth >3 \@toodeep\else
+ \advance\@enumdepth \@ne 
+ \edef\@enumctr{enum\romannumeral\the\@enumdepth}\list
+ {\csname label\@enumctr\endcsname}{\usecounter
+ {\@enumctr}\def\makelabel##1{{\hfill\rm ##1}}
+ \settowidth{\labelwidth}{\kern\e@labelwidth} \labelsep=0.5em
+                \itemindent=\labelwidth \advance\itemindent\labelsep
+                \advance\itemindent\parindent
+                \leftmargin=\the\itemindent\itemindent=\z@
+                \partopsep\z@ \topsep\@halfline \parsep\z@ \itemsep\z@
+ \listparindent\z@}\fi}
+\let\endenumerate=\endlist
+
+% ITEMIZE
+% Itemization is controlled by four commands: \labelitemi, \labelitemii,
+% \labelitemiii, and \labelitemiv, which define the labels of the various 
+% itemization levels.
+
+\def\labelitemi{\bf --}
+\def\labelitemii{$\ast$}
+\def\labelitemiii{$\ast$}
+\def\labelitemiv{{\footnotesize +}}
+
+
+
+\newskip\@halfline
+\@halfline=6pt plus 1 pt minus 2pt 
+
+\def\itemize{\ifnum \@itemdepth >2 \@toodeep\else
+  \advance\@itemdepth \@ne
+  \edef\@itemitem{labelitem\romannumeral\the\@itemdepth}\list
+    {\csname\@itemitem\endcsname}{\settowidth{\labelwidth}
+                {\csname\@itemitem\endcsname}
+                \def\makelabel##1{##1}
+		\itemindent=\labelwidth \advance\itemindent\labelsep
+                \advance\itemindent\parindent
+		\leftmargin\the\itemindent \itemindent=\z@
+                \partopsep\z@ \topsep\@halfline \parsep\z@
+		\itemsep\z@ \listparindent\z@} \fi}
+\let\enditemize=\endlist
+% ************************MATH STUFF
+\input{fleqn.sty}
+\mathindent 2em
+% Naujas \divid apibrezimas:
+\def\divid#1#2{%
+\mathchoice{% Display mode
+{#1}\over{#2}}
+{% Text mode
+{\vbox{\hbox{$\scriptstyle #1$}\vskip1pt}\over
+\vbox{\vskip1pt\hbox{$\scriptstyle #2$}\vskip1pt}}}
+{% Script mode (divids)
+{\vbox{\hbox{$\scriptstyle #1$}\vskip1pt}\over
+\vbox{\vskip2pt\hbox{$\scriptstyle #2$}\vskip1pt}}}
+{% Sriptsript mode
+{\vbox{\hbox{$\scriptstyle #1$}
+\vskip1pt}\over\vbox{\vskip.7pt\hbox{$\scriptstyle #2$}\vskip3pt}}}
+}
+% ZS apibrezimas
+\def\zs#1{\mathchoice{#1}{#1}{\lower.4ex\hbox{$\scriptstyle#1$}}
+{\lower0.4ex\hbox{$\scriptscriptstyle#1$}}}
+\def\zss#1{\mathchoice{#1}{#1}{\lower.8ex\hbox{$\scriptstyle#1$}}
+{\lower0.8ex\hbox{$\scriptscriptstyle#1$}}}
+%
+\def\dvt{\colon\ }
+\def\dvtx{\nobreak\,\colon\relax}
+%
+% Ivairus matematiniai sriftai: (is TOP.STY)
+\def\nuc#1#2{\relax\ifmmode{}^{#1}{\protect\text{#2}}\else${}^{#1}$#2\fi}
+\def\itnuc#1#2{\setbox\@tempboxa=\hbox{\scriptsize\it #1}
+  \def\@tempa{{}^{\box\@tempboxa}\!\protect\text{\it #2}}\relax
+  \ifmmode \@tempa \else $\@tempa$\fi}
+\let\old@vec\vec
+\def\pol#1{\old@vec{#1}}
+%
+% PROOF ENVIRONMENT
+\def\qed{\relax\ifmmode\hskip2em \Box\else\unskip\nobreak\hskip1em $\Box$\fi}
+%
+\newenvironment{pf}%
+%  {\par\addvspace{\@bls plus 0.1\@bls minus 0.1\@bls}\noindent
+  {\par\addvspace{12pt plus1pt minus3pt}\noindent
+   {\bf\proofname}\enspace\ignorespaces}%
+%  {\par\addvspace{\@bls plus 0.1\@bls minus 0.1\@bls}}
+  {\par\addvspace{12pt plus1pt minus3pt}}
+\def\proofname{Proof.}
+\@namedef{pf*}#1{\par\begingroup\def\proofname{#1.}\pf\endgroup\ignorespaces}
+\expandafter\let\csname endpf*\endcsname=\endpf
+%
+% ******************* TABULAR **********************
+\newdimen\v@tmp
+\def\d#1{\setbox0=\hbox{1}\v@tmp=#1\wd0\kern\v@tmp}
+%
+%**************************** FLOATS: FIGURES, TABLES, ALGORITHM
+\setcounter{topnumber}{5}
+\def\topfraction{0.99}
+\def\textfraction{0.05}
+\def\floatpagefraction{0.9}
+\setcounter{bottomnumber}{5}
+\def\bottomfraction{0.99}
+\setcounter{totalnumber}{10}
+\def\dbltopfraction{0.99}
+\def\dblfloatpagefraction{0.8}
+\setcounter{dbltopnumber}{5}
+%
+\def\@tablecapfont{\footnotesize}
+\def\@figcapfont{\footnotesize}
+%
+% FIGURE
+\newcounter{figure}
+\def\fps@figure{tbp}
+\def\ftype@figure{1}
+\def\ext@figure{lof}
+\def\fnum@figure{\figurename~\thefigure}
+\def\figure{\let\@makecaption\@makefigurecaption \centering\@float{figure}}
+\let\endfigure\end@float
+\@namedef{figure*}{\let\@makecaption\@makefigurecaption \centering\@dblfloat{figure}}
+\@namedef{endfigure*}{\end@dblfloat}
+%
+\long\def\@makefigurecaption#1#2{\footnotesize
+  \vskip 8pt
+  \setbox\@tempboxa\hbox{#1. #2}
+  \ifdim \wd\@tempboxa >\hsize
+    \unhbox\@tempboxa\par
+  \else
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi}
+% TABLE
+\newcounter{table}
+\def\fps@table{tbp}
+\def\ftype@table{2}
+\def\ext@table{lot}
+\def\fnum@table{\tablename~\thetable}
+%
+\newdimen\tablewidth \tablewidth\hsize
+%
+\def\table{\let\@makecaption\@maketablecaption \footnotesize
+  \tablewidth=\hsize
+  \let\footnoterule\relax
+  \@float{table}}
+\let\endtable\end@float
+\@namedef{table*}{\let\@makecaption\@maketablecaption \footnotesize
+  \tablewidth=\textwidth
+  \let\footnoterule\relax
+  \@dblfloat{table}}
+\@namedef{endtable*}{\end@dblfloat}
+%
+\long\def\@maketablecaption#1#2{\footnotesize%
+  \setbox\@tempboxa\hbox{#2}
+  \ifdim \wd\@tempboxa > \tablewidth  %%\hsize %z.k.
+  \hbox to \hsize{\hfill\parbox[t]{\tablewidth}{
+\hbox to \hsize{\hss#1\hss}\par #2}\hfill}
+  \else
+  \hbox to \hsize{\hfill\parbox[t]{\tablewidth}{\centering
+\hbox to \hsize{\hss#1\hss}\par #2}\hfill}
+\fi
+\vskip3pt}
+%
+\long\def\tabnotes#1{\vskip3pt\begin{minipage}[t]{\tablewidth}#1\end{minipage}}
+
+% Algorithm
+\newcounter{algorithm}
+\def\fps@algorithm{tbp}
+\def\ftype@algorithm{4}
+\def\ext@algorithm{lof}
+\def\fnum@algorithm{Algorithm \thealgorithm}
+\def\algorithm{\let\@makecaption\@makealgocaption\centering\@float{algorithm}}
+\let\endalgorithm\end@float
+
+\long\def\@makealgocaption#1#2{\vskip 2ex \small
+  \hbox to \hsize{\parbox[t]{\hsize}{{\bf #1.} #2}}}
+
+
+% ******************  COUNTERS
+
+\newcounter{section}
+\newcounter{subsection}[section]
+\newcounter{subsubsection}[subsection]
+\newcounter{paragraph}[subsubsection]
+\newcounter{subparagraph}[paragraph]
+
+\if@seceqn
+ \@addtoreset{equation}{section}
+ \@addtoreset{table}{section}
+ \@addtoreset{figure}{section}
+ \def\theequation{\thesection.\arabic{equation}}% V.S.
+ \def\thetable{\thesection.\arabic{table}}
+ \def\thefigure{\thesection.\arabic{figure}}
+ \def\thealgorithm{\thesection.\arabic{algorithm}}
+\else
+ \def\theequation{\arabic{equation}}
+ \def\thefigure{\arabic{figure}}
+ \def\thetable{\arabic{table}}
+ \def\thealgorithm{\arabic{algorithm}}
+\fi
+
+\def\thesection{\arabic{section}}
+\def\thesubsection{\thesection.\arabic{subsection}}
+\def\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\def\theparagraph{\thesubsubsection.\arabic{paragraph}}
+\def\thesubparagraph{\theparagraph.\arabic{subparagraph}}
+
+\setcounter{secnumdepth}{4}
+% ******************  BIBLIOGRAPHY
+
+\def\thebibliography#1{\section*{\refname\@mkboth
+  {\uppercase{\bibname}}{\uppercase{\bibname}}}\footnotesize
+  \typeout{\refname}\def\bibwidthlabel{#1}\list
+  {\@bib@counter}{\@bib@list}
+    \let\makelabel\@biblabel
+    \def\newblock{\hskip .11em plus .33em minus .07em}
+    \sloppy\clubpenalty10000\widowpenalty10000
+    \sfcode`\.=1000\relax}
+
+\let\endthebibliography=\endlist
+
+\if@numreferences
+
+  \typeout{Numbered references}
+
+  \def\@bib@counter{\arabic{enumi}}
+
+  \def\@bib@list{\setlength{\labelsep}{1em}%
+    \settowidth{\labelwidth}{\@biblabel{\bibwidthlabel}}%
+    \setlength{\leftmargin}{\labelwidth}%
+    \addtolength{\leftmargin}{\labelsep}%
+    \setlength{\itemindent}{0pt}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parsep}{0pt}%
+    \usecounter{enumi}%
+    \let\makelabel\kap@biblabel}
+
+  \def\@biblabel#1{\hfill [#1]}
+
+  \def\@bibitem#1{\item\if@filesw\immediate\write\@auxout
+    {\string\bibcite{#1}{\the\value{\@listctr}}}\fi\ignorespaces}
+
+  \def\@lbibitem[#1]#2{\item\if@filesw
+    {\def\protect##1{\string ##1\space}\immediate
+    \write\@auxout{\string\bibcite{#2}{\the
+    \value{\@listctr}}}}\fi\ignorespaces}
+
+\let\@internalcite\cite
+
+\def\cite{\@ifstar{\@internalcite}{\@internalcite}}
+\def\shortcite{\@ifstar{\@internalcite}{\@internalcite}}
+\def\citeauthor{\@ifstar{\@internalcite}{\@internalcite}}
+\def\citeyear{\@ifstar{\@internalcite}{\@internalcite}}
+
+\def\citeauthoryear{}
+
+\newcount\@tempcntc
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+ \@tempcnta\z@\@tempcntb\m@ne\def\@citea{}\@cite{\@for\@citeb:=#2\do
+  {\@ifundefined
+   {b@\@citeb}{\@citeo\@tempcntb\m@ne\@citea\def\@citea{, }{\bf ?}\@warning
+   {Citation `\@citeb' on page \thepage \space undefined}\special{mt:badrefs}}%
+  {\setbox\z@\hbox{\global\@tempcntc0\csname b@\@citeb\endcsname\relax}%
+   \ifnum\@tempcntc=\z@ \@citeo\@tempcntb\m@ne
+    \@citea\def\@citea{, }\hbox{\csname b@\@citeb\endcsname}%
+   \else
+    \advance\@tempcntb\@ne
+    \ifnum\@tempcntb=\@tempcntc
+    \else\advance\@tempcntb\m@ne\@citeo
+    \@tempcnta\@tempcntc\@tempcntb\@tempcntc\fi\fi}}\@citeo}{#1}}
+\def\@citeo{\ifnum\@tempcnta>\@tempcntb\else\@citea\def\@citea{, }%
+ \ifnum\@tempcnta=\@tempcntb\the\@tempcnta\else
+  {\advance\@tempcnta\@ne\ifnum\@tempcnta=\@tempcntb \else \def\@citea{--}\fi
+   \advance\@tempcnta\m@ne\the\@tempcnta\@citea\the\@tempcntb}\fi\fi}
+
+\else
+
+  \typeout{Documentstyle Named references}
+
+  \def\@bib@counter{\relax}
+
+  \def\@bib@list{\setlength{\labelsep}{0em}%
+	\setlength{\labelwidth}{0pt}%
+	\setlength{\itemindent}{-\bibhang}%
+	\setlength{\itemsep}{0pt}%
+	\setlength{\parsep}{0pt}%
+	\setlength{\leftmargin}{\bibhang}}
+
+  \newlength{\bibhang}
+  \setlength{\bibhang}{1.4em}
+
+
+  \def\@biblabel#1{}
+
+  
+% FILE NAMED.STY
+%
+% This file implements citations for the ``named'' bibliography style.
+%  Place it in a file called named.sty in the TeX search path.  (Placing it
+% in the same directory as the LaTeX document should also work.)
+
+% Prepared by Peter F. Patel-Schneider, with the assistance of several,
+% since forgotten, LaTeX hackers.
+% This style is NOT guaranteed to work.  It is provided in the hope
+% that it will make the preparation of papers easier.
+%
+% There are undoubtably bugs in this style.  If you make bug fixes,
+% improvements, etc.  please let me know.  My e-mail address is:
+%       pfps@research.att.com
+
+% The preparation of this file was supported by Schlumberger Palo Alto
+% Research and AT\&T Bell Laboratories.
+
+% This file can be modified and used in other conferences as long
+% as credit to the authors and supporting agencies is retained, this notice
+% is not changed, and further modification or reuse is not restricted.
+
+% The ``named'' bibliography style creates citations with labels like
+%       \citeauthoryear{author-info}{year}
+% these labels are processed by the following commands:
+%       \cite{key}
+%               which produces citations with both author and year,
+%               enclosed in square brackets
+%       \shortcite{key}
+%               which produces citations with year only,
+%               enclosed in square brackets
+%       \citeauthor{key}
+%               which produces the author information only
+%       \citeyear{key}
+%               which produces the year information only
+% Changes Sept 90, [rmjw]:
+%       \raisebox instead of \raise in Definition of \@up
+%       Lots of \rm's within \citeathoryear-definitons
+
+\def\@up#1{\raisebox{.2ex}{#1}}%[rmjw]
+
+\let\@internalcite\cite
+
+% SQUARE BRACKETS IN \def\cite OMITTED
+% SQUARE BRACKETS IN \def\shortcite CHANGED TO PARENTHESES
+
+\def\cite{\def\@citeseppen{-1000}%
+\def\@cite##1##2{{##1\if@tempswa , ##2\fi}}%
+    \def\citeauthoryear##1##2{\rm ##1, ##2}\@internalcite}
+
+\def\shortcite{\def\@citeseppen{1000}%
+    \def\@cite##1##2{({##1\if@tempswa , ##2\fi})}%
+    \def\citeauthoryear##1##2{\rm ##2}\@internalcite}
+
+\def\citeauthor#1{\def\@citeseppen{1000}%
+    \def\@cite##1##2{{##1\if@tempswa , ##2\fi}}%
+    \def\citeauthoryear##1##2{\rm ##1}\@citedata{#1}}
+
+\def\citeyear#1{\def\@citeseppen{1000}%
+    \def\@cite##1##2{{##1\if@tempswa , ##2\fi}}%
+    \def\citeauthoryear##1##2{\rm ##2}\@citedata{#1}}
+
+\def\@citedata#1{\@tempswafalse%
+ \if@filesw\immediate\write\@auxout{\string\citation{#1}}\fi
+  \def\@citea{}\@cite{\@for\@citeb:=#1\do
+    {\@citea\def\@citea{,\penalty\@citeseppen\ }\@ifundefined
+       {b@\@citeb}{{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}\special{mt:badrefs}}%
+{\csname b@\@citeb\endcsname}}}{}}
+
+% don't box citations, separate with ; and a space
+% also, make the penalty between citations negative: a good place to break
+
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{;\penalty\@citeseppen\ }\@ifundefined
+       {b@\@citeb}{{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}\special{mt:badrefs}}%
+{\csname b@\@citeb\endcsname}}}{#1}}
+% END OF FILE NAMED.STY
+
+\fi % \if@numreferences
+% ********************** FOOTNOTE
+\long\def\@makefntext#1{\leavevmode\hbox{}\kern1em $^{\@thefnmark}$\footnotesize#1}
+\fboxsep = 3pt  
+\fboxrule = .4pt
+% Speciali footnotetext pirmam lapui
+\def\sfootnotetext[#1]{\begingroup\let\protect\noexpand
+      \xdef\@thefnmark{#1}\endgroup
+    \@footnotetext}
+
+% ****************** HEADINGS
+ 
+\mark{{}{}}
+\def\@markfont{\footnotesize\rm}
+\def\@pgnumfont{\footnotesize\rm}
+
+
+\def\ps@headings{\let\@mkboth\@gobbletwo
+  \def\@oddfoot{\hfill}
+  \def\@evenfoot{\hfill}
+  \def\@evenhead{\@markfont\thepage\hfil{\em\leftmark}\hfil\phantom{\thepage}}
+  \def\@oddhead{\@markfont\phantom{\thepage}\hfil{\em\leftmark}\hfil\thepage}
+  \def\sectionmark##1{}%
+  \def\subsectionmark##1{}}
+
+\def\ps@title{\let\@mkboth\@gobbletwo
+  \def\@evenhead{\parbox[t]{\textwidth}{\ltitleheadline}}%
+  \def\@oddhead{\parbox[t]{\textwidth}{\rtitleheadline}}%
+  \def\@oddfoot{\parindent 0pt
+    \parbox{\textwidth}{\vskip10pt\footnotesize\@copyright}}%
+  \let\@evenfoot\@oddfoot
+}
+%
+% HEADLINE: INFORMATION Services & Use 15 (1995) 171-183  171
+%           IOS Press
+% FOOTLINE: 0167-5265/$5.00 C 1996, IOS Press
+%           
+\def\rtitleheadline{\@markfont\@journal\ \@volume\ (\@pubyear)\ \@pages
+\hfill \thepage\break
+\@publisher}
+\let\ltitleheadline\rtitleheadline
+\def\@copyright{\@markfont\@ISSN/\$\@price\ \copyright@sign\
+\@pubyear\@copyrightowner}
+%
+\newif\if@runningtitleset
+\newif\if@runningauthorset
+
+\def\runningtitle#1{\if@runningtitleset\else
+   \xdef\@runningtitle{{#1}}\fi
+   \global\@runningtitlesettrue}
+\gdef\@runningtitle{}
+ 
+\def\runningauthor#1{\if@runningauthorset\else
+    {\def\etal{et al.}
+    \xdef\@runningauthor{{#1\ /}}}\fi
+    \global\@runningauthorsettrue}
+  \gdef\@runningauthor{}
+
+% *************************** COPYRIGHT, JOURNAL INFO
+\font\copyrf=psyr at 9pt
+\def\copyright@sign{{\copyrf\char'323}}
+
+\def\journal#1{\gdef\@journal{#1}}     \gdef\@journal{Journal not defined}
+\def\volume#1{\gdef\@volume{#1}}       \gdef\@volume{0}
+\def\issue#1{\gdef\@issue{#1}}         \gdef\@issue{0}
+\def\Nr#1{\gdef\@Nr{#1}}               \gdef\@Nr{Nr.}
+\def\pubmonth#1{\gdef\@pubmonth{#1}}   \gdef\@pubmonth{}
+\def\pubyear#1{\gdef\@pubyear{#1}}     \gdef\@pubyear{}
+\def\ISSN#1{\gdef\@ISSN{#1}}           \gdef\@ISSN{}
+\def\price#1{\gdef\@price{#1}}         \gdef\@price{}
+\def\editor#1{\gdef\@editor{#1}}       \gdef\@editor{}
+
+
+\def\copyrightowner#1{\gdef\@copyrightowner{#1}}
+\gdef\@copyrightowner{ --IOS Press. All rights reserved}
+%
+\def\publisher#1{\gdef\@publisher{#1}}
+\gdef\@publisher{IOS Press}
+%
+\def\firstpage#1{\c@page=0 \global
+  \advance\c@page by #1
+  \xdef\@firstpage{\thepage}
+  \xdef\@pages{\thepage}}
+\gdef\@firstpage{1}
+\gdef\@pages{0}
+
+\def\lastpage#1{\gdef\@lastpage{#1}\ifx\@firstpage\@lastpage%
+\else\xdef\@pages{\@firstpage--\@lastpage}\fi}
+\def\setlastpage{\@ifundefined{r@lastpage}{}%
+{\expandafter\@setlastp\r@lastpage}}
+\def\@setlastp#1#2{\gdef\@lastpage{#2}}
+% \gdef\@lastpage{1}
+%
+\gdef\@lastpage{??}
+%
+
+
+% ****************** OPENING
+%
+% Article types: article, review
+\def\arttype#1{\gdef\@artty{#1}}
+\gdef\@artty{RA} % Default Research Article
+\gdef\@RA{RA}%     Research Article
+\gdef\@RV{RV}%     Review Article
+\gdef\@XX{XX}%     Miscelaneous Article
+ 
+\def\opening{\relax}
+\def\endopening{}
+\def\etal{{\rm et al.}}
+
+\def\titlepage{\thispagestyle{title}\c@page\z@}
+\def\endtitlepage{\newpage}
+
+
+\newif\if@pretitle
+\newif\if@title
+\newif\if@subtitle
+\newif\if@dedication
+\newif\if@surname
+\newif\if@authors
+\newif\if@address
+\newif\if@correspondence
+\newif\if@sfootnotetext
+
+\def\pretitle#1{\gdef\@pretitle{#1}\global\@pretitletrue}
+\def\title#1{\gdef\@title{#1}\global\@titletrue}
+\def\subtitle#1{\gdef\@subtitle{#1}\global\@subtitletrue}
+\def\dedication@#1{\gdef\@dedication{#1}\global\@dedicationtrue}
+% Received, accepted etc.
+\def\correspondence#1{\gdef\@correspondence{#1}\global\@correspondencetrue}
+\def\received#1{\def\@tempa{#1}\ifx\@tempa\@empty\else\gdef\@received{#1}\fi}
+  \def\@received{\@nil}
+\def\revised#1{\def\@tempa{#1}\ifx\@tempa\@empty\else\gdef\@revised{#1}\fi}
+  \def\@revised{\@nil}
+\def\accepted#1{\def\@tempa{#1}\ifx\@tempa\@empty\else\gdef\@accepted{#1}\fi}
+  \def\@accepted{\@nil}
+\def\communicated#1{\def\@tempa{#1}\ifx\@tempa\@empty\else\gdef\@communicated{#1}\fi}
+  \def\@communicated{\@nil}
+\def\dedicated#1{\def\@tempa{#1}\ifx\@tempa\@empty\else\gdef\@dedicated{#1}\fi}
+  \def\@dedicated{\@nil}
+\def\presented#1{\def\@tempa{#1}\ifx\@tempa\@empty\else\gdef\@presented{#1}\fi}
+  \def\@presented{\@nil}
+\def\received@prefix{Received~}
+\def\revised@prefix{Revised~}
+\def\accepted@prefix{Accepted~}
+\def\communicated@prefix{Communicated~by~}
+% Authors
+\let\t@sfootnotetext\sfootnotetext
+\def\sfootnotetext[#1]#2{\gdef\s@fntmark{#1}\gdef\s@fnttext{#2}\global\@sfootnotetexttrue}
+
+\def\maketitle{}
+%
+% SKIPS
+%
+\def\@ftertitleskip{0pt\relax}
+\def\@presubtitleskip{0pt\relax}
+\def\@ftersubtitleskip{1em\relax}
+\def\@fterauthorskip{0pt\relax}
+\def\@fteraddresskip{\baselineskip\relax}
+\def\@ftercorrespondenceskip{\baselineskip\relax}
+\def\@afterabstractskip{0pt plus10pt}
+%
+% FONTS
+%
+\def\pretitle@size{\LARGE}
+\def\title@size{\Huge}
+\def\subtitle@size{\large\it}
+\def\authors@size{\large}
+\def\address@size{\normalsize\it}
+\def\abstract@size{\footnotesize}
+\def\received@size{\footnotesize}
+\newskip\BFTskip
+\BFTskip=36pt plus12pt minus12pt
+\def\@topglue{24pt}
+\def\empty@data{\@nil}
+
+% MAKE RA TITLE (Research Article)
+  \def\@makeRAtitle{\newpage\thispagestyle{title}
+   \begingroup
+     \raggedright\title@size
+     \if@pretitle \make@pretitle\fi
+     \if@title \make@title \vspace{\@ftertitleskip}\fi
+     \if@subtitle
+     \vspace{\@presubtitleskip}
+     \make@subtitle
+%     \vskip \@ftersubtitleskip
+     \fi
+     \if@dedication
+     {\normalsize\it\@dedication\par}
+     \vspace{18pt}
+     \fi
+   \endgroup
+\vskip\BFTskip 
+}
+% MAKE RV TITLE (Review Article)
+\let\@makeRVtitle\@makeRAtitle
+% MAKE XX TITLE
+\let\@makeXXtitle\@makeXXtitle
+%
+
+% OPENINGS (topmatter einantis dvejuose kolonelese:
+\def\make@RAopening{%
+% isvedame sfootnotetext:
+   \global\let\sfootnotetext\t@sfootnotetext
+   \if@sfootnotetext
+   \sfootnotetext[\s@fntmark]{\s@fnttext}\fi
+   \address@size
+   \begin{flushleft}
+   \make@authorsandinstitutes
+   \make@correspondence
+   \make@history
+   \make@dedicated
+   \end{flushleft}
+   \normalsize
+%   \vskip 0pt plus24pt
+   \make@abstract
+   \markboth{\@runningauthor\ \@runningtitle}{\@runningauthor\ \@runningtitle}%
+}
+%
+\def\make@RVopening{\markboth{\@runningtitle}{\@runningtitle}}%
+%
+\def\make@XXopening{\markboth{}{}\gdef\thepage{}}%
+%
+\newcount\art@type \art@type=0
+\def\maketitle@@{\begingroup
+   \setcounter{footnote}{0}%
+   \def\thefootnote{\fnsymbol{footnote}}%
+   \ifx\@artty\@RA \art@type=0\fi%Research Article
+   \ifx\@artty\@RV \art@type=1\fi%Review Article
+   \ifx\@artty\@XX \art@type=2\fi%Misc. Article
+\relax
+   \ifcase\art@type
+     % Research Article
+     \message{Research Article}
+     \if@twocolumn
+       \twocolumn[\@makeRAtitle]
+     \else
+       \newpage\global\@topnum\z@ \@makeRAtitle
+     \fi
+     \make@RAopening
+   \or
+     %Review Article
+     \message{Review Article}
+     \if@twocolumn
+       \twocolumn[\@makeRVtitle]
+     \else
+       \newpage\global\@topnum\z@ \@makeRVtitle
+     \fi
+     \make@RVopening
+   \or
+    %Miscelaneous article
+     \message{Miscelaneous Article}
+     \if@twocolumn
+       \twocolumn[\@makeXXtitle]
+     \else
+       \newpage\global\@topnum\z@ \@makeXXtitle
+     \fi
+     \make@XXopening
+   \fi%case
+ \endgroup
+ \setcounter{footnote}{0}%
+ \let\maketitle\relax
+ \let\@maketitle\relax
+ \gdef\@title{}%
+ \gdef\@authors{}%
+ \let\thanks\relax}
+%
+% PRETITLE
+\def\make@pretitle{
+\vglue6pt
+\noindent\pretitle@size\@pretitle\par
+\vskip6pt
+\hrule
+}
+%
+% TITLE
+\def\make@title{\begingroup\vglue\@topglue\parindent 0pt
+\begingroup \def\\{ }\def\m##1{ } \xdef\@argi{\@title}\endgroup
+    \runningtitle{\@argi}%
+    \def\\{\hfill\break}\def\m##1{$^{\bf ##1}$}
+    \hyphenpenalty10000
+    \title@size\@title\endgroup\par}
+%
+% SUBTITLE
+\def\make@subtitle{\vspace{6pt}
+\noindent\subtitle@size\@subtitle\par
+\vskip6pt}
+%
+% AUTHORS
+% Steko valdymo komandos:
+\newtoks\t@a
+\newtoks\t@b
+\long\def\append@item#1\to#2{\t@a={\@k@p{#1}}\t@b=\expandafter{#2}%
+  \xdef#2{\the\t@b\the\t@a}}
+\def\get@left#1\to#2{\expandafter\g@l#1\g@l#1#2}
+\long\def\g@l\@k@p#1#2\g@l#3#4{\def#4{#1}\def#3{#2}}
+%
+\def\@authors{}
+\def\@allauthors{}
+\def\@institutes{}
+\def\authors@institute{}
+%
+\def\author#1{\@authorstrue\append@item#1\to\@authors
+  \append@item#1\to\@allauthors}
+%
+\def\institute#1{\append@item#1\to\@institutes
+  \expandafter\append@item\expandafter{\@authors}\to\authors@institute
+  \gdef\@authors{}}
+%
+\let\address=\institute
+%
+\def\@formatauthors{{\authors@size\begingroup
+  \newcount\cnt@authors
+  \cnt@authors=0\def\@k@p##1{\advance\cnt@authors by 1}\@curauths
+  \def\@k@p##1{\advance\cnt@authors by -1
+    \ifnum\cnt@authors>1 \hbox{##1,\penalty-1000}\space\fi
+    \ifnum\cnt@authors=1 \hbox{##1 and\penalty-1000}\space\fi
+   \ifnum\cnt@authors<1 \hbox{##1}\par\fi}\@curauths
+  \endgroup}}
+%
+\def\@formatinstitute{{\address@size \@curinst\par}}
+%
+\def\make@authorsandinstitutes{\begingroup
+  \newcount\cnt@institutes
+  \newcount\cnt@authors
+  \newbox\@authbox
+% Suskaiciuojame visus autorius RH
+  \cnt@authors=0\def\@k@p##1{\advance\cnt@authors by 1}\@allauthors
+  \xdef\@authnames{}%
+  \begingroup
+    \def\m##1{}
+    \def\@k@p##1{\advance\cnt@authors by -1
+      \ifnum\cnt@authors=0 \xdef\@authnames{\@authnames ##1}\fi
+      \ifnum\cnt@authors=1 \xdef\@authnames{##1\ and }\fi
+      \ifnum\cnt@authors>1 \xdef\@authnames{##1\ et al.}\cnt@authors=0\fi}%
+    \global\setbox\@authbox=\hbox{\@allauthors}%
+    \expandafter\runningauthor\expandafter{\@authnames}
+  \endgroup
+% Suskaiciuojame institutus
+  \def\m##1{$^{##1}$}
+  \def\\{\hfill\break}
+  \cnt@institutes=0
+  \def\@k@p##1{\advance\cnt@institutes by 1}\@institutes
+  \loop\ifnum\cnt@institutes>0
+    \get@left\authors@institute\to\@curauths
+    \noindent\@formatauthors
+    \vskip\@fterauthorskip
+    \get@left\@institutes\to\@curinst
+    \noindent\@formatinstitute
+    \vskip\@fteraddresskip
+    \ifnum\cnt@institutes=1% Paskutinis institutas
+      \vskip2pt plus12pt minus2pt
+    \fi
+    \advance\cnt@institutes by -1
+  \repeat\endgroup}
+%
+%
+% CORRESPONDENCE
+\def\make@correspondence{\if@correspondence\begingroup\parindent 0pt
+  \def\\{\hfil\break}\def\m##1{$^{##1}$}
+  \address@size\@correspondence\endgroup\par
+\vskip\@ftercorrespondenceskip\fi}
+%
+\def\make@history{%
+ \bgroup\parindent 0pt\footnotesize
+% \vskip 3pt plus2pt minus1pt
+   \ifx\@received\empty@data \else
+      \leavevmode
+      \received@prefix\@received\par%
+      \vspace{3pt}%
+   \fi%
+   \ifx\@revised\empty@data \else
+      \revised@prefix\@revised\par%
+      \vspace{3pt}%
+   \fi%
+   \ifx\@accepted\empty@data \else
+      \accepted@prefix\@accepted\par%
+      \vspace{3pt}%
+   \fi%
+   \ifx\@communicated\empty@data \else
+      \communicated@prefix\@communicated\par%
+      \vspace{3pt}%
+   \fi \egroup}
+%
+\def\make@dedicated{%
+  \ifx\@dedicated\empty@data \else
+    \vskip 4pt plus 3pt
+    {\normalsize\it\@dedicated\par}
+    \fi}
+%
+
+%  
+% ABSTRACT, KEYWORDS
+\newif\if@keywords \@keywordsfalse
+\def\@keywords{}
+
+\newif\if@abstract \@abstractfalse
+\def\@abstract{}
+%  
+\def\make@abstract{%
+   \if@abstract{\abstract@size{\bf\abstractname.} \@abstract\par\gdef\@abstract{}}\fi
+   \if@keywords\vskip 10pt plus6pt
+   \noindent\abstract@size{\keywordsname\/}:\ \@keywords\gdef\@keywords{}\fi%
+   \par
+\vskip\@afterabstractskip
+}
+
+\long\def\abstract#1{\global\@abstracttrue%
+\ignorespaces\gdef\@abstract{#1}}
+\def\endabstract{\relax}
+\def\keywords#1{\global\@keywordstrue\gdef\@keywords{#1}}
+
+
+\let\old@document\document
+\def\document{\old@document
+  \setlastpage %
+  \maketitle@@
+\normalsize
+}
+% ***************  AUTHOR INDEX
+\def\aindex{%
+\def\aindexwidth{133mm}% AA stiliui
+%
+\def\entry ##1##2##3##4##5{\hangindent=1.2em%
+\setbox0=\hbox{999} \setbox2=\hbox{\kern1pt--\kern1pt}
+##1, ##2\hfill\rlap{\hbox to\@tempdima{%
+\hfill
+\hbox to4.0mm{\hfil (##3)}\kern2pt%
+\hbox to\wd0{\hfil ##4}%
+\hbox to\wd2{\hfil --\hfil}%
+\hbox to\wd0{\hfil ##5}}}
+}
+%
+\def\entrY ##1##2##3##4{\hangindent=1.2em%
+\setbox0=\hbox{999} \setbox2=\hbox{\kern1pt--\kern1pt}
+##1\hfill\rlap{\hbox to\@tempdima{%
+\hfill
+\hbox to4.0mm{\hfil (##2)}\kern2pt%
+\hbox to\wd0{\hfil ##3}%
+\hbox to\wd2{\hfil --\hfil}%
+\hbox to\wd0{\hfil ##4}}}
+}
+%
+\vskip24pt plus6pt minus6pt\bgroup
+\@tempdima=\hsize \advance\@tempdima by-\aindexwidth
+%\footnotesize \rightskip=\t@xtheight \parindent=0pt\hangindent=1.2em
+\small \rightskip=\@tempdima \parindent=0pt\hangindent=1.2em
+\hangafter=1\parfillskip=0pt}
+%
+\def\endaindex{\egroup}
+
+
+
+% ************************** STUFF
+% ROMAN PUNCTUATION LATEX, (C) Vytas V. Statulevicius, 1991, 1995
+{\gdef\kbl@{\ifmmode ,\else{\rm ,}\fi}\catcode`\,=\active \global\let,=\kbl@}
+{\gdef\kblt@{\ifmmode ;\else{\rm ;}\fi}\catcode`\;=\active \global\let;=\kblt@}
+{\gdef\dvt@{\ifmmode :\else{\rm :}\fi}\catcode`\:=\active \global\let:=\dvt@}
+{\gdef\ks@{\ifmmode (\else{\rm (}\fi}\catcode`\(=\active \global\let(=\ks@}
+{\gdef\ds@{\ifmmode )\else{\rm )}\fi}\catcode`\)=\active \global\let)=\ds@}
+%\pron ijungia, \proff isjungia Roman Punctuation skyrybos zenklams:
+\xdef\pron{\catcode`,=\active \catcode`;=\active \catcode`:=\active}
+\xdef\proff{\catcode`,=12 \catcode`;=12 \catcode`:=12}
+%Roman Punctuation pabaiga
+% Skliaustai visada status:
+\xdef\itcoron{%
+\catcode`(=\active \catcode`)=\active}
+% Jei kas, stacius skliaustus galime isjungti:
+\xdef\itcoroff{%
+\catcode`(=12 \catcode`)=12}
+\itcoron
+%Roman Punctuation pabaiga
+%
+%***************************** DIMENSIONS
+% SIDE MARGINS:
+\oddsidemargin 0cm
+\evensidemargin 0cm
+\hoffset -0.5cm
+\marginparwidth 0.75in
+\marginparsep 7pt
+%
+% VERTICAL SPACING:
+\voffset= -10mm
+\topmargin 10mm
+\headheight 12pt
+\headsep   15pt
+\topskip = 10pt
+\footskip 25pt
+% DIMENSION OF TEXT: (type B)
+\textheight 206mm
+\textwidth 160mm
+\columnsep 9mm
+\columnseprule 0pt
+% FOOTNOTES:
+\footnotesep 6.65pt
+\skip\footins 24pt plus 4pt minus 2pt
+% FLOATS:
+\floatsep 15pt plus 10pt minus 4pt
+\textfloatsep 12pt plus 6pt minus 4pt
+\intextsep 12pt plus 6pt minus 4pt
+\@maxsep 18pt
+% Two-column floats in two-column mode:
+\dblfloatsep 15pt plus 10pt minus 4pt
+\dbltextfloatsep 12pt plus 12pt minus 4pt
+\@dblmaxsep 24pt
+% For floats on a separate float page or column:
+\@fptop 0pt plus 1fil
+\@fpsep 10pt plus 2fil
+\@fpbot 0pt plus 1fil
+% Double-column floats in two-column mode.
+\@dblfptop 0pt plus 1fil
+\@dblfpsep 10pt plus 2fil
+\@dblfpbot 0pt plus 1fil
+% Marginal notes:
+\marginparpush 5pt
+% PARAGRAPHING
+\parskip 0pt
+\parindent 1em
+\partopsep 2pt plus 1pt minus 1pt
+% MATH STUFF
+\arraycolsep 1.2pt
+\tabcolsep 6pt      
+\arrayrulewidth .4pt
+\doublerulesep 2pt  
+\tabbingsep\labelsep
+\jot 6pt
+%
+% BREAKS PENALTIES
+\@lowpenalty   51
+\@medpenalty  151
+\@highpenalty 301
+\@beginparpenalty -\@lowpenalty
+\@endparpenalty   -\@lowpenalty
+\@itempenalty     -\@lowpenalty
+% PAGE-BREAKING PENALTIES
+%\widowpenalty=0
+%\clubpenalty=0
+%\displaywidowpenalty=0
+%\predisplaypenalty=0
+%\doublehyphendemerits=0
+%\adjdemerits=0
+%\brokenpenalty=0
+%\interlinepenalty=0
+% \raggedbottom
+% \clubpenalty         % 'Club line'  at bottom of page.
+% \widowpenalty        % 'Widow line' at top of page.
+% \displaywidowpenalty % Math display widow line.
+% \predisplaypenalty   % Breaking before a math display.
+% \postdisplaypenalty  % Breaking after a math display.
+% \interlinepenalty    % Breaking at a line within a paragraph.
+% \brokenpenalty       % Breaking after a hyphenated line.
+\tolerance=1600
+\hbadness=1600
+\hfuzz=1pt
+% INICIALIZATION
+\ps@headings  
+\pagenumbering{arabic} 
+%\onecolumn
+\@twosidetrue
+% Changes for IOS.STY for journal type A
+%
+\typeout{^^JIOS Press Style option A^^J}
+%
+%***************************** SECTIONS
+\newskip\Bls@  \Bls@=24pt plus6pt minus6pt  % 24pt +3 -3
+\newskip\bls@  \bls@=12pt plus12pt minus3pt % 12pt +3 -3
+\newskip\bla@  \bla@=12pt plus6pt  minus3pt % 12pt +3 -3
+
+%*****************************  LISTS
+\topsep 6pt plus 3pt minus 3pt              %12pt +3 -3
+\partopsep 3pt plus 1pt minus 2pt           % 2pt +1 -1
+
+\def\@listI{\leftmargin\leftmargini
+  \topsep 6pt plus 3pt minus 3pt            % 9pt +3 -3
+  \partopsep 3pt plus 1pt minus 2pt
+  \itemsep 0pt plus 0.5pt minus 1pt
+\parsep0pt}
+\let\@listi\@listI
+\@listi
+
+% ********************** FOOTNOTE
+\def\footnoterule{\kern-3\p@
+  \hrule width\columnwidth
+  \kern 2.6\p@}
+
+% ****************** HEADINGS
+%
+\def\ps@headings{\let\@mkboth\@gobbletwo
+  \def\@oddfoot{\hfill}
+  \def\@evenfoot{\hfill}
+  \def\@evenhead{\@markfont\thepage\hfil{\leftmark}\hfil\phantom{\thepage}}
+  \def\@oddhead{\@markfont\phantom{\thepage}\hfil{\leftmark}\hfil\thepage}
+  \def\sectionmark##1{}%
+  \def\subsectionmark##1{}}
+%
+\def\ps@title{\let\@mkboth\@gobbletwo
+  \def\@evenhead{{\normalsize\thepage}\hfill}
+  \def\@oddhead{\hfill{\normalsize\thepage}}
+  \def\@oddfoot{\parindent 0pt
+    \parbox{\textwidth}{\vskip10pt\footnotesize\@copyright}}%
+  \let\@evenfoot\@oddfoot
+}
+%
+% HEADLINE: AICOM / IOS PRESS
+% FOOTLINE: AI Communications 9 (1986) 1-5
+%           ISSN 00000-000 /$5.00 C 1996, IOS Press
+\def\rtitleheadline{\hfill\@markfont\@journal\ / {\it IOS Press}}
+\def\ltitleheadline{\@markfont\@journal\ / {\it IOS Pres}\hfill}
+\def\@copyright{\@markfont\@journal\ \@volume\ (\@pubyear)\ \@pages\\
+\@ISSN\ /  \$\@price\ \copyright@sign\ \@pubyear, IOS 
+Press}
+
+% FONTS
+%
+\def\abstract@size{\small}
+
+% TITLE
+% glue before title:
+\def\@topglue{24pt}
+%
+% RECEIVED straipsnio gale
+\newif\if@received
+\def\received#1{\gdef\@received{#1}\global\received@true}
+  \def\@received{\@nil} % Kad nedetu pradzioje
+\def\make@received{\if@received\vskip\baselineskip
+\leftline{\received@size\em\@received}\fi}
+%
+\def\make@abstract{%
+   \if@abstract{\abstract@size\@abstract\par\gdef\@abstract{}}\fi
+   \if@keywords\vskip 10pt plus6pt
+   \noindent\abstract@size{\keywordsname\/}:\ \@keywords\gdef\@keywords{}\fi%
+   \par
+\vskip\@afterabstractskip
+}
+
+\let\old@enddocument\enddocument
+\def\enddocument{\make@received\label{lastpage} \old@enddocument}
+
+%********************* MATHEMATICS
+%\mathindent=\parindent %?
+
+%********************* DIMENSIONS
+\voffset=0pt
+\topmargin 10mm
+% DIMENSION OF TEXT: (type A)
+\textheight = 50\baselineskip %51 eilute
+\advance\textheight by \topskip
+\textwidth 162mm
+% PAGE-BREAKING PENALTIES
+\widowpenalty=1000
+\clubpenalty=1000
+\displaywidowpenalty=0
+\predisplaypenalty=0
+\doublehyphendemerits=0
+\adjdemerits=0
+\brokenpenalty=0
+\interlinepenalty=0
+%
+% INICIALIZATION
+\ps@headings  
+% Specific information:
+\def\journal@code{AIC}
+\journal{AI Communications}
+\price{8.00}
+\ISSN{ISSN 0921-7126}
+\copyrightowner{ -- IOS Press. All rights reserved}
+\publisher{IOS Press}
+\endinput

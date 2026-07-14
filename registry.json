@@ -25,9 +25,9 @@
         "ifthen"
       ],
       "files": [
+        "IEEEtran.cls",
         "caption2.sty",
         "figura.jpg",
-        "IEEEtran.cls",
         "info.json",
         "logo_template.png",
         "ref_wete.bst",
@@ -39,7 +39,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/11th-workshop-space-engineering-technology",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/11th-workshop-space-engineering-technology",
-      "size": "557.3KB",
+      "size": "549.4KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -82,7 +82,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/12th-iccp-proceedings-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/12th-iccp-proceedings-template",
-      "size": "696.5KB",
+      "size": "694.9KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -131,7 +131,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/2024-jadicc-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/2024-jadicc-template",
-      "size": "15.1KB",
+      "size": "15.0KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -160,16 +160,16 @@
         "listings"
       ],
       "files": [
+        "Meta.json",
         "bibliography.bib",
         "ceccsub.cls",
         "info.json",
-        "main.tex",
-        "Meta.json"
+        "main.tex"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/24th-central-european-conference-on-cryptology-submission-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/24th-central-european-conference-on-cryptology-submission-template",
-      "size": "18.9KB",
+      "size": "18.4KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex"
@@ -210,9 +210,9 @@
         "hyperref"
       ],
       "files": [
+        "OECS19-abstract.tex",
         "images/Figure.png",
-        "info.json",
-        "OECS19-abstract.tex"
+        "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/abstract-template-oecs19",
@@ -298,7 +298,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/abstract-template-sst2022",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/abstract-template-sst2022",
-      "size": "148.0KB",
+      "size": "147.7KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -333,9 +333,9 @@
         "hyperref"
       ],
       "files": [
+        "UCM2025-abstract.tex",
         "images/Figure.png",
-        "info.json",
-        "UCM2025-abstract.tex"
+        "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/abstract-template-ucm2025",
@@ -383,7 +383,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/acm-mile-high-video-conference-2023-abstract",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/acm-mile-high-video-conference-2023-abstract",
-      "size": "217.2KB",
+      "size": "210.2KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -398,6 +398,60 @@
       ],
       "author": {
         "name": "Ekrem Cetinkaya, Minh Nguyen"
+      },
+      "contributorProfile": {
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
+      }
+    },
+    {
+      "id": "ai-communications-journal-template",
+      "name": "Ai Communications Journal Template",
+      "shortDescription": "Official AI Communications journal submission template featuring front matter, title, authors, abstract, keywords, section formatting, figures, acknowledgments, and references.",
+      "category": "conference",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "AI Communications journal template",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "srcltx",
+        "amsthm",
+        "amssymb",
+        "amsfonts",
+        "graphicx",
+        "epsfig",
+        "latexsym",
+        "colortbl",
+        "times",
+        "helvet",
+        "courier",
+        "caption",
+        "subfig",
+        "float",
+        "xcolor",
+        "pslatex",
+        "eso-pic",
+        "footmisc",
+        "url",
+        "etex"
+      ],
+      "files": [
+        "aicom.sty",
+        "aicom2e.cls",
+        "aicom_example.tex",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ai-communications-journal-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ai-communications-journal-template",
+      "size": "76.3KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Carville G. Bevans, Ph.D."
       },
       "contributorProfile": {
         "name": "Toufiq Ahmed",
@@ -475,9 +529,9 @@
         "babel"
       ],
       "files": [
-        "assets/demobib.bib",
         "assets/EmbeddingFonts4LaTex.pdf",
         "assets/MathExpandExpression.jpg",
+        "assets/demobib.bib",
         "assets/puzzle.png",
         "assets/puzzle_1.png",
         "assets/puzzle_2.png",
@@ -491,7 +545,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/annsim-2026-conference-paper",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/annsim-2026-conference-paper",
-      "size": "339.1KB",
+      "size": "335.2KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex"
@@ -529,20 +583,20 @@
         "keyval"
       ],
       "files": [
+        "LICENSE",
+        "README.md",
         "bdletter.cls",
         "examples/bank-request.tex",
         "examples/job-application.tex",
         "examples/school-leave.tex",
         "fonts/NotoSerifBengali-Bold.ttf",
         "fonts/NotoSerifBengali-Regular.ttf",
-        "LICENSE",
-        "main.tex",
-        "README.md"
+        "main.tex"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/bdletter",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/bdletter",
-      "size": "511.1KB",
+      "size": "510.5KB",
       "compatibleWith": [
         "tectonic",
         "xelatex"
@@ -620,10 +674,10 @@
         "lineno"
       ],
       "files": [
+        "ICSM-5_elsarticle-template.tex",
         "elsarticle-harv.bst",
         "elsarticle-num-names.bst",
         "elsarticle-num.bst",
-        "ICSM-5_elsarticle-template.tex",
         "info.json",
         "model1-num-names.bst",
         "placeholder.jpg",
@@ -632,7 +686,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/icsm5-submission-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/icsm5-submission-template",
-      "size": "150.8KB",
+      "size": "144.6KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -665,13 +719,13 @@
         "graphicx"
       ],
       "files": [
+        "IEEEtran.cls",
+        "New_IEEEtran_how-to.pdf",
+        "New_IEEEtran_how-to.tex",
         "bare_jrnl_new_sample4.pdf",
         "bare_jrnl_new_sample4.tex",
         "fig1.png",
-        "IEEEtran.cls",
-        "info.json",
-        "New_IEEEtran_how-to.pdf",
-        "New_IEEEtran_how-to.tex"
+        "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-computational-intelligence-letters",
@@ -716,17 +770,17 @@
         "xcolor"
       ],
       "files": [
+        "IEEEtran.cls",
+        "IEEEtran_HOWTO.pdf",
         "conference_101719.pdf",
         "conference_101719.tex",
         "fig1.png",
-        "IEEEtran.cls",
-        "IEEEtran_HOWTO.pdf",
         "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-conference-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-conference-template",
-      "size": "1.1MB",
+      "size": "1.0MB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -761,11 +815,11 @@
         "fancyhdr"
       ],
       "files": [
+        "IEEEtran.cls",
+        "IEEEtran_HOWTO.pdf",
         "conference.pdf",
         "conference.tex",
         "fig1.png",
-        "IEEEtran.cls",
-        "IEEEtran_HOWTO.pdf",
         "info.json"
       ],
       "hasPreview": true,
@@ -813,12 +867,12 @@
         "url"
       ],
       "files": [
+        "IEEEtran.cls",
+        "IEEEtran_HOWTO.pdf",
         "graphics/mddgraph.gv",
         "graphics/mddgraph.pdf",
         "graphics/ru-logo.pdf",
         "graphics/scope1.png",
-        "IEEEtran.cls",
-        "IEEEtran_HOWTO.pdf",
         "info.json",
         "references.bib",
         "team00-conference.tex"
@@ -859,26 +913,26 @@
         "url"
       ],
       "files": [
-        "citesort.sty",
-        "dcc_paper.pdf",
-        "dccpaper.cls",
         "Figures/image1.pdf",
         "Figures/image3.pdf",
         "Figures/image4.pdf",
         "IEEEbib.bst",
+        "Makefile",
+        "README.txt",
+        "citesort.sty",
+        "dcc_paper.pdf",
+        "dccpaper.cls",
         "image1.pdf",
         "image3.pdf",
         "image4.pdf",
         "info.json",
         "main.tex",
-        "Makefile",
-        "README.txt",
         "refs.bib"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-data-compression-conference-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-data-compression-conference-template",
-      "size": "121.8KB",
+      "size": "120.5KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -914,6 +968,8 @@
         "textcomp"
       ],
       "files": [
+        "IEEEoj-data.cls",
+        "IEEEtran.bst",
         "fig1.png",
         "ieeedata_collection.pdf",
         "ieeedata_collection.tex",
@@ -924,8 +980,6 @@
         "ieeedata_meta.pdf",
         "ieeedata_meta.tex",
         "ieeelogo.png",
-        "IEEEoj-data.cls",
-        "IEEEtran.bst",
         "info.json"
       ],
       "hasPreview": true,
@@ -1006,6 +1060,7 @@
         "textcomp"
       ],
       "files": [
+        "LOGO-generic-web.pdf",
         "a1.png",
         "a2.png",
         "a3.png",
@@ -1016,8 +1071,7 @@
         "generic-color.tex",
         "generic.sty",
         "ieeecolor.cls",
-        "info.json",
-        "LOGO-generic-web.pdf"
+        "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-electron-device-letters",
@@ -1074,7 +1128,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-electron-devices-reviews",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-electron-devices-reviews",
-      "size": "725.6KB",
+      "size": "724.8KB",
       "compatibleWith": [
         "pdflatex",
         "xelatex"
@@ -1162,7 +1216,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-journal-of-biomedical-and-health-informatics",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-journal-of-biomedical-and-health-informatics",
-      "size": "1014.9KB",
+      "size": "1009.1KB",
       "compatibleWith": [
         "pdflatex",
         "xelatex"
@@ -1216,16 +1270,16 @@
         "xcolor"
       ],
       "files": [
-        "info.json",
         "J-ERM_Template-first-page-for-LaTex-users.doc",
         "JERM-LaTeX-Template/IEEEJERM.cls",
         "JERM-LaTeX-Template/JERM Demo.tex",
-        "JERM-LaTeX-Template/JERM.png"
+        "JERM-LaTeX-Template/JERM.png",
+        "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-journal-of-electromagnetics-rf-and-microwaves-in-medicine-and-biology",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-journal-of-electromagnetics-rf-and-microwaves-in-medicine-and-biology",
-      "size": "468.0KB",
+      "size": "467.5KB",
       "compatibleWith": [
         "pdflatex",
         "xelatex"
@@ -1278,7 +1332,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-journal-of-indoor-and-seamless-positioning-and-navigation",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-journal-of-indoor-and-seamless-positioning-and-navigation",
-      "size": "784.1KB",
+      "size": "783.3KB",
       "compatibleWith": [
         "pdflatex",
         "xelatex"
@@ -1313,12 +1367,12 @@
         "hyperref"
       ],
       "files": [
-        "IEEE_JMW_LaTex_Template_Oct18_2021/fig1.png",
         "IEEE_JMW_LaTex_Template_Oct18_2021/IEEEjmw.cls",
         "IEEE_JMW_LaTex_Template_Oct18_2021/IEEEtran_HOWTO.pdf",
         "IEEE_JMW_LaTex_Template_Oct18_2021/JMW-header.png",
         "IEEE_JMW_LaTex_Template_Oct18_2021/JMW_template.pdf",
         "IEEE_JMW_LaTex_Template_Oct18_2021/JMW_template.tex",
+        "IEEE_JMW_LaTex_Template_Oct18_2021/fig1.png",
         "info.json"
       ],
       "hasPreview": true,
@@ -1380,15 +1434,15 @@
       ],
       "files": [
         "IEEEJERM.cls",
-        "info.json",
         "JERM Demo.pdf",
         "JERM Demo.tex",
+        "info.json",
         "references.bib"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-journal-of-translational-engineering-in-health-and-medicine",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-journal-of-translational-engineering-in-health-and-medicine",
-      "size": "367.3KB",
+      "size": "366.6KB",
       "compatibleWith": [
         "pdflatex",
         "xelatex"
@@ -1441,7 +1495,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-journal-on-exploratory-solid-state-computational-devices-and-circuits",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-journal-on-exploratory-solid-state-computational-devices-and-circuits",
-      "size": "788.6KB",
+      "size": "787.8KB",
       "compatibleWith": [
         "pdflatex",
         "xelatex"
@@ -1480,6 +1534,7 @@
         "textcomp"
       ],
       "files": [
+        "LOGO-generic-web.pdf",
         "a1.png",
         "a2.png",
         "a3.png",
@@ -1490,8 +1545,7 @@
         "generic-color.tex",
         "generic.sty",
         "ieeecolor.cls",
-        "info.json",
-        "LOGO-generic-web.pdf"
+        "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-journal-on-wireless-power-technologies",
@@ -1536,13 +1590,13 @@
         "textcomp"
       ],
       "files": [
+        "OAJPE_template_Revised04052024.pdf",
+        "PES-logo.png",
+        "Tesla.png",
         "fig1.png",
         "ieeeoj.cls",
         "info.json",
-        "main.tex",
-        "OAJPE_template_Revised04052024.pdf",
-        "PES-logo.png",
-        "Tesla.png"
+        "main.tex"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-open-access-journal-of-power-and-energy",
@@ -1587,20 +1641,20 @@
         "wrapfig"
       ],
       "files": [
+        "IEEEtran.bst",
+        "LOGO-jsen-web.pdf",
+        "Thumbs.db",
         "a1.png",
         "a2.png",
         "a3.png",
         "fig1.png",
         "ieeecolor.cls",
-        "IEEEtran.bst",
         "info.json",
         "jsen.pdf",
         "jsen.sty",
         "jsen.synctex.gz",
         "jsen.tex",
-        "jsenga.png",
-        "LOGO-jsen-web.pdf",
-        "Thumbs.db"
+        "jsenga.png"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-sensors-journal",
@@ -1640,6 +1694,9 @@
         "IEEEtran"
       ],
       "files": [
+        "IEEEtran/IEEEtran.cls",
+        "IEEEtran/IEEEtran_HOWTO.pdf",
+        "IEEEtran/README",
         "IEEEtran/bare_adv.tex",
         "IEEEtran/bare_conf.tex",
         "IEEEtran/bare_conf_compsoc.tex",
@@ -1648,26 +1705,23 @@
         "IEEEtran/bare_jrnl_comsoc.tex",
         "IEEEtran/bare_jrnl_transmag.tex",
         "IEEEtran/changelog.txt",
-        "IEEEtran/IEEEtran.cls",
-        "IEEEtran/IEEEtran_HOWTO.pdf",
-        "IEEEtran/README",
-        "info.json",
         "Transactions-Bibliography/IEEEabrv.bib",
         "Transactions-Bibliography/IEEEexample.bib",
         "Transactions-Bibliography/IEEEfull.bib",
         "Transactions-Bibliography/IEEEtran.bst",
-        "Transactions-Bibliography/IEEEtran_bst_HOWTO.pdf",
         "Transactions-Bibliography/IEEEtranN.bst",
         "Transactions-Bibliography/IEEEtranS.bst",
         "Transactions-Bibliography/IEEEtranSA.bst",
         "Transactions-Bibliography/IEEEtranSN.bst",
+        "Transactions-Bibliography/IEEEtran_bst_HOWTO.pdf",
         "Transactions-Bibliography/README",
-        "Transactions-instructions-only.pdf"
+        "Transactions-instructions-only.pdf",
+        "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-transactions-latex2e-templates",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-transactions-latex2e-templates",
-      "size": "2.6MB",
+      "size": "2.5MB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -1697,27 +1751,27 @@
         "graphicx"
       ],
       "files": [
-        "IEEE_TAES_correspd_template_latex/fig1.png",
-        "IEEE_TAES_correspd_template_latex/figtbl1.png",
         "IEEE_TAES_correspd_template_latex/IEEE_TAES_correspd_template_latex.pdf",
         "IEEE_TAES_correspd_template_latex/IEEE_TAES_correspd_template_latex.tex",
         "IEEE_TAES_correspd_template_latex/IEEEtaes.bst",
         "IEEE_TAES_correspd_template_latex/IEEEtaes.cls",
         "IEEE_TAES_correspd_template_latex/IEEEtran_HOWTO.pdf",
-        "IEEE_TAES_letter_template_latex/fig1.png",
-        "IEEE_TAES_letter_template_latex/figtbl1.png",
+        "IEEE_TAES_correspd_template_latex/fig1.png",
+        "IEEE_TAES_correspd_template_latex/figtbl1.png",
         "IEEE_TAES_letter_template_latex/IEEE_TAES_letter_template_latex.pdf",
         "IEEE_TAES_letter_template_latex/IEEE_TAES_letter_template_latex.tex",
         "IEEE_TAES_letter_template_latex/IEEEtaes.bst",
         "IEEE_TAES_letter_template_latex/IEEEtaes.cls",
         "IEEE_TAES_letter_template_latex/IEEEtran_HOWTO.pdf",
-        "IEEE_TAES_regular_template_latex/fig1.png",
-        "IEEE_TAES_regular_template_latex/figtbl1.png",
+        "IEEE_TAES_letter_template_latex/fig1.png",
+        "IEEE_TAES_letter_template_latex/figtbl1.png",
         "IEEE_TAES_regular_template_latex/IEEE_TAES_regular_template_latex.pdf",
         "IEEE_TAES_regular_template_latex/IEEE_TAES_regular_template_latex.tex",
         "IEEE_TAES_regular_template_latex/IEEEtaes.bst",
         "IEEE_TAES_regular_template_latex/IEEEtaes.cls",
         "IEEE_TAES_regular_template_latex/IEEEtran_HOWTO.pdf",
+        "IEEE_TAES_regular_template_latex/fig1.png",
+        "IEEE_TAES_regular_template_latex/figtbl1.png",
         "info.json"
       ],
       "hasPreview": true,
@@ -1779,6 +1833,9 @@
         "url"
       ],
       "files": [
+        "IEEEtran/IEEEtran.cls",
+        "IEEEtran/IEEEtran_HOWTO.pdf",
+        "IEEEtran/README",
         "IEEEtran/bare_adv.tex",
         "IEEEtran/bare_conf.tex",
         "IEEEtran/bare_conf_compsoc.tex",
@@ -1787,21 +1844,18 @@
         "IEEEtran/bare_jrnl_comsoc.tex",
         "IEEEtran/bare_jrnl_transmag.tex",
         "IEEEtran/changelog.txt",
-        "IEEEtran/IEEEtran.cls",
-        "IEEEtran/IEEEtran_HOWTO.pdf",
-        "IEEEtran/README",
-        "info.json",
         "Transactions-Bibliography/IEEEabrv.bib",
         "Transactions-Bibliography/IEEEexample.bib",
         "Transactions-Bibliography/IEEEfull.bib",
         "Transactions-Bibliography/IEEEtran.bst",
-        "Transactions-Bibliography/IEEEtran_bst_HOWTO.pdf",
         "Transactions-Bibliography/IEEEtranN.bst",
         "Transactions-Bibliography/IEEEtranS.bst",
         "Transactions-Bibliography/IEEEtranSA.bst",
         "Transactions-Bibliography/IEEEtranSN.bst",
+        "Transactions-Bibliography/IEEEtran_bst_HOWTO.pdf",
         "Transactions-Bibliography/README",
-        "Transactions-instructions-only.pdf"
+        "Transactions-instructions-only.pdf",
+        "info.json"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-transactions-on-biometrics-behavior-and-identity-science",
@@ -1850,10 +1904,10 @@
         "verbatim"
       ],
       "files": [
+        "LOGO-tdei-web.pdf",
         "fig1.png",
         "ieeecolor.cls",
         "info.json",
-        "LOGO-tdei-web.pdf",
         "tdei.pdf",
         "tdei.sty",
         "tdei.tex"
@@ -1861,7 +1915,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-transactions-on-dielectrics-and-electrical-insulation",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-transactions-on-dielectrics-and-electrical-insulation",
-      "size": "565.3KB",
+      "size": "559.7KB",
       "compatibleWith": [
         "pdflatex",
         "xelatex"
@@ -1902,6 +1956,7 @@
         "setspace"
       ],
       "files": [
+        "README",
         "abbrv-doi-hyperref-narrow.bst",
         "abbrv-doi-hyperref.bst",
         "abbrv-doi-narrow.bst",
@@ -1913,7 +1968,6 @@
         "figures/sample.pdf",
         "info.json",
         "makefile",
-        "README",
         "sections/2024WorkshopStats.tex",
         "sections/abstract.tex",
         "sections/activities.tex",
@@ -1973,15 +2027,15 @@
         "xcolor"
       ],
       "files": [
-        "fig1.png",
         "IEEEtran.cls",
+        "fig1.png",
         "info.json",
         "main.tex"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieeeintelec2024-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieeeintelec2024-template",
-      "size": "302.2KB",
+      "size": "296.0KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -2026,7 +2080,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/iepc-2022-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/iepc-2022-template",
-      "size": "515.6KB",
+      "size": "513.7KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex",
@@ -2059,8 +2113,8 @@
         "hyperref"
       ],
       "files": [
-        "images/Figure.png",
         "IMAMPC2024-abstract.tex",
+        "images/Figure.png",
         "info.json"
       ],
       "hasPreview": true,
@@ -2098,6 +2152,7 @@
       ],
       "files": [
         "ACM-Reference-Format.bst",
+        "README.txt",
         "acmart.cls",
         "acmdatamodel.dbx",
         "acmguide.pdf",
@@ -2106,7 +2161,6 @@
         "info.json",
         "macros.tex",
         "mom-template.sty",
-        "README.txt",
         "sample-base.bib",
         "sample-sigconf.tex",
         "score-tables.tex"
@@ -2114,7 +2168,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/mom-2026-challenge-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/mom-2026-challenge-template",
-      "size": "718.5KB",
+      "size": "709.5KB",
       "compatibleWith": [
         "tectonic"
       ],
@@ -2163,20 +2217,20 @@
         "xcolor"
       ],
       "files": [
+        "Makefile",
         "body.tex",
         "driver.tex",
         "elsarticle.cls",
         "figs/placeholder_fig.pdf",
         "info.json",
         "keywords.tex",
-        "Makefile",
         "model1-num-names.bst",
         "references.bib"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/pdc-2025-abstract-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/pdc-2025-abstract-template",
-      "size": "73.2KB",
+      "size": "70.7KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex"
@@ -2215,14 +2269,14 @@
         "helvet"
       ],
       "files": [
+        "LPSCshort_url.bst",
+        "Makefile",
+        "Meta.json",
         "driver.tex",
         "figs/placeholder_fig.pdf",
         "info.json",
         "jasa.bst",
         "lpsc_style.sty",
-        "LPSCshort_url.bst",
-        "Makefile",
-        "Meta.json",
         "references.bib",
         "s-conc.tex",
         "s-intro.tex",
@@ -2233,7 +2287,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/pdc-2025-extended-abstract-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/pdc-2025-extended-abstract-template",
-      "size": "110.3KB",
+      "size": "106.4KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex"
@@ -2281,6 +2335,7 @@
         "helvet"
       ],
       "files": [
+        "Makefile",
         "abs.tex",
         "ack.tex",
         "driver.tex",
@@ -2288,7 +2343,6 @@
         "figs/placeholder_fig.pdf",
         "info.json",
         "keywords.tex",
-        "Makefile",
         "model1-num-names.bst",
         "references.bib",
         "s-conc.tex",
@@ -2300,7 +2354,7 @@
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/pdc-2025-paper-template",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/pdc-2025-paper-template",
-      "size": "78.8KB",
+      "size": "76.2KB",
       "compatibleWith": [
         "tectonic",
         "pdflatex"
