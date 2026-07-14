@@ -1,0 +1,14 @@
+{
+  "title": "IEEE Journal of Microwaves Template",
+  "author": "IEEE",
+  "last_updated": "2026",
+  "license": "LaTeX Project Public License (LPPL)",
+  "abstract": "TODO: verify official Aims & Scope for IEEE Journal of Microwaves on IEEE Xplore and replace this placeholder.",
+  "tags": [
+    "IEEE",
+    "Journal",
+    "Microwaves"
+  ],
+  "folder_name": "ieee-journal-of-microwaves",
+  "template_url": "https://template-selector.ieee.org/"
+}
