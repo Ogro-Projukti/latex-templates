@@ -1,0 +1,16 @@
+{
+  "title": "IEEE Journal on Wireless Power Technologies Template",
+  "author": "IEEE",
+  "last_updated": "2026",
+  "license": "LaTeX Project Public License 1.3c",
+  "abstract": "TODO: verify official Aims & Scope for IEEE Journal on Wireless Power Technologies on IEEE Xplore and replace this placeholder.",
+  "tags": [
+    "IEEE",
+    "Journal",
+    "Wireless",
+    "Power",
+    "Technologies"
+  ],
+  "folder_name": "ieee-journal-on-wireless-power-technologies",
+  "template_url": "https://template-selector.ieee.org/"
+}
