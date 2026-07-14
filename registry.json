@@ -1682,6 +1682,67 @@
       }
     },
     {
+      "id": "ieee-transactions-on-aerospace-and-electronic-systems",
+      "name": "Ieee Transactions On Aerospace And Electronic Systems",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Transactions on Aerospace and Electronic Systems on IEEE Xplore and replace this placeholder.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License (LPPL)",
+      "packages": [
+        "amsthm",
+        "array",
+        "color",
+        "graphicx"
+      ],
+      "files": [
+        "IEEE_TAES_correspd_template_latex/fig1.png",
+        "IEEE_TAES_correspd_template_latex/figtbl1.png",
+        "IEEE_TAES_correspd_template_latex/IEEE_TAES_correspd_template_latex.pdf",
+        "IEEE_TAES_correspd_template_latex/IEEE_TAES_correspd_template_latex.tex",
+        "IEEE_TAES_correspd_template_latex/IEEEtaes.bst",
+        "IEEE_TAES_correspd_template_latex/IEEEtaes.cls",
+        "IEEE_TAES_correspd_template_latex/IEEEtran_HOWTO.pdf",
+        "IEEE_TAES_letter_template_latex/fig1.png",
+        "IEEE_TAES_letter_template_latex/figtbl1.png",
+        "IEEE_TAES_letter_template_latex/IEEE_TAES_letter_template_latex.pdf",
+        "IEEE_TAES_letter_template_latex/IEEE_TAES_letter_template_latex.tex",
+        "IEEE_TAES_letter_template_latex/IEEEtaes.bst",
+        "IEEE_TAES_letter_template_latex/IEEEtaes.cls",
+        "IEEE_TAES_letter_template_latex/IEEEtran_HOWTO.pdf",
+        "IEEE_TAES_regular_template_latex/fig1.png",
+        "IEEE_TAES_regular_template_latex/figtbl1.png",
+        "IEEE_TAES_regular_template_latex/IEEE_TAES_regular_template_latex.pdf",
+        "IEEE_TAES_regular_template_latex/IEEE_TAES_regular_template_latex.tex",
+        "IEEE_TAES_regular_template_latex/IEEEtaes.bst",
+        "IEEE_TAES_regular_template_latex/IEEEtaes.cls",
+        "IEEE_TAES_regular_template_latex/IEEEtran_HOWTO.pdf",
+        "info.json"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-transactions-on-aerospace-and-electronic-systems",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-transactions-on-aerospace-and-electronic-systems",
+      "size": "3.6MB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-vis-2026-workshop-proposal",
       "name": "Ieee Vis 2026 Workshop Proposal",
       "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",
