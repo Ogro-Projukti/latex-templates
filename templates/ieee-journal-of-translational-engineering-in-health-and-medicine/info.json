@@ -1,0 +1,18 @@
+{
+  "title": "IEEE Journal of Translational Engineering in Health and Medicine Template",
+  "author": "IEEE",
+  "last_updated": "2026",
+  "license": "LaTeX Project Public License (LPPL)",
+  "abstract": "TODO: verify official Aims & Scope for IEEE Journal of Translational Engineering in Health and Medicine on IEEE Xplore and replace this placeholder.",
+  "tags": [
+    "IEEE",
+    "Journal",
+    "Translational",
+    "Engineering",
+    "in",
+    "Health",
+    "Medicine"
+  ],
+  "folder_name": "ieee-journal-of-translational-engineering-in-health-and-medicine",
+  "template_url": "https://template-selector.ieee.org/"
+}

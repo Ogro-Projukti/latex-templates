@@ -1344,6 +1344,70 @@
       }
     },
     {
+      "id": "ieee-journal-of-translational-engineering-in-health-and-medicine",
+      "name": "Ieee Journal Of Translational Engineering In Health And Medicine",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Journal of Translational Engineering in Health and Medicine on IEEE Xplore and replace this placeholder.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License (LPPL)",
+      "packages": [
+        "algorithmic",
+        "amsfonts",
+        "amsmath",
+        "amssymb",
+        "array",
+        "bm",
+        "breakcites",
+        "breqn",
+        "cite",
+        "dblfloatfix",
+        "endfloat",
+        "epsfig",
+        "fancyhdr",
+        "fixltx2e",
+        "graphicx",
+        "hyperref",
+        "ifpdf",
+        "soul",
+        "stfloats",
+        "subfig",
+        "subfigure",
+        "times",
+        "url",
+        "xcolor"
+      ],
+      "files": [
+        "IEEEJERM.cls",
+        "info.json",
+        "JERM Demo.pdf",
+        "JERM Demo.tex",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-journal-of-translational-engineering-in-health-and-medicine",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-journal-of-translational-engineering-in-health-and-medicine",
+      "size": "367.3KB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-transactions-latex2e-templates",
       "name": "Ieee Transactions Latex2e Templates",
       "shortDescription": "Official IEEE Transactions LaTeX2e template bundle by Michael Shell. Includes 7 skeleton templates covering journal, conference, Computer Society, ComSoc, and Transactions on Magnetics formats, with full IEEEtran.cls, BibTeX style files, and detailed formatting instructions.",
