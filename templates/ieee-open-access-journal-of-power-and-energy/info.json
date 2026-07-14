@@ -1,0 +1,17 @@
+{
+  "title": "IEEE Open Access Journal of Power and Energy Template",
+  "author": "IEEE",
+  "last_updated": "2026",
+  "license": "LaTeX Project Public License (LPPL)",
+  "abstract": "TODO: verify official Aims & Scope for IEEE Open Access Journal of Power and Energy on IEEE Xplore and replace this placeholder.",
+  "tags": [
+    "IEEE",
+    "Open",
+    "Access",
+    "Journal",
+    "Power",
+    "Energy"
+  ],
+  "folder_name": "ieee-open-access-journal-of-power-and-energy",
+  "template_url": "https://template-selector.ieee.org/"
+}
