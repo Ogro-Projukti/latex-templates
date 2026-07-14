@@ -1567,6 +1567,64 @@
       }
     },
     {
+      "id": "ieee-sensors-journal",
+      "name": "Ieee Sensors Journal",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Sensors Journal on IEEE Xplore and replace this placeholder.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License (LPPL)",
+      "packages": [
+        "algorithmic",
+        "amsfonts",
+        "amsmath",
+        "amssymb",
+        "cite",
+        "graphicx",
+        "jsen",
+        "textcomp",
+        "wrapfig"
+      ],
+      "files": [
+        "a1.png",
+        "a2.png",
+        "a3.png",
+        "fig1.png",
+        "ieeecolor.cls",
+        "IEEEtran.bst",
+        "info.json",
+        "jsen.pdf",
+        "jsen.sty",
+        "jsen.synctex.gz",
+        "jsen.tex",
+        "jsenga.png",
+        "LOGO-jsen-web.pdf",
+        "Thumbs.db"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-sensors-journal",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-sensors-journal",
+      "size": "1.4MB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-transactions-latex2e-templates",
       "name": "Ieee Transactions Latex2e Templates",
       "shortDescription": "Official IEEE Transactions LaTeX2e template bundle by Michael Shell. Includes 7 skeleton templates covering journal, conference, Computer Society, ComSoc, and Transactions on Magnetics formats, with full IEEEtran.cls, BibTeX style files, and detailed formatting instructions.",
