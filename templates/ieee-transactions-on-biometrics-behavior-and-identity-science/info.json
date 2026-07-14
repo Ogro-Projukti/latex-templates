@@ -1,0 +1,17 @@
+{
+  "title": "IEEE Transactions on Biometrics, Behavior and Identity Science Template",
+  "author": "IEEE",
+  "last_updated": "2026",
+  "license": "LaTeX Project Public License (LPPL)",
+  "abstract": "TODO: verify official Aims & Scope for IEEE Transactions on Biometrics, Behavior and Identity Science on IEEE Xplore and replace this placeholder.",
+  "tags": [
+    "IEEE",
+    "Transactions",
+    "Biometrics",
+    "Behavior",
+    "Identity",
+    "Science"
+  ],
+  "folder_name": "ieee-transactions-on-biometrics-behavior-and-identity-science",
+  "template_url": "https://template-selector.ieee.org/"
+}
