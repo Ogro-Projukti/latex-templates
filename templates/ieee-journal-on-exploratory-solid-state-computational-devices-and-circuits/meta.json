@@ -12,7 +12,7 @@
     "name": "Siddartho Sarker Bipro",
     "github": "https://github.com/Siddhatho"
   },
-  "description": "TODO: verify official Aims & Scope for IEEE Journal on Exploratory Solid-State Computational Devices and Circuits on IEEE Xplore and replace this placeholder.",
+  "description": "Official paper template for IEEE Journal on Exploratory Solid-State Computational Devices and Circuits (JXCDC). Designed for research articles on emerging solid-state devices, novel computing architectures, advanced circuits, and beyond-CMOS technologies, with support for figures, tables, references, and IEEE-compliant journal formatting.",
   "compatibleWith": [
     "pdflatex",
     "xelatex"

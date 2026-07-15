@@ -12,7 +12,7 @@
     "name": "Siddartho Sarker Bipro",
     "github": "https://github.com/Siddhatho"
   },
-  "description": "TODO: verify official Aims & Scope for IEEE Transactions on Biometrics, Behavior and Identity Science on IEEE Xplore and replace this placeholder.",
+  "description": "Official paper template for IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM). Designed for research articles on biometric recognition, identity analytics, behavioral modeling, computer vision, pattern recognition, and related security and privacy applications, with support for figures, tables, references, and IEEE-compliant journal formatting.",
   "compatibleWith": [
     "pdflatex",
     "xelatex"

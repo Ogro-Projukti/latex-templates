@@ -12,7 +12,7 @@
     "name": "Siddartho Sarker Bipro",
     "github": "https://github.com/Siddhatho"
   },
-  "description": "TODO: verify official Aims & Scope for IEEE Journal on Wireless Power Technologies on IEEE Xplore and replace this placeholder.",
+  "description": "Official paper template for IEEE Journal on Wireless Power Technologies. Designed for research articles on wireless power transfer, energy harvesting, power electronics, charging systems, and related enabling technologies, with support for figures, tables, references, and IEEE-compliant journal formatting.",
   "compatibleWith": [
     "pdflatex",
     "xelatex"

@@ -12,7 +12,7 @@
     "name": "Siddartho Sarker Bipro",
     "github": "https://github.com/Siddhatho"
   },
-  "description": "TODO: verify official Aims & Scope for IEEE Transactions on Dielectrics and Electrical Insulation on IEEE Xplore and replace this placeholder.",
+  "description": "Official paper template for IEEE Transactions on Dielectrics and Electrical Insulation (TDEI). Designed for research articles on dielectric materials, electrical insulation systems, high-voltage engineering, insulation diagnostics, and related applications in electrical and electronic equipment, with support for figures, tables, references, and IEEE-compliant journal formatting.",
   "compatibleWith": [
     "pdflatex",
     "xelatex"

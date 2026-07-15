@@ -12,7 +12,7 @@
     "name": "Siddartho Sarker Bipro",
     "github": "https://github.com/Siddhatho"
   },
-  "description": "TODO: verify official Aims & Scope for IEEE Journal of Electromagnetics, RF and Microwaves in Medicine and Biology on IEEE Xplore and replace this placeholder.",
+  "description": "Official paper template for IEEE Journal of Electromagnetics, RF and Microwaves in Medicine and Biology (J-ERM). Designed for research articles on the application of electromagnetics, radio-frequency technologies, and microwave systems in medicine, healthcare, and biological sciences, with support for figures, tables, references, and IEEE-compliant journal formatting.",
   "compatibleWith": [
     "pdflatex",
     "xelatex"

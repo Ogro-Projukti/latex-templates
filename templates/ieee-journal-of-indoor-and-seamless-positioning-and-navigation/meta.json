@@ -12,7 +12,7 @@
     "name": "Siddartho Sarker Bipro",
     "github": "https://github.com/Siddhatho"
   },
-  "description": "TODO: verify official Aims & Scope for IEEE Journal of Indoor and Seamless Positioning and Navigation on IEEE Xplore and replace this placeholder.",
+  "description": "Official paper template for IEEE Journal of Indoor and Seamless Positioning and Navigation (J-ISPIN). Designed for research articles on indoor localization, navigation systems, sensor fusion, location-based services, and seamless positioning technologies, with support for figures, tables, references, and IEEE-compliant journal formatting.",
   "compatibleWith": [
     "pdflatex",
     "xelatex"
