@@ -1,9 +1,0 @@
-{
-  "title": "IEEE Computational Intelligence Letters Template",
-  "author": "IEEE",
-  "last_updated": "2026",
-  "license": "IEEE Copyright / LaTeX Project Public License",
-  "abstract": "Official LaTeX template for preparing and submitting original research articles to the IEEE Computational Intelligence Letters journal.",
-  "tags": ["IEEE", "Computational Intelligence", "Journal"],
-  "folder_name": "ieee-computational-intelligence-letters"
-}
