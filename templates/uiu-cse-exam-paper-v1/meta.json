@@ -43,8 +43,5 @@
     "assessment",
     "academic"
   ],
-  "category": [
-    "Education",
-    "Exam Paper"
-  ]
+  "category": "Exam Paper"
 }
