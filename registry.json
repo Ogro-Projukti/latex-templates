@@ -560,7 +560,7 @@
       "contributor": "Siddartho Sarker Bipro",
       "version": "1.0.0",
       "lastUpdated": "2026-06-28",
-      "license": "{'name': 'MIT License', 'url': 'https://opensource.org/licenses/MIT'}",
+      "license": "MIT License",
       "packages": [
         "fontspec",
         "polyglossia",
@@ -2336,7 +2336,7 @@
       "contributor": "Siddartho Sarker Bipro",
       "version": "1.0.0",
       "lastUpdated": "2026-07-16",
-      "license": "{'name': 'MIT License', 'url': 'https://opensource.org/licenses/MIT'}",
+      "license": "MIT License",
       "packages": [
         "inputenc",
         "geometry",

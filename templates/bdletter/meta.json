@@ -26,10 +26,7 @@
     "etoolbox",
     "keyval"
   ],
-  "license": {
-    "name": "MIT License",
-    "url": "https://opensource.org/licenses/MIT"
-  },
+  "license": "MIT License",
   "tags": [
     "Bangladeshi",
     "official letter",

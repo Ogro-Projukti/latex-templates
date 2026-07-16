@@ -28,10 +28,7 @@
     "tabularx",
     "graphicx"
   ],
-  "license": {
-    "name": "MIT License",
-    "url": "https://opensource.org/licenses/MIT"
-  },
+  "license": "MIT License",
   "tags": [
     "exam",
     "question paper",
