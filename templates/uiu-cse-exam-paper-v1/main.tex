@@ -1,0 +1,396 @@
+\documentclass[11pt,a4paper]{article}
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry} % Comfortable margins for an exam paper
+\usepackage{amsmath, amssymb}        % Math symbols
+\usepackage{listings}                % Code highlighting configuration
+\usepackage{xcolor}                  % Text and line coloration
+\usepackage{tabularx}                % Wrap-around layout for input/output tables
+\usepackage{graphicx}                % Required to render the logo image
+
+% --- Code Block Highlight Settings for Java ---
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{
+  frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4
+}
+
+\begin{document}
+% =========================================================================
+% EXACT MATCHING HEADER SECTION WITH LOGO
+% =========================================================================
+\noindent
+\begin{minipage}[c]{0.15\textwidth}
+% Places the logo on the left. Overleaf will look for "uiu_logo.png"
+\includegraphics[width=\textwidth]{uiu_logo.png}
+\end{minipage}%
+\begin{minipage}[c]{0.85\textwidth}
+\begin{center}
+{\Large \textbf{United International University (UIU)}} \\
+\vspace{0.05cm}
+{\large \textbf{Dept. of Computer Science \& Engineering (CSE)}} \\
+\vspace{0.15cm}
+{\normalsize Final Exam, Trimester: Spring 2025} \\
+\vspace{0.05cm}
+{\normalsize Course Code: CSE 1115, Course Title: Object Oriented Programming} \\
+\vspace{0.05cm}
+{\normalsize Total Marks: 40, Duration: 2 Hours}
+\end{center}
+\end{minipage}
+\vspace{0.4cm}
+\begin{center}
+\textit{\textbf{Any examinee found adopting unfair means will be expelled from the trimester / program as per UIU disciplinary rules.}} \\
+\vspace{0.1cm}
+\textit{\textbf{Answer all Five Questions.}}
+\end{center}
+\vspace{0.2cm}
+\hrule
+\vspace{0.5cm}
+
+% =========================================================================
+% QUESTION 1
+% =========================================================================
+\section*{QUESTION 1 \hfill [4 + 6 = 10 Marks]}
+\subsection*{a) Output Tracing [4 Marks] [CO1]}
+Analyze the Java code given below and write the output of the code for each of the test cases given in the ``Sample Input'' table.
+\begin{lstlisting}
+import java.util.Scanner;
+class TryCatchExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] arr = {"10", "0", null};
+        System.out.print("Enter index (0-2): ");
+        int index = sc.nextInt();
+        
+        try {
+            int value = Integer.parseInt(arr[index]);
+            try {
+                int result = 100 / value;
+                System.out.println("Result = " + result);
+            } 
+            catch (ArithmeticException e) {
+                System.out.println("Inner catch: ArithmeticException");
+            } 
+            finally {
+                System.out.println("Inner finally block executed.");
+            }
+        } 
+        catch (ArithmeticException e) {
+            System.out.println("Outer catch: ArithmeticException");
+        } 
+        catch (NumberFormatException e) {
+            System.out.println("Outer catch: NumberFormatException");
+        } 
+        finally {
+            System.out.println("Outer finally block executed.");
+        }
+    }
+}
+\end{lstlisting}
+\vspace{0.3cm}
+
+\noindent\textbf{Solution/Output:}
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Sample Input} & \textbf{Output} \\ \hline
+Enter index (0-2): 0 & Result = 10 \newline Inner finally block executed. \newline Outer finally block executed. \\ \hline
+Enter index (0-2): 1 & Inner catch: ArithmeticException \newline Inner finally block executed. \newline Outer finally block executed. \\ \hline
+Enter index (0-2): 2 & Outer catch: NumberFormatException \newline Outer finally block executed. \\ \hline
+\end{tabularx}
+\end{table}
+
+\newpage
+\subsection*{b) Custom Exceptions [6 Marks] [CO1]}
+Suppose you are designing a banking application in Java. You need to write a program that simulates a withdrawal from a bank account. The account balance is initialized to 5000. The user will enter the amount to withdraw.
+
+If the amount entered is greater than the current balance, a user-defined exception named \texttt{InsufficientFundsException} should be thrown. The exception should display a meaningful message like: \textit{"Withdrawal amount exceeds current balance."} The program must also include a \texttt{finally} block that always prints \textit{"Transaction processing completed."}
+
+\noindent\textbf{Solution:}
+\begin{lstlisting}
+// task1: Write the InsufficientFundsException class
+class InsufficientFundsException extends Exception {
+    public InsufficientFundsException(String message) {
+        super(message);
+    }
+}
+
+public class Bank {
+    private int balance;
+
+    // Constructor
+    public Bank(int initialBalance) {
+        this.balance = initialBalance;
+    }
+
+    // task2: Write the withdraw method
+    public void withdraw(int amount) throws InsufficientFundsException {
+        if (amount > balance) {
+            throw new InsufficientFundsException("Withdrawal amount exceeds current balance.");
+        }
+        balance -= amount;
+    }
+
+    // Main method to test the Bank class
+    public static void main(String[] args) {
+        Bank myAccount = new Bank(5000);
+        try {
+            myAccount.withdraw(6000);
+        } catch (InsufficientFundsException e) {
+            System.out.println("Exception: " + e.getMessage());
+        } finally {
+            System.out.println("Transaction processing completed.");
+        }
+    }
+}
+\end{lstlisting}
+\vspace{0.6cm}
+
+% =========================================================================
+% QUESTION 2
+% =========================================================================
+\section*{QUESTION 2 \hfill [10 Marks] [CO2]}
+Write a Java program that reads a file named \texttt{"student.txt"} with multiple lines where each line contains a student's ID (string), Name (string), mark1 (integer) \& mark2 (integer) separated by a single space.
+Your task is to split this into two separate files:
+\begin{itemize}
+\item \texttt{"info.txt"} -- containing Id \& Name.
+\item \texttt{"mark.txt"} -- containing Name \& summation of both marks.
+\end{itemize}
+Both the input and output files should be located in the \texttt{"src"} directory. 
+
+\noindent\textbf{Solution:}
+\begin{lstlisting}
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class FileSplitter {
+    public static void main(String[] args) {
+        File inputFile = new File("src/student.txt");
+        File infoFile = new File("src/info.txt");
+        File markFile = new File("src/mark.txt");
+
+        try (
+            Scanner sc = new Scanner(inputFile);
+            PrintWriter infoWriter = new PrintWriter(infoFile);
+            PrintWriter markWriter = new PrintWriter(markFile)
+        ) {
+            while (sc.hasNextLine()) {
+                String line = sc.nextLine().trim();
+                if (line.isEmpty()) continue;
+                
+                String[] parts = line.split(" ");
+                if (parts.length >= 4) {
+                    String id = parts[0];
+                    String name = parts[1];
+                    int mark1 = Integer.parseInt(parts[2]);
+                    int mark2 = Integer.parseInt(parts[3]);
+                    int totalMark = mark1 + mark2;
+
+                    infoWriter.println(id + " " + name);
+                    markWriter.println(name + " " + totalMark);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Error: File path not found. " + e.getMessage());
+        }
+    }
+}
+\end{lstlisting}
+\vspace{0.6cm}
+
+% =========================================================================
+% QUESTION 3
+% =========================================================================
+\section*{QUESTION 3 \hfill [5 Marks] [CO1]}
+Write an interface named \texttt{"AdvancedComputable"} which inherits \texttt{"Computable"} and includes its own method named \texttt{"max"} (return type: \texttt{int}). Now, write a class named \texttt{"Adder"} that inherits from both \texttt{"AdvancedComputable"} and \texttt{"Processor"}. Implement the necessary methods.
+
+\noindent\textbf{Solution:}
+\begin{lstlisting}
+interface Computable {
+    int compute(int a, int b);
+}
+
+abstract class Processor {
+    protected String id;
+    public Processor(String id) {
+        this.id = id;
+    }
+    public abstract void process();
+    public void printId() {
+        System.out.println("Processor ID: " + id);
+    }
+}
+
+// Write your solution below
+interface AdvancedComputable extends Computable {
+    int max(int a, int b);
+}
+
+class Adder extends Processor implements AdvancedComputable {
+    public Adder(String id) {
+        super(id);
+    }
+
+    @Override
+    public int compute(int a, int b) {
+        return a + b;
+    }
+
+    @Override
+    public int max(int a, int b) {
+        return Math.max(a, b);
+    }
+
+    @Override
+    public void process() {
+        System.out.println("Processing Addition");
+    }
+}
+\end{lstlisting}
+\vspace{0.6cm}
+
+% =========================================================================
+% QUESTION 4
+% =========================================================================
+\section*{QUESTION 4 \hfill [5 Marks] [CO2]}
+Complete the tasks listed below inside the \texttt{main} method of the \texttt{ProductList} class.
+
+\noindent\textbf{Solution:}
+\begin{lstlisting}
+import java.util.*;
+
+class Product {
+    String name;
+    int amount;
+    double unit_price;
+    public Product(String name, int amount, double unit_price) {
+        this.name = name;
+        this.amount = amount;
+        this.unit_price = unit_price;
+    }
+}
+
+class ProductList {
+    public static void main(String[] args) {
+        // i. Declare an ArrayList of type Product.
+        ArrayList<Product> products = new ArrayList<>();
+
+        // ii. Insert items: ("Mango", 5, 20), ("Apple", 4, 24), and ("Litchi", 20, 3).
+        products.add(new Product("Mango", 5, 20));
+        products.add(new Product("Apple", 4, 24));
+        products.add(new Product("Litchi", 20, 3));
+
+        // iii. Insert a new product ("Banana", 10, 12) at index 1.
+        products.add(1, new Product("Banana", 10, 12));
+
+        // iv. Update the unit price of "Apple" to 30.
+        for (Product p : products) {
+            if (p.name.equals("Apple")) {
+                p.unit_price = 30;
+                break;
+            }
+        }
+
+        // v. Sort the arraylist based on the total price in descending order.
+        Collections.sort(products, new Comparator<Product>() {
+            @Override
+            public int compare(Product p1, Product p2) {
+                double total1 = p1.amount * p1.unit_price;
+                double total2 = p2.amount * p2.unit_price;
+                return Double.compare(total2, total1); // Descending order
+            }
+        });
+    }
+}
+\end{lstlisting}
+\newpage
+
+% =========================================================================
+% QUESTION 5
+% =========================================================================
+\section*{QUESTION 5 \hfill [10 Marks] [CO2]}
+Write \textbf{only the event-handling code} for the three buttons inside the provided Swing architecture layout.
+
+\noindent\textbf{Solution:}
+\begin{lstlisting}
+import javax.swing.*;
+import java.awt.event.*;
+
+public class RockPaperScissorsGUI {
+
+    private static String getRandomChoice() {
+        String[] options = {"Rock", "Paper", "Scissors"};
+        return options[(int)(Math.random() * 3)];
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Rock Paper Scissors");
+        JLabel label1 = new JLabel("Player 1");
+        JLabel label2 = new JLabel("Player 2");
+        JLabel resultLabel = new JLabel("Result will be shown here");
+        
+        JButton leftButton = new JButton("Player 1 Play");
+        JButton rightButton = new JButton("Player 2 Play");
+        JButton checkButton = new JButton("Check Winner");
+
+        // ==========================================
+        // WRITE ONLY THE EVENT-HANDLING CODE BELOW
+        // ==========================================
+        leftButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                label1.setText(getRandomChoice());
+            }
+        });
+
+        rightButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                label2.setText(getRandomChoice());
+            }
+        });
+
+        checkButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String choice1 = label1.getText();
+                String choice2 = label2.getText();
+
+                if (choice1.equals("Player 1") || choice2.equals("Player 2")) {
+                    resultLabel.setText("Both players must play first!");
+                    return;
+                }
+
+                if (choice1.equals(choice2)) {
+                    resultLabel.setText("Draw");
+                } else if ((choice1.equals("Rock") && choice2.equals("Scissors")) ||
+                           (choice1.equals("Paper") && choice2.equals("Rock")) ||
+                           (choice1.equals("Scissors") && choice2.equals("Paper"))) {
+                    resultLabel.setText("Player 1 Wins!");
+                } else {
+                    resultLabel.setText("Player 2 Wins!");
+                }
+            }
+        });
+    }
+}
+\end{lstlisting}
+\end{document}

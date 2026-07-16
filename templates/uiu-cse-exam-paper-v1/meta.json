@@ -1,0 +1,53 @@
+{
+  "id": "uiu-cse-exam-paper-v1",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2026-07-16",
+  "author": {
+    "name": "Md Mahmudul Hasan",
+    "github": "https://github.com/MahmudulHasn"
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Version 1 of the UIU CSE Examination Question Paper template. Features a traditional university exam layout with institutional branding, mark distribution, Java code listings, assessment tables, and learning outcome mapping.",
+  "compatibleWith": [
+    "pdflatex",
+    "xelatex",
+    "tectonic"
+  ],
+  "packages": [
+    "inputenc",
+    "geometry",
+    "amsmath",
+    "amssymb",
+    "listings",
+    "xcolor",
+    "tabularx",
+    "graphicx"
+  ],
+  "license": {
+    "name": "MIT License",
+    "url": "https://opensource.org/licenses/MIT"
+  },
+  "tags": [
+    "exam",
+    "question paper",
+    "version 1",
+    "university",
+    "UIU",
+    "computer science",
+    "programming",
+    "java",
+    "object oriented programming",
+    "education",
+    "assessment",
+    "academic"
+  ],
+  "category": [
+    "Education",
+    "Exam Paper"
+  ]
+}

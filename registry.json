@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-15",
+  "updated": "2026-07-16",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -2326,6 +2326,61 @@
       "contributorProfile": {
         "name": "Mutasim Fuad Rafi",
         "github": "https://github.com/mfbhai10"
+      }
+    },
+    {
+      "id": "uiu-cse-exam-paper-v1",
+      "name": "Uiu Cse Exam Paper V1",
+      "shortDescription": "Version 1 of the UIU CSE Examination Question Paper template. Features a traditional university exam layout with institutional branding, mark distribution, Java code listings, assessment tables, and learning outcome mapping.",
+      "category": "['Education', 'Exam Paper']",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2026-07-16",
+      "license": "{'name': 'MIT License', 'url': 'https://opensource.org/licenses/MIT'}",
+      "packages": [
+        "inputenc",
+        "geometry",
+        "amsmath",
+        "amssymb",
+        "listings",
+        "xcolor",
+        "tabularx",
+        "graphicx"
+      ],
+      "files": [
+        "main.tex",
+        "uiu_logo.png"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/uiu-cse-exam-paper-v1",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/uiu-cse-exam-paper-v1",
+      "size": "158.8KB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex",
+        "tectonic"
+      ],
+      "tags": [
+        "exam",
+        "question paper",
+        "version 1",
+        "university",
+        "UIU",
+        "computer science",
+        "programming",
+        "java",
+        "object oriented programming",
+        "education",
+        "assessment",
+        "academic"
+      ],
+      "author": {
+        "name": "Md Mahmudul Hasan",
+        "github": "https://github.com/MahmudulHasn"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
       }
     }
   ]
