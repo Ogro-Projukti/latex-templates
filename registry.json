@@ -1944,6 +1944,63 @@
       }
     },
     {
+      "id": "ieee-transactions-on-ultrasonics-ferroelectrics-and-frequency-control",
+      "name": "Ieee Transactions On Ultrasonics Ferroelectrics And Frequency Control",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control on IEEE Xplore and replace this placeholder.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "algorithmic",
+        "amsfonts",
+        "amsmath",
+        "amssymb",
+        "cite",
+        "colortbl",
+        "graphicx",
+        "textcomp",
+        "tuffc",
+        "wrapfig"
+      ],
+      "files": [
+        "a1.png",
+        "a2.png",
+        "a3.png",
+        "fig1.png",
+        "ieeecolor.cls",
+        "LOGO-generic-web.pdf",
+        "LOGO-tuffc-web-eps-converted-to.pdf",
+        "LOGO-tuffc-web.pdf",
+        "tuffc.pdf",
+        "tuffc.sty",
+        "tuffc.tex",
+        "tuffcga.png"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-transactions-on-ultrasonics-ferroelectrics-and-frequency-control",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-transactions-on-ultrasonics-ferroelectrics-and-frequency-control",
+      "size": "1.3MB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-vis-2026-workshop-proposal",
       "name": "Ieee Vis 2026 Workshop Proposal",
       "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",
