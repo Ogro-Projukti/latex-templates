@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-16",
+  "updated": "2026-07-21",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -556,7 +556,7 @@
       "id": "bdletter",
       "name": "Bdletter",
       "shortDescription": "A LaTeX class for writing authentic Bangladeshi official letters. Supports government offices, schools, colleges, banks, NGOs, and general public use. Follows the standard Bangladeshi formal letter structure with বরাবর, বিষয়, and বিনীত নিবেদক blocks. Noto Serif Bengali font is bundled — no installation required.",
-      "category": "['Bangla']",
+      "category": "Bangla",
       "contributor": "Siddartho Sarker Bipro",
       "version": "1.0.0",
       "lastUpdated": "2026-06-28",
@@ -1898,6 +1898,52 @@
       }
     },
     {
+      "id": "ieee-transactions-on-nuclear-science",
+      "name": "Ieee Transactions On Nuclear Science",
+      "shortDescription": "TODO: verify official Aims & Scope for IEEE Transactions on Nuclear Science on IEEE Xplore and replace this placeholder.",
+      "category": "journal",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "Built in",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "amsfonts",
+        "amsmath",
+        "amssymb",
+        "cite",
+        "graphicx",
+        "nicefrac",
+        "textcomp"
+      ],
+      "files": [
+        "tns.pdf",
+        "tns.tex",
+        "tns1.png",
+        "tns2.png"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ieee-transactions-on-nuclear-science",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ieee-transactions-on-nuclear-science",
+      "size": "335.4KB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex"
+      ],
+      "tags": [
+        "journal",
+        "submission",
+        "template",
+        "ieee"
+      ],
+      "author": {
+        "name": "IEEE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "ieee-vis-2026-workshop-proposal",
       "name": "Ieee Vis 2026 Workshop Proposal",
       "shortDescription": "Official IEEE VIS 2026 Workshop Proposal template for preparing workshop submissions following the IEEE VGTC formatting guidelines.",
@@ -2332,7 +2378,7 @@
       "id": "uiu-cse-exam-paper-v1",
       "name": "Uiu Cse Exam Paper V1",
       "shortDescription": "Version 1 of the UIU CSE Examination Question Paper template. Features a traditional university exam layout with institutional branding, mark distribution, Java code listings, assessment tables, and learning outcome mapping.",
-      "category": "['Education', 'Exam Paper']",
+      "category": "Exam Paper",
       "contributor": "Siddartho Sarker Bipro",
       "version": "1.0.0",
       "lastUpdated": "2026-07-16",
