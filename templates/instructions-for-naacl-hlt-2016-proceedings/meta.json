@@ -1,0 +1,38 @@
+{
+  "id": "instructions-for-naacl-hlt-2016-proceedings",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "11 years ago",
+  "author": {
+    "name": "Meg Mitchell and Adam Lopez",
+    "github": ""
+  },
+  "description": "Official LaTeX template for NAACL HLT 2016 conference submissions and camera-ready manuscripts. Provides the required two-column format, double-blind review support with anonymization and line-numbered ruler, title/author/abstract formatting, citation and bibliography style, and detailed guidelines on page limits, figures, tables, and accessibility.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "naaclhlt2016",
+    "times",
+    "latexsym",
+    "geometry"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "naacl",
+    "nlp",
+    "computational-linguistics",
+    "template"
+  ]
+}
