@@ -2360,6 +2360,64 @@
       }
     },
     {
+      "id": "ilass-europe-2026-conference-paper-template",
+      "name": "Ilass Europe 2026 Conference Paper Template",
+      "shortDescription": "Official LaTeX template for full-length papers submitted to ILASS Europe 2026, the 34th Conference on Liquid Atomization and Spray Systems, held in Lisbon, Portugal. Provides the required title, author, and affiliation formatting, section and subsection heading styles, figure and table layouts, equation numbering, nomenclature, and a running-header/footer conference page style, based on a custom document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "a month ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "graphicx",
+        "color",
+        "ulem",
+        "url",
+        "xcolor",
+        "enumitem",
+        "arydshln",
+        "anyfontsize",
+        "fancyhdr",
+        "inputenc",
+        "fontenc",
+        "amsmath",
+        "amssymb",
+        "amsfonts",
+        "textcomp",
+        "calc",
+        "hyperref",
+        "caption",
+        "helvet"
+      ],
+      "files": [
+        "drawing.png",
+        "ILASSEurope_2026_Paper_Format.cls",
+        "main.tex",
+        "refs.bib",
+        "refsTemplate.bst"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ilass-europe-2026-conference-paper-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ilass-europe-2026-conference-paper-template",
+      "size": "734.2KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "ilass",
+        "spray-systems",
+        "template"
+      ],
+      "author": {
+        "name": "ILASS Europe 2026"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "imampc2024-abstract-template",
       "name": "Imampc2024 Abstract Template",
       "shortDescription": "Official one-page abstract template for the 13th International Meeting on Atomic and Molecular Physics and Chemistry (IMAMPC 2024). Designed for conference abstract submissions with support for author affiliations, figures, acknowledgments, and references.",
