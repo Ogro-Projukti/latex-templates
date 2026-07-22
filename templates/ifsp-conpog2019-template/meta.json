@@ -1,0 +1,49 @@
+{
+  "id": "ifsp-conpog2019-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "7 years ago",
+  "author": {
+    "name": "FULANO C. SILVA",
+    "github": ""
+  },
+  "description": "Template for submitting extended abstracts to the 4th IFSP Postgraduate Congress (Congresso Pós-Graduação do IFSP) 2019. Provides the required Portuguese/English bilingual title, abstract, and keywords layout, along with formatting guidelines for equations, figures, tables, and references, based on the abntex2 document class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "inputenc",
+    "graphicx",
+    "fontenc",
+    "babel",
+    "lipsum",
+    "multicol",
+    "helvet",
+    "microtype",
+    "subcaption",
+    "amsmath",
+    "circuitikz",
+    "geometry",
+    "textpos",
+    "fancyhdr",
+    "fancyvrb"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "abstract",
+    "ifsp",
+    "portuguese",
+    "template"
+  ]
+}
