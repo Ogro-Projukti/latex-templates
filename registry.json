@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -2151,6 +2151,44 @@
       ],
       "author": {
         "name": "Electric Rocket Propulsion Society (ERPS)"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "ifmbe-proceedings-seriestemplate-and-instructions-for-authors",
+      "name": "Ifmbe Proceedings Seriestemplate And Instructions For Authors",
+      "shortDescription": "Official template for the IFMBE (International Federation for Medical and Biological Engineering) Proceedings series. Provides formatting instructions and a ready-to-use LaTeX structure for authors preparing conference papers, covering title/author/affiliation layout, two-column page setup, tables, figures, equations, references, and ethical-compliance sections (conflict of interest, informed consent, human/animal rights statements).",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "9 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [],
+      "files": [
+        "ama.bst",
+        "example.bib",
+        "ifmbe.cls",
+        "ifmbe.pdf",
+        "main.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ifmbe-proceedings-seriestemplate-and-instructions-for-authors",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ifmbe-proceedings-seriestemplate-and-instructions-for-authors",
+      "size": "153.6KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "proceedings",
+        "ifmbe",
+        "template"
+      ],
+      "author": {
+        "name": "IFMBE authors"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",

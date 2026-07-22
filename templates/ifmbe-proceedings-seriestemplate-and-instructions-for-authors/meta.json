@@ -1,0 +1,32 @@
+{
+  "id": "ifmbe-proceedings-seriestemplate-and-instructions-for-authors",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "9 years ago",
+  "author": {
+    "name": "IFMBE authors",
+    "github": ""
+  },
+  "description": "Official template for the IFMBE (International Federation for Medical and Biological Engineering) Proceedings series. Provides formatting instructions and a ready-to-use LaTeX structure for authors preparing conference papers, covering title/author/affiliation layout, two-column page setup, tables, figures, equations, references, and ethical-compliance sections (conflict of interest, informed consent, human/animal rights statements).",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "proceedings",
+    "ifmbe",
+    "template"
+  ]
+}
