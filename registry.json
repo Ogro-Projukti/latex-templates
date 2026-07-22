@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-22",
+  "updated": "2026-07-23",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -2189,6 +2189,45 @@
       ],
       "author": {
         "name": "IFMBE authors"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "ifsa-eusflat-2021-template",
+      "name": "Ifsa Eusflat 2021 Template",
+      "shortDescription": "Official LaTeX template for the IFSA-EUSFLAT 2021 Bratislava conference. Provides the required two-column layout, title/abstract/keywords formatting, and citation and bibliography style for submitting full papers, along with formatting instructions for tables, figures, footnotes, acknowledgments, and Author Contribution sections.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "6 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [],
+      "files": [
+        "BIBeusflat2021.bib",
+        "eusflat2021.bst",
+        "eusflat2021.cls",
+        "FuzzySets.pdf",
+        "ifsa-eusflat-2021-template.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ifsa-eusflat-2021-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ifsa-eusflat-2021-template",
+      "size": "59.0KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "proceedings",
+        "eusflat",
+        "ifsa",
+        "template"
+      ],
+      "author": {
+        "name": "EUSFLAT"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",
