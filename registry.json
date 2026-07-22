@@ -2418,6 +2418,61 @@
       }
     },
     {
+      "id": "ilrn-conferences-template-short-papers-extended-abstracts-and-doctoral-colloquium",
+      "name": "Ilrn Conferences Template Short Papers Extended Abstracts And Doctoral Colloquium",
+      "shortDescription": "Official LaTeX template for submissions to the Immersive Learning Research Network (iLRN) Conferences, covering Short Papers, Extended Abstracts, Doctoral Colloquium, iLEAD, and iLRNFuser contributions. Provides the required title, author, abstract, and keyword formatting, four levels of section headings, custom figure/table caption styles, and a Springer MathPhySci-style bibliography, based on a custom document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "a year ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "geometry",
+        "times",
+        "graphicx",
+        "titlesec",
+        "eso-pic",
+        "titling",
+        "setspace",
+        "parskip",
+        "changepage",
+        "url",
+        "enumitem",
+        "booktabs",
+        "caption"
+      ],
+      "files": [
+        "ILRN_Conferences_SP_EA_DC_iLRNFuser_ILEAD_LaTeX_Official_Template/ILRN_Conferences_SP_EA_DC_iLRNFuser_ILEAD_LaTeX_Template.pdf",
+        "ILRN_Conferences_SP_EA_DC_iLRNFuser_ILEAD_LaTeX_Official_Template/iLRN_header_logo.png",
+        "ILRN_Conferences_SP_EA_DC_iLRNFuser_ILEAD_LaTeX_Official_Template/iLRNConf_template_with_instructions.tex",
+        "ILRN_Conferences_SP_EA_DC_iLRNFuser_ILEAD_LaTeX_Official_Template/iLRNConfProc.cls",
+        "ILRN_Conferences_SP_EA_DC_iLRNFuser_ILEAD_LaTeX_Official_Template/README.txt",
+        "ILRN_Conferences_SP_EA_DC_iLRNFuser_ILEAD_LaTeX_Official_Template/references.bib",
+        "ILRN_Conferences_SP_EA_DC_iLRNFuser_ILEAD_LaTeX_Official_Template/spmpsci.bst"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ilrn-conferences-template-short-papers-extended-abstracts-and-doctoral-colloquium",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ilrn-conferences-template-short-papers-extended-abstracts-and-doctoral-colloquium",
+      "size": "207.7KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "ilrn",
+        "extended-abstract",
+        "doctoral-colloquium",
+        "template"
+      ],
+      "author": {
+        "name": "Immersive Learning Research Network (iLRN)"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "imampc2024-abstract-template",
       "name": "Imampc2024 Abstract Template",
       "shortDescription": "Official one-page abstract template for the 13th International Meeting on Atomic and Molecular Physics and Chemistry (IMAMPC 2024). Designed for conference abstract submissions with support for author affiliations, figures, acknowledgments, and references.",
