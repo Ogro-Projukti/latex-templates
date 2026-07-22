@@ -1,0 +1,57 @@
+{
+  "id": "ihc-2022-latex-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "4 years ago",
+  "author": {
+    "name": "André Pimenta Freire",
+    "github": ""
+  },
+  "description": "Official LaTeX template for IHC 2022, the 21st Brazilian Symposium on Human Factors in Computing Systems. Based on the ACM Master Article Template (acmart, sigconf style), providing the full formatting structure for ACM conference proceedings including title/author/affiliation blocks, CCS concepts, keywords, teaser figures, tables, math equations, citations via ACM-Reference-Format, acknowledgments, and appendices.",
+  "compatibleWith": [
+    "pdflatex",
+    "xelatex",
+    "lualatex"
+  ],
+  "packages": [
+    "xkeyval",
+    "xstring",
+    "iftex",
+    "microtype",
+    "etoolbox",
+    "booktabs",
+    "refcount",
+    "totpages",
+    "environ",
+    "textcase",
+    "natbib",
+    "hyperref",
+    "hyperxmp",
+    "graphicx",
+    "xcolor",
+    "geometry",
+    "manyfoot",
+    "caption",
+    "float",
+    "comment",
+    "fancyhdr"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "acm",
+    "sigconf",
+    "ihc",
+    "template"
+  ]
+}

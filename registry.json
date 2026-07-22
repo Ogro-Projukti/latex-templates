@@ -2235,6 +2235,131 @@
       }
     },
     {
+      "id": "ifsp-conpog2019-template",
+      "name": "Ifsp Conpog2019 Template",
+      "shortDescription": "Template for submitting extended abstracts to the 4th IFSP Postgraduate Congress (Congresso Pós-Graduação do IFSP) 2019. Provides the required Portuguese/English bilingual title, abstract, and keywords layout, along with formatting guidelines for equations, figures, tables, and references, based on the abntex2 document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "7 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "inputenc",
+        "graphicx",
+        "fontenc",
+        "babel",
+        "lipsum",
+        "multicol",
+        "helvet",
+        "microtype",
+        "subcaption",
+        "amsmath",
+        "circuitikz",
+        "geometry",
+        "textpos",
+        "fancyhdr",
+        "fancyvrb"
+      ],
+      "files": [
+        "Conict.png",
+        "Fig1.png",
+        "Fig2.png",
+        "IFSP.jpg",
+        "main.tex",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ifsp-conpog2019-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ifsp-conpog2019-template",
+      "size": "381.6KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "abstract",
+        "ifsp",
+        "portuguese",
+        "template"
+      ],
+      "author": {
+        "name": "FULANO C. SILVA"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "ihc-2022-latex-template",
+      "name": "Ihc 2022 Latex Template",
+      "shortDescription": "Official LaTeX template for IHC 2022, the 21st Brazilian Symposium on Human Factors in Computing Systems. Based on the ACM Master Article Template (acmart, sigconf style), providing the full formatting structure for ACM conference proceedings including title/author/affiliation blocks, CCS concepts, keywords, teaser figures, tables, math equations, citations via ACM-Reference-Format, acknowledgments, and appendices.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "4 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "xkeyval",
+        "xstring",
+        "iftex",
+        "microtype",
+        "etoolbox",
+        "booktabs",
+        "refcount",
+        "totpages",
+        "environ",
+        "textcase",
+        "natbib",
+        "hyperref",
+        "hyperxmp",
+        "graphicx",
+        "xcolor",
+        "geometry",
+        "manyfoot",
+        "caption",
+        "float",
+        "comment",
+        "fancyhdr"
+      ],
+      "files": [
+        "ACM-Reference-Format.bbx",
+        "ACM-Reference-Format.bst",
+        "ACM-Reference-Format.cbx",
+        "ACM-Reference-Format.dbx",
+        "acmart.cls",
+        "acmart.pdf",
+        "README.txt",
+        "sample-base.bib",
+        "sample-franklin.png",
+        "sample-sigconf.tex",
+        "sampleteaser.pdf"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ihc-2022-latex-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ihc-2022-latex-template",
+      "size": "1.6MB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex",
+        "lualatex"
+      ],
+      "tags": [
+        "conference",
+        "acm",
+        "sigconf",
+        "ihc",
+        "template"
+      ],
+      "author": {
+        "name": "André Pimenta Freire"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "imampc2024-abstract-template",
       "name": "Imampc2024 Abstract Template",
       "shortDescription": "Official one-page abstract template for the 13th International Meeting on Atomic and Molecular Physics and Chemistry (IMAMPC 2024). Designed for conference abstract submissions with support for author affiliations, figures, acknowledgments, and references.",
