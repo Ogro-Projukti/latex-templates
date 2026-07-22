@@ -1,0 +1,40 @@
+{
+  "id": "instructions-for-authors-of-sbc-book-chapters",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "11 years ago",
+  "author": {
+    "name": "Luís Gustavo Coutinho do Rêgo",
+    "github": ""
+  },
+  "description": "Official template for SBC (Brazilian Computer Society) book chapters, describing the required style for articles and short papers submitted to SBC conferences. Provides bilingual (English/Portuguese) abstract and resumo support, chapter-numbered section headings, figure and table caption formatting, and citation guidelines, based on a custom document class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "inputenc",
+    "fontenc",
+    "babel",
+    "graphicx",
+    "times",
+    "mathptmx"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "book",
+  "tags": [
+    "book",
+    "sbc",
+    "portuguese",
+    "chapter",
+    "template"
+  ]
+}

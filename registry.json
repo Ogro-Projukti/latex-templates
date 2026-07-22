@@ -2512,6 +2512,99 @@
       }
     },
     {
+      "id": "instructions-for-authors-of-sbc-book-chapters",
+      "name": "Instructions For Authors Of Sbc Book Chapters",
+      "shortDescription": "Official template for SBC (Brazilian Computer Society) book chapters, describing the required style for articles and short papers submitted to SBC conferences. Provides bilingual (English/Portuguese) abstract and resumo support, chapter-numbered section headings, figure and table caption formatting, and citation guidelines, based on a custom document class.",
+      "category": "book",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "11 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "inputenc",
+        "fontenc",
+        "babel",
+        "graphicx",
+        "times",
+        "mathptmx"
+      ],
+      "files": [
+        "fig1.eps",
+        "fig1.jpg",
+        "fig2.eps",
+        "fig2.jpg",
+        "sample-bookchapter.pdf",
+        "sample-bookchapter.tex",
+        "sbc-template.bib",
+        "sbc.bst",
+        "SBCbookchapter.cls"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/instructions-for-authors-of-sbc-book-chapters",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/instructions-for-authors-of-sbc-book-chapters",
+      "size": "476.1KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "book",
+        "sbc",
+        "portuguese",
+        "chapter",
+        "template"
+      ],
+      "author": {
+        "name": "Luís Gustavo Coutinho do Rêgo"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "instructions-for-naacl-hlt-2016-proceedings",
+      "name": "Instructions For Naacl Hlt 2016 Proceedings",
+      "shortDescription": "Official LaTeX template for NAACL HLT 2016 conference submissions and camera-ready manuscripts. Provides the required two-column format, double-blind review support with anonymization and line-numbered ruler, title/author/abstract formatting, citation and bibliography style, and detailed guidelines on page limits, figures, tables, and accessibility.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "11 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "naaclhlt2016",
+        "times",
+        "latexsym",
+        "geometry"
+      ],
+      "files": [
+        "naaclhlt2016.bib",
+        "naaclhlt2016.bst",
+        "naaclhlt2016.sty",
+        "naaclhlt2016.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/instructions-for-naacl-hlt-2016-proceedings",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/instructions-for-naacl-hlt-2016-proceedings",
+      "size": "67.2KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "naacl",
+        "nlp",
+        "computational-linguistics",
+        "template"
+      ],
+      "author": {
+        "name": "Meg Mitchell and Adam Lopez"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
