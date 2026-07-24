@@ -2841,6 +2841,67 @@
       }
     },
     {
+      "id": "international-astronautical-congress-iac-unofficial-template-updated-2025",
+      "name": "International Astronautical Congress Iac Unofficial Template Updated 2025",
+      "shortDescription": "Unofficial LaTeX template for the International Astronautical Congress (IAC), fulfilling the manuscript style guidelines dictated by the International Astronautical Federation (IAF). Provides the required two-column format, paper ID/copyright/location/date header fields, multi-author and multi-affiliation blocks with ORCID and corresponding-author markers, abstract, nomenclature and acronym sections, numbered sections with Roman-numeral styling, figure/table/equation formatting, appendix handling, and a customized bibliography, based on a custom document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "a year ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "hyperref",
+        "url",
+        "graphicx",
+        "booktabs",
+        "cite",
+        "lastpage",
+        "fancyhdr",
+        "titlesec",
+        "ulem",
+        "etoolbox",
+        "alphalph",
+        "float",
+        "orcidlink",
+        "tabularx",
+        "appendix",
+        "geometry",
+        "fontenc",
+        "newtxmath",
+        "newtxtext",
+        "caption"
+      ],
+      "files": [
+        "biblio.bib",
+        "example.tex",
+        "IAC_style.cls",
+        "LICENSE",
+        "pics/example.jpg",
+        "README.md"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/international-astronautical-congress-iac-unofficial-template-updated-2025",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/international-astronautical-congress-iac-unofficial-template-updated-2025",
+      "size": "3.9MB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "iac",
+        "astronautical",
+        "aerospace",
+        "template"
+      ],
+      "author": {
+        "name": "Stefano Farì, Davide Grande"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
