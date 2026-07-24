@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-23",
+  "updated": "2026-07-24",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -2598,6 +2598,51 @@
       ],
       "author": {
         "name": "Meg Mitchell and Adam Lopez"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "instructions-for-naacl-hlt-2019-demo-track-proceedings",
+      "name": "Instructions For Naacl Hlt 2019 Demo Track Proceedings",
+      "shortDescription": "Official LaTeX template for the NAACL-HLT 2019 Demo Track proceedings. Provides the required two-column format, double-blind review support with anonymization and line-numbered ruler, title/author/affiliation formatting (with author names included for Demo Track submissions), natbib-based citation commands, and DOI-linked bibliography support via hyperref.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "7 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "naaclhlt2019",
+        "times",
+        "latexsym",
+        "url"
+      ],
+      "files": [
+        "acl_natbib.bst",
+        "naaclhlt2019.bib",
+        "naaclhlt2019.pdf",
+        "naaclhlt2019.sty",
+        "naaclhlt2019.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/instructions-for-naacl-hlt-2019-demo-track-proceedings",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/instructions-for-naacl-hlt-2019-demo-track-proceedings",
+      "size": "227.8KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "naacl",
+        "demo-track",
+        "nlp",
+        "computational-linguistics",
+        "template"
+      ],
+      "author": {
+        "name": "Nasrin Mostafazadeh"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",

@@ -1,0 +1,39 @@
+{
+  "id": "instructions-for-naacl-hlt-2019-demo-track-proceedings",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "7 years ago",
+  "author": {
+    "name": "Nasrin Mostafazadeh",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the NAACL-HLT 2019 Demo Track proceedings. Provides the required two-column format, double-blind review support with anonymization and line-numbered ruler, title/author/affiliation formatting (with author names included for Demo Track submissions), natbib-based citation commands, and DOI-linked bibliography support via hyperref.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "naaclhlt2019",
+    "times",
+    "latexsym",
+    "url"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "naacl",
+    "demo-track",
+    "nlp",
+    "computational-linguistics",
+    "template"
+  ]
+}
