@@ -3337,6 +3337,52 @@
       }
     },
     {
+      "id": "ison-2022-template",
+      "name": "Ison 2022 Template",
+      "shortDescription": "Official LaTeX template for the Interactive Sonification (ISon) Workshop 2022 proceedings. Provides two-column ICAD-derived formatting, single/two-author title blocks with address and thanks/sthanks footnote support, nine-point body text option, boldfaced numbered section headings, custom fancy header/footer with electronic page numbering, and IEEE-style bibliography, based on a custom ison2022 style file.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "5 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "ison2022",
+        "amssymb",
+        "amsmath",
+        "epsfig"
+      ],
+      "files": [
+        "latex-template-ISon2022/IEEEbib.bst",
+        "latex-template-ISon2022/ison2022.sty",
+        "latex-template-ISon2022/paper.pdf",
+        "latex-template-ISon2022/paper.tex",
+        "latex-template-ISon2022/pics/dir.eps",
+        "latex-template-ISon2022/pics/dir.pdf",
+        "latex-template-ISon2022/references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ison-2022-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ison-2022-template",
+      "size": "183.5KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "ison",
+        "sonification",
+        "acoustics",
+        "template"
+      ],
+      "author": {
+        "name": "Tim Ziemer, Thomas Hermann, Roberto Bresin"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
