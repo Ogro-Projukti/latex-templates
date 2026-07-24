@@ -1,0 +1,53 @@
+{
+  "id": "jrda-2022-abstract-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "4 years ago",
+  "author": {
+    "name": "Debora Alves",
+    "github": ""
+  },
+  "description": "Official LaTeX abstract template for the Journée Régionale des Doctorants en Automatique (JRDA) 2022. Provides a one-page abstract format with a branded logo header, multi-author/multi-affiliation blocks via authblk with a corresponding-author footer, numbered sections in sans-serif Helvetica, a dedicated figure-caption/listing style, and natbib citations, based on a custom JRDA document class shared with the IAHR Young Professionals Network lineage.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "array",
+    "graphicx",
+    "inputenc",
+    "geometry",
+    "helvet",
+    "authblk",
+    "xcolor",
+    "hyperref",
+    "parskip",
+    "fancyhdr",
+    "lineno",
+    "titlesec",
+    "natbib",
+    "listings",
+    "float",
+    "rotating",
+    "subfigure",
+    "caption"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "jrda",
+    "automatique",
+    "doctorants",
+    "abstract",
+    "template"
+  ]
+}

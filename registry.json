@@ -3774,6 +3774,65 @@
       }
     },
     {
+      "id": "jrda-2022-abstract-template",
+      "name": "Jrda 2022 Abstract Template",
+      "shortDescription": "Official LaTeX abstract template for the Journée Régionale des Doctorants en Automatique (JRDA) 2022. Provides a one-page abstract format with a branded logo header, multi-author/multi-affiliation blocks via authblk with a corresponding-author footer, numbered sections in sans-serif Helvetica, a dedicated figure-caption/listing style, and natbib citations, based on a custom JRDA document class shared with the IAHR Young Professionals Network lineage.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "4 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "array",
+        "graphicx",
+        "inputenc",
+        "geometry",
+        "helvet",
+        "authblk",
+        "xcolor",
+        "hyperref",
+        "parskip",
+        "fancyhdr",
+        "lineno",
+        "titlesec",
+        "natbib",
+        "listings",
+        "float",
+        "rotating",
+        "subfigure",
+        "caption"
+      ],
+      "files": [
+        "Abstract_template.tex",
+        "JRDA.bib",
+        "JRDA.bst",
+        "JRDA.cls",
+        "Logo_header.png"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/jrda-2022-abstract-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/jrda-2022-abstract-template",
+      "size": "77.9KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "jrda",
+        "automatique",
+        "doctorants",
+        "abstract",
+        "template"
+      ],
+      "author": {
+        "name": "Debora Alves"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
