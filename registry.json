@@ -3729,6 +3729,51 @@
       }
     },
     {
+      "id": "joint-event-euromech-colloquium-on-data-driven-fluid-dynamics2nd-ercoftac-workshop-on-machine-learning-for-fluid-dynamics-2-4-april-2025-london-uk",
+      "name": "Joint Event Euromech Colloquium On Data Driven Fluid Dynamics2nd Ercoftac Workshop On Machine Learning For Fluid Dynamics 2 4 April 2025 London Uk",
+      "shortDescription": "Official LaTeX one-page abstract template for the joint Euromech Colloquium on Data-Driven Fluid Dynamics and 2nd ERCOFTAC Workshop on Machine Learning for Fluid Dynamics (London, 2-4 April 2025). Provides a branded logo header with event title banner, centered title/author/affiliation block with superscript affiliation markers and corresponding-author email, figure support, and a numbered bibliography, based on the plain article class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "graphicx",
+        "geometry",
+        "times",
+        "authblk"
+      ],
+      "files": [
+        "Lastname_Firstname_main.tex",
+        "Logo_header.pdf",
+        "references.bib",
+        "sample_figure.pdf"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/joint-event-euromech-colloquium-on-data-driven-fluid-dynamics2nd-ercoftac-workshop-on-machine-learning-for-fluid-dynamics-2-4-april-2025-london-uk",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/joint-event-euromech-colloquium-on-data-driven-fluid-dynamics2nd-ercoftac-workshop-on-machine-learning-for-fluid-dynamics-2-4-april-2025-london-uk",
+      "size": "1.7MB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "euromech",
+        "ercoftac",
+        "fluid-dynamics",
+        "machine-learning",
+        "abstract",
+        "template"
+      ],
+      "author": {
+        "name": "Luca Magri"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",

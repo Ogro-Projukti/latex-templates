@@ -1,0 +1,40 @@
+{
+  "id": "joint-event-euromech-colloquium-on-data-driven-fluid-dynamics2nd-ercoftac-workshop-on-machine-learning-for-fluid-dynamics-2-4-april-2025-london-uk",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "Luca Magri",
+    "github": ""
+  },
+  "description": "Official LaTeX one-page abstract template for the joint Euromech Colloquium on Data-Driven Fluid Dynamics and 2nd ERCOFTAC Workshop on Machine Learning for Fluid Dynamics (London, 2-4 April 2025). Provides a branded logo header with event title banner, centered title/author/affiliation block with superscript affiliation markers and corresponding-author email, figure support, and a numbered bibliography, based on the plain article class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "graphicx",
+    "geometry",
+    "times",
+    "authblk"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "euromech",
+    "ercoftac",
+    "fluid-dynamics",
+    "machine-learning",
+    "abstract",
+    "template"
+  ]
+}
