@@ -1,0 +1,45 @@
+{
+  "id": "international-conference-on-computational-processing-of-portuguese-propor",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "5 months ago",
+  "author": {
+    "name": "PROPOR",
+    "github": ""
+  },
+  "description": "Official LaTeX template for PROPOR (International Conference on Computational Processing of Portuguese), adapted from the standard *ACL style files to support submissions written in Portuguese. Provides the required two-column format, double-blind review support, title/author/affiliation formatting, natbib-based citation commands, and DOI-linked bibliography support, based on the acl.sty package shared across ACL-family conferences.",
+  "compatibleWith": [
+    "pdflatex",
+    "xelatex",
+    "lualatex"
+  ],
+  "packages": [
+    "acl",
+    "times",
+    "latexsym",
+    "fontenc",
+    "inputenc",
+    "microtype",
+    "inconsolata",
+    "graphicx"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "propor",
+    "portuguese",
+    "nlp",
+    "computational-linguistics",
+    "template"
+  ]
+}
