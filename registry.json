@@ -2694,6 +2694,51 @@
       }
     },
     {
+      "id": "instructions-for-ranlp-2025-proceedings",
+      "name": "Instructions For Ranlp 2025 Proceedings",
+      "shortDescription": "Official LaTeX template for RANLP 2025 (Recent Advances in Natural Language Processing) conference proceedings. Provides the required two-column format, double-blind review support with anonymization and line-numbered ruler, title/author/affiliation formatting, natbib-based citation commands, and DOI-linked bibliography support via hyperref, based on the ACL/NAACL/EMNLP line of style files.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "a year ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "ranlp2023",
+        "times",
+        "latexsym",
+        "microtype"
+      ],
+      "files": [
+        "acl_natbib.bst",
+        "anthology.bib",
+        "Instructions_for_RANLP_2023_Proceedings.pdf",
+        "ranlp2023.bib",
+        "ranlp2023.sty",
+        "ranlp2023.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/instructions-for-ranlp-2025-proceedings",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/instructions-for-ranlp-2025-proceedings",
+      "size": "32.2MB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "ranlp",
+        "nlp",
+        "computational-linguistics",
+        "template"
+      ],
+      "author": {
+        "name": "Ivelina Nikolova-Koleva and Nikolai Nikolov"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
