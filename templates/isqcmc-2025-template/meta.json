@@ -1,0 +1,45 @@
+{
+  "id": "isqcmc-2025-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "Paulo Itaborai",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the International Symposium on Quantum Computing and Musical Creativity (ISQCMC) 2025. Provides two-column A4 formatting, double-blind anonymization support via redacted author/affiliation blocks, multi-institution author tagging with email formatting, and a custom syntax-highlighted code listing style with a bundled OPENQASM language definition, based on a custom isqcmc2025 style file derived from the SBCM template lineage.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "isqcmc2025",
+    "graphicx",
+    "url",
+    "anonymize",
+    "listings",
+    "geometry",
+    "caption",
+    "newtxtext",
+    "newtxmath",
+    "fix-cm",
+    "xcolor"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "isqcmc",
+    "quantum-computing",
+    "music",
+    "template"
+  ]
+}

@@ -3435,6 +3435,58 @@
       }
     },
     {
+      "id": "isqcmc-2025-template",
+      "name": "Isqcmc 2025 Template",
+      "shortDescription": "Official LaTeX template for the International Symposium on Quantum Computing and Musical Creativity (ISQCMC) 2025. Provides two-column A4 formatting, double-blind anonymization support via redacted author/affiliation blocks, multi-institution author tagging with email formatting, and a custom syntax-highlighted code listing style with a bundled OPENQASM language definition, based on a custom isqcmc2025 style file derived from the SBCM template lineage.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "isqcmc2025",
+        "graphicx",
+        "url",
+        "anonymize",
+        "listings",
+        "geometry",
+        "caption",
+        "newtxtext",
+        "newtxmath",
+        "fix-cm",
+        "xcolor"
+      ],
+      "files": [
+        "anonymize.sty",
+        "example.bib",
+        "fig/bloch.png",
+        "isqcmc2025.sty",
+        "paper_isqcmc.pdf",
+        "paper_isqcmc.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/isqcmc-2025-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/isqcmc-2025-template",
+      "size": "1001.6KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "isqcmc",
+        "quantum-computing",
+        "music",
+        "template"
+      ],
+      "author": {
+        "name": "Paulo Itaborai"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
