@@ -1,0 +1,128 @@
+\documentclass[twocolumn]{svjour3}          % twocolumn option for two-column layout
+
+\usepackage{graphicx}                       % standard LaTeX graphics tool
+\usepackage{amsmath,amsfonts,amssymb}       % for mathematical symbols and fonts
+\usepackage{hyperref}                       % for hyperlinks
+%\usepackage{caption}                        % for better captioning
+\usepackage{float}                          % for placing figures/tables
+\usepackage{lipsum}                         % for dummy text (optional)
+\usepackage{newtxtext}                      % Times font for text
+\usepackage{newtxmath}                      % Times font for math (with bold support)
+\usepackage{multirow}                       % for multi-row tables
+\usepackage[title]{appendix}                % for appendices
+\usepackage{xcolor}                         % for color
+\usepackage{textcomp}                       % for text symbols
+\usepackage{booktabs}                       % for better table rules
+\usepackage{algorithm}                      % for algorithm environment
+\usepackage{algpseudocode}                  % for pseudocode within algorithms
+\usepackage{listings}                       % for code listings
+
+\journalname{Springer Journal}              % Define the journal name (optional)
+
+\title{ITNG Conference LaTeX Template}
+\author{First Author\textsuperscript{1,2*} \and 
+        Second Author\textsuperscript{2,3†} \and 
+        Third Author\textsuperscript{1,2†}}
+\institute{
+    \textsuperscript{1}Department, Organization, Street, City, 100190, State, Country. \\
+    \textsuperscript{2}Department, Organization, Street, City, 10587, State, Country. \\
+    \textsuperscript{3}Department, Organization, Street, City, 610101, State, Country. \\
+    *Corresponding author(s). E-mail(s): \href{mailto:iauthor@gmail.com}{iauthor@gmail.com} \\
+    Contributing authors: \href{mailto:iiauthor@gmail.com}{iiauthor@gmail.com}; \href{mailto:iiiauthor@gmail.com}{iiiauthor@gmail.com} \\
+    †These authors contributed equally to this work.
+}
+
+\date{}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is the abstract for the two-column article. The abstract provides a brief summary of the work.
+\keywords{keyword1 \and keyword2 \and keyword3}
+\end{abstract}
+
+\section{Introduction}
+\label{intro}
+This is the introduction section. Here you will explain the motivation for your research or project \cite{Galyardt14mmm}.
+\lipsum[1-2]  % Dummy text for the introduction section
+
+\section{Methods}
+\label{methods}
+In this section, you describe the methods and processes used in your research.
+\lipsum[3-4]
+
+\section{Results}
+\label{results}
+This is the section where you present your results.
+\lipsum[5-6]
+
+\section{Tables}\label{sec5}
+Tables can be inserted via the normal table and tabular environment. Footnotes can be placed inside tables using \verb+\footnotetext[]{...}+ tags. For the corresponding footnote mark use \verb+\footnotemark[...]+.
+
+\begin{table}[H]
+\caption{Caption text}\label{tab1}%
+\begin{tabular}{@{}llll@{}}
+\toprule
+Column 1 & Column 2  & Column 3 & Column 4\\
+\midrule
+row 1    & data 1   & data 2  & data 3  \\
+row 2    & data 4   & data 5\footnotemark[1]  & data 6  \\
+row 3    & data 7   & data 8  & data 9\footnotemark[2]  \\
+\bottomrule
+\end{tabular}
+\footnotetext[1]{Example of a first table footnote.}
+\footnotetext[2]{Example of a second table footnote.}
+\end{table}
+
+\section{Equations}\label{sec4}
+For display equations (with auto-generated equation numbers) use the equation or align environments:
+\begin{equation}
+\|\tilde{X}(k)\|^2 \leq\frac{\sum\limits_{i=1}^{p}\left\|\tilde{Y}_i(k)\right\|^2+\sum\limits_{j=1}^{q}\left\|\tilde{Z}_j(k)\right\|^2 }{p+q}.\label{eq1}
+\end{equation}
+\begin{align}
+D_\mu &=  \partial_\mu - ig \frac{\lambda^a}{2} A^a_\mu \nonumber \\
+F^a_{\mu\nu} &= \partial_\mu A^a_\nu - \partial_\nu A^a_\mu + g f^{abc} A^b_\mu A^a_\nu \label{eq2}
+\end{align}
+
+\section{Algorithms, Program codes and Listings}\label{sec7}
+Use \verb+algorithm+ and \verb+algpseudocode+ for setting algorithms:
+
+\begin{algorithm}
+\caption{Calculate $y = x^n$}\label{algo1}
+\begin{algorithmic}[1]
+\Require $n \geq 0 \vee x \neq 0$
+\Ensure $y = x^n$ 
+\State $y \Leftarrow 1$
+\If{$n < 0$}
+    \State $X \Leftarrow 1 / x$
+    \State $N \Leftarrow -n$
+\Else
+    \State $X \Leftarrow x$
+    \State $N \Leftarrow n$
+\EndIf
+\While{$N \neq 0$}
+    \If{$N$ is even}
+        \State $X \Leftarrow X \times X$
+        \State $N \Leftarrow N / 2$
+    \Else
+        \State $y \Leftarrow y \times X$
+        \State $N \Leftarrow N - 1$
+    \EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+\section{Conclusion}
+\label{conclusion}
+Summarize the key findings of your work in this section.
+\lipsum[9]
+
+\begin{acknowledgements}
+Acknowledgments go here.
+\end{acknowledgements}
+
+\bibliographystyle{spmpsci}  % Springer preferred numbered style
+\bibliography{bibliography.bib}
+
+\end{document}
