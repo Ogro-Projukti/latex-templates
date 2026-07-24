@@ -1,0 +1,41 @@
+{
+  "id": "international-conference-on-geospatial-information-sciences-igisc-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "5 years ago",
+  "author": {
+    "name": "Alejandro Molina Villegas",
+    "github": ""
+  },
+  "description": "LaTeX template for the International Conference on Geospatial Information Sciences (iGISc), based on the Springer contributed-volume book class. Provides title/author/institute formatting with footnote-style affiliations, starred and printed abstract environments, numbered sections through sub-subsection level, figure/table/equation formatting with sidecaption support, and a standard bibliography environment.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "type1cm",
+    "makeidx",
+    "graphicx",
+    "multicol",
+    "footmisc",
+    "newtxtext",
+    "newtxmath"
+  ],
+  "license": "Other (as stated in the work)",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "igisc",
+    "geospatial",
+    "gis",
+    "template"
+  ]
+}

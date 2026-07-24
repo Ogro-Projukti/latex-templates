@@ -2956,6 +2956,58 @@
       }
     },
     {
+      "id": "international-conference-on-geospatial-information-sciences-igisc-template",
+      "name": "International Conference On Geospatial Information Sciences Igisc Template",
+      "shortDescription": "LaTeX template for the International Conference on Geospatial Information Sciences (iGISc), based on the Springer contributed-volume book class. Provides title/author/institute formatting with footnote-style affiliations, starred and printed abstract environments, numbered sections through sub-subsection level, figure/table/equation formatting with sidecaption support, and a standard bibliography environment.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "5 years ago",
+      "license": "Other (as stated in the work)",
+      "packages": [
+        "type1cm",
+        "makeidx",
+        "graphicx",
+        "multicol",
+        "footmisc",
+        "newtxtext",
+        "newtxmath"
+      ],
+      "files": [
+        "authorsample.pdf",
+        "authorsample.tex",
+        "figure.pdf",
+        "references.tex",
+        "spbasic.bst",
+        "spmpsci.bst",
+        "spphys.bst",
+        "svind.ist",
+        "svindd.ist",
+        "svmult.cls"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/international-conference-on-geospatial-information-sciences-igisc-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/international-conference-on-geospatial-information-sciences-igisc-template",
+      "size": "311.0KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "igisc",
+        "geospatial",
+        "gis",
+        "template"
+      ],
+      "author": {
+        "name": "Alejandro Molina Villegas"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
