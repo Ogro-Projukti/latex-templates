@@ -1,0 +1,54 @@
+{
+  "id": "interspeech-paper-kit",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "7 months ago",
+  "author": {
+    "name": "TPC Chairs Interspeech 2026",
+    "github": ""
+  },
+  "description": "Official LaTeX Paper Kit for Interspeech 2026. Provides double-blind review support with a camera-ready toggle, structured author/affiliation/ORCID handling with equal-contribution and corresponding-author markers, keyword and abstract fields, line numbering for the review version, and IEEE-format bibliography, based on a custom document class maintained by ISCA.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "graphicx",
+    "amssymb",
+    "amsmath",
+    "bm",
+    "textcomp",
+    "booktabs",
+    "caption",
+    "siunitx",
+    "xspace",
+    "url",
+    "lipsum",
+    "tipa",
+    "enumitem",
+    "xkeyval",
+    "calc",
+    "xcolor",
+    "tikz",
+    "lineno",
+    "hyperref",
+    "comment"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "interspeech",
+    "speech",
+    "signal-processing",
+    "template"
+  ]
+}
