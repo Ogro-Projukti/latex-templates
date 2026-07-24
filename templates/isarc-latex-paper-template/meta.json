@@ -1,0 +1,38 @@
+{
+  "id": "isarc-latex-paper-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "3 years ago",
+  "author": {
+    "name": "Borja Garcia de Soto (garcia.de.soto@nyu.edu) and Nas Gopee",
+    "github": ""
+  },
+  "description": "Official LaTeX template for manuscripts submitted to ISARC, the International Symposium on Automation and Robotics in Construction. Provides the required title/author/affiliation/email formatting, bold abstract and keywords blocks, three levels of numbered headings, figure/table/equation formatting with landscape support, and automatic reference formatting via BibTeX.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "ISARC",
+    "lscape",
+    "hologo"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "isarc",
+    "automation",
+    "robotics",
+    "construction",
+    "template"
+  ]
+}

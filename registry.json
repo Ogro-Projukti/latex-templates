@@ -3132,6 +3132,49 @@
       }
     },
     {
+      "id": "isarc-latex-paper-template",
+      "name": "Isarc Latex Paper Template",
+      "shortDescription": "Official LaTeX template for manuscripts submitted to ISARC, the International Symposium on Automation and Robotics in Construction. Provides the required title/author/affiliation/email formatting, bold abstract and keywords blocks, three levels of numbered headings, figure/table/equation formatting with landscape support, and automatic reference formatting via BibTeX.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "3 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "ISARC",
+        "lscape",
+        "hologo"
+      ],
+      "files": [
+        "ISARC.bib",
+        "ISARC.sty",
+        "ISARC_ExampleFigure.pdf",
+        "ISARC_Instruction_camera-ready.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/isarc-latex-paper-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/isarc-latex-paper-template",
+      "size": "183.7KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "isarc",
+        "automation",
+        "robotics",
+        "construction",
+        "template"
+      ],
+      "author": {
+        "name": "Borja Garcia de Soto (garcia.de.soto@nyu.edu) and Nas Gopee"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
