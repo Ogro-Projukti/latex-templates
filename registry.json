@@ -3071,6 +3071,67 @@
       }
     },
     {
+      "id": "interspeech-paper-kit-2",
+      "name": "Interspeech Paper Kit 2",
+      "shortDescription": "Official LaTeX Paper Kit for Interspeech 2025. Provides double-blind review support with a camera-ready toggle, structured author/affiliation handling with numbered affiliation superscripts, keyword and abstract fields, line numbering for the review version, and IEEE-format bibliography, based on a custom document class maintained by ISCA.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "graphicx",
+        "amssymb",
+        "amsmath",
+        "bm",
+        "textcomp",
+        "booktabs",
+        "caption",
+        "siunitx",
+        "xspace",
+        "url",
+        "lipsum",
+        "tipa",
+        "enumitem",
+        "xkeyval",
+        "calc",
+        "lineno",
+        "hyperref",
+        "comment"
+      ],
+      "files": [
+        "figure.pdf",
+        "IEEEtran.bst",
+        "Interspeech.cls",
+        "mybib.bib",
+        "README.txt",
+        "template.tex",
+        "template_for_camera_ready.pdf",
+        "template_for_review_version.pdf"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/interspeech-paper-kit-2",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/interspeech-paper-kit-2",
+      "size": "476.6KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "interspeech",
+        "speech",
+        "signal-processing",
+        "template"
+      ],
+      "author": {
+        "name": "Simon King, Sébastien Le Maguer, Luciana Ferrer, Tomi Kinnunen, Esther Klabbers, Antoine Serrurier"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
