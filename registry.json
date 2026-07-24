@@ -3607,6 +3607,66 @@
       }
     },
     {
+      "id": "itng-overleaf-template-abstract",
+      "name": "Itng Overleaf Template Abstract",
+      "shortDescription": "Official LaTeX abstract/short-paper template for the International Conference on Information Technology: New Generations (ITNG). Provides a one-column Springer-journal layout with a branded manuscript header box and logo, multi-author/multi-affiliation title blocks with corresponding/contributing-author email handling, keyword listing, table and equation formatting, algorithm/pseudocode support, appendices, and Springer's numbered bibliography style, based on the svjour3 document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "graphicx",
+        "amsmath",
+        "amsfonts",
+        "amssymb",
+        "hyperref",
+        "float",
+        "lipsum",
+        "newtxtext",
+        "newtxmath",
+        "multirow",
+        "appendix",
+        "xcolor",
+        "textcomp",
+        "booktabs",
+        "algorithm",
+        "algpseudocode",
+        "listings"
+      ],
+      "files": [
+        "bibliography.bib",
+        "ITNG.jpg",
+        "main.tex",
+        "spbasic.bst",
+        "spmpsci.bst",
+        "spphys.bst",
+        "svglov3.clo",
+        "svjour3.cls"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/itng-overleaf-template-abstract",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/itng-overleaf-template-abstract",
+      "size": "202.1KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "itng",
+        "information-technology",
+        "abstract",
+        "template"
+      ],
+      "author": {
+        "name": "Noha Hazzazi"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",

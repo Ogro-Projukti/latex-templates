@@ -1,0 +1,51 @@
+{
+  "id": "itng-overleaf-template-abstract",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "Noha Hazzazi",
+    "github": ""
+  },
+  "description": "Official LaTeX abstract/short-paper template for the International Conference on Information Technology: New Generations (ITNG). Provides a one-column Springer-journal layout with a branded manuscript header box and logo, multi-author/multi-affiliation title blocks with corresponding/contributing-author email handling, keyword listing, table and equation formatting, algorithm/pseudocode support, appendices, and Springer's numbered bibliography style, based on the svjour3 document class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "graphicx",
+    "amsmath",
+    "amsfonts",
+    "amssymb",
+    "hyperref",
+    "float",
+    "lipsum",
+    "newtxtext",
+    "newtxmath",
+    "multirow",
+    "appendix",
+    "xcolor",
+    "textcomp",
+    "booktabs",
+    "algorithm",
+    "algpseudocode",
+    "listings"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "itng",
+    "information-technology",
+    "abstract",
+    "template"
+  ]
+}
