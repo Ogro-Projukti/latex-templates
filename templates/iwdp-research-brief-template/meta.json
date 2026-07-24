@@ -1,0 +1,56 @@
+{
+  "id": "iwdp-research-brief-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "IWDP organizers",
+    "github": ""
+  },
+  "description": "Official LaTeX template for abstracts and short papers submitted to the International Workshop on Detonation for Propulsion (IWDP). Provides one-column letter-size formatting with distinct branded headers/footers for the title page versus subsequent pages, colored numbered section headings, multi-author/multi-affiliation blocks via authblk, wrapped and full-width figure support, styled tables with a custom state-notation macro, and numbered natbib citations.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "amsmath",
+    "helvet",
+    "fancyhdr",
+    "bm",
+    "hyperref",
+    "url",
+    "color",
+    "lipsum",
+    "graphicx",
+    "geometry",
+    "floatrow",
+    "multirow",
+    "wrapfig",
+    "natbib",
+    "subfigure",
+    "booktabs",
+    "tikz",
+    "titlesec",
+    "xcolor",
+    "caption",
+    "authblk"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "iwdp",
+    "detonation",
+    "propulsion",
+    "aerospace",
+    "template"
+  ]
+}

@@ -3667,6 +3667,68 @@
       }
     },
     {
+      "id": "iwdp-research-brief-template",
+      "name": "Iwdp Research Brief Template",
+      "shortDescription": "Official LaTeX template for abstracts and short papers submitted to the International Workshop on Detonation for Propulsion (IWDP). Provides one-column letter-size formatting with distinct branded headers/footers for the title page versus subsequent pages, colored numbered section headings, multi-author/multi-affiliation blocks via authblk, wrapped and full-width figure support, styled tables with a custom state-notation macro, and numbered natbib citations.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "amsmath",
+        "helvet",
+        "fancyhdr",
+        "bm",
+        "hyperref",
+        "url",
+        "color",
+        "lipsum",
+        "graphicx",
+        "geometry",
+        "floatrow",
+        "multirow",
+        "wrapfig",
+        "natbib",
+        "subfigure",
+        "booktabs",
+        "tikz",
+        "titlesec",
+        "xcolor",
+        "caption",
+        "authblk"
+      ],
+      "files": [
+        "figures/figure1.pdf",
+        "figures/figure2.png",
+        "info.json",
+        "library.bib",
+        "main.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/iwdp-research-brief-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/iwdp-research-brief-template",
+      "size": "187.9KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "iwdp",
+        "detonation",
+        "propulsion",
+        "aerospace",
+        "template"
+      ],
+      "author": {
+        "name": "IWDP organizers"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
