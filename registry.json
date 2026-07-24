@@ -3175,6 +3175,58 @@
       }
     },
     {
+      "id": "iscs-extended-abstract-template",
+      "name": "Iscs Extended Abstract Template",
+      "shortDescription": "Official LaTeX template for extended abstract and show-and-tell submissions to the International Symposium on Computational Sensing (ISCS). Provides the required 9pt two-column IEEE conference format, title/author/affiliation blocks with superscript affiliation markers, abstract, and numbered bibliography, based on the IEEEtran document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "amssymb",
+        "amsthm",
+        "amsmath",
+        "array",
+        "graphicx",
+        "subfig",
+        "xspace",
+        "natbib",
+        "stmaryrd",
+        "xcolor",
+        "mathtools",
+        "float",
+        "textcomp"
+      ],
+      "files": [
+        "IEEEtran.cls",
+        "Main.tex",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/iscs-extended-abstract-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/iscs-extended-abstract-template",
+      "size": "272.4KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "iscs",
+        "computational-sensing",
+        "abstract",
+        "extended-abstract",
+        "template"
+      ],
+      "author": {
+        "name": "ISCS general chairs"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
