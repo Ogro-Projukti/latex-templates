@@ -2650,6 +2650,50 @@
       }
     },
     {
+      "id": "instructions-for-nodalida-baltic-hlt-2025-submissions",
+      "name": "Instructions For Nodalida Baltic Hlt 2025 Submissions",
+      "shortDescription": "Official LaTeX template for NoDaLiDa/Baltic-HLT 2025 proceedings. Provides the required two-column format, double-blind review support with anonymization and line-numbered ruler, title/author/affiliation formatting, natbib-based citation commands, and ACL-style bibliography, adapted from the NAACL/ACL line of conference style files.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "nodalida2025",
+        "times",
+        "url",
+        "latexsym"
+      ],
+      "files": [
+        "acl_natbib.bst",
+        "nodalida2025.bib",
+        "nodalida2025.sty",
+        "nodalida2025.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/instructions-for-nodalida-baltic-hlt-2025-submissions",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/instructions-for-nodalida-baltic-hlt-2025-submissions",
+      "size": "91.6KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "nodalida",
+        "baltic-hlt",
+        "nlp",
+        "computational-linguistics",
+        "template"
+      ],
+      "author": {
+        "name": "Sara Stymne"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",

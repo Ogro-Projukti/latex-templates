@@ -1,0 +1,39 @@
+{
+  "id": "instructions-for-nodalida-baltic-hlt-2025-submissions",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "Sara Stymne",
+    "github": ""
+  },
+  "description": "Official LaTeX template for NoDaLiDa/Baltic-HLT 2025 proceedings. Provides the required two-column format, double-blind review support with anonymization and line-numbered ruler, title/author/affiliation formatting, natbib-based citation commands, and ACL-style bibliography, adapted from the NAACL/ACL line of conference style files.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "nodalida2025",
+    "times",
+    "url",
+    "latexsym"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "nodalida",
+    "baltic-hlt",
+    "nlp",
+    "computational-linguistics",
+    "template"
+  ]
+}
