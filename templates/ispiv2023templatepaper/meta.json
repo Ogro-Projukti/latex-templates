@@ -1,0 +1,44 @@
+{
+  "id": "ispiv2023templatepaper",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "4 years ago",
+  "author": {
+    "name": "The ISPIV 2023 Organizing Committee",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the International Symposium on Particle Image Velocimetry (ISPIV) 2023. Provides a one-column, letter-size layout with large bold title/author/affiliation blocks, a branded first-page fancy header with symposium name and dates, custom abstract and acknowledgments sections, subfigure support, and a dedicated bibliography style, based on a custom ISPIV2023_Template_Paper_Class document class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "pslatex",
+    "graphicx",
+    "fancyhdr",
+    "amsmath",
+    "amssymb",
+    "textcomp",
+    "natbib",
+    "geometry",
+    "subfigure",
+    "hyperref"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "ispiv",
+    "particle-image-velocimetry",
+    "fluid-dynamics",
+    "template"
+  ]
+}

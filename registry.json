@@ -3383,6 +3383,58 @@
       }
     },
     {
+      "id": "ispiv2023templatepaper",
+      "name": "Ispiv2023templatepaper",
+      "shortDescription": "Official LaTeX template for the International Symposium on Particle Image Velocimetry (ISPIV) 2023. Provides a one-column, letter-size layout with large bold title/author/affiliation blocks, a branded first-page fancy header with symposium name and dates, custom abstract and acknowledgments sections, subfigure support, and a dedicated bibliography style, based on a custom ISPIV2023_Template_Paper_Class document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "4 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "pslatex",
+        "graphicx",
+        "fancyhdr",
+        "amsmath",
+        "amssymb",
+        "textcomp",
+        "natbib",
+        "geometry",
+        "subfigure",
+        "hyperref"
+      ],
+      "files": [
+        "figs/test.eps",
+        "figs/test.pdf",
+        "ISPIV2023_BibliographyStyle.bst",
+        "ISPIV2023_References.bib",
+        "ISPIV2023_template.pdf",
+        "ISPIV2023_Template_Paper.tex",
+        "ISPIV2023_Template_Paper_Class.cls"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ispiv2023templatepaper",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ispiv2023templatepaper",
+      "size": "151.8KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "ispiv",
+        "particle-image-velocimetry",
+        "fluid-dynamics",
+        "template"
+      ],
+      "author": {
+        "name": "The ISPIV 2023 Organizing Committee"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
