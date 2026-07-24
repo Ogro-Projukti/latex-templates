@@ -2512,6 +2512,61 @@
       }
     },
     {
+      "id": "instrucoes-para-submissao-de-trabalhos-na-ii-semap",
+      "name": "Instrucoes Para Submissao De Trabalhos Na Ii Semap",
+      "shortDescription": "Official LaTeX template for abstract submissions to the II SEMAP (Mostra da Pós-Graduação na Semana de Matemática Aplicada), based on the official SBMAC templates for CNMAC. Provides Portuguese-language formatting via babel, title/author/affiliation blocks with footnote-style email contacts, a custom title command, and a standard bibliography environment, within a strict 3-page limit for submissions.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "8 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "babel",
+        "inputenc",
+        "graphics",
+        "subfigure",
+        "graphicx",
+        "epsfig",
+        "amsmath",
+        "indentfirst",
+        "amsfonts",
+        "amssymb",
+        "amsthm",
+        "newlfont",
+        "longtable",
+        "cite",
+        "color",
+        "lipsum"
+      ],
+      "files": [
+        "report.cls",
+        "SEMAP_TemplateResumo.pdf",
+        "SEMAP_TemplateResumo.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/instrucoes-para-submissao-de-trabalhos-na-ii-semap",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/instrucoes-para-submissao-de-trabalhos-na-ii-semap",
+      "size": "128.5KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "semap",
+        "sbmac",
+        "portuguese",
+        "abstract",
+        "template"
+      ],
+      "author": {
+        "name": "Comissão Organizadora da II SEMAP"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "instructions-for-authors-of-sbc-book-chapters",
       "name": "Instructions For Authors Of Sbc Book Chapters",
       "shortDescription": "Official template for SBC (Brazilian Computer Society) book chapters, describing the required style for articles and short papers submitted to SBC conferences. Provides bilingual (English/Portuguese) abstract and resumo support, chapter-numbered section headings, figure and table caption formatting, and citation guidelines, based on a custom document class.",

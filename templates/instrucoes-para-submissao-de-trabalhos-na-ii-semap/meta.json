@@ -1,0 +1,51 @@
+{
+  "id": "instrucoes-para-submissao-de-trabalhos-na-ii-semap",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "8 years ago",
+  "author": {
+    "name": "Comissão Organizadora da II SEMAP",
+    "github": ""
+  },
+  "description": "Official LaTeX template for abstract submissions to the II SEMAP (Mostra da Pós-Graduação na Semana de Matemática Aplicada), based on the official SBMAC templates for CNMAC. Provides Portuguese-language formatting via babel, title/author/affiliation blocks with footnote-style email contacts, a custom title command, and a standard bibliography environment, within a strict 3-page limit for submissions.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "babel",
+    "inputenc",
+    "graphics",
+    "subfigure",
+    "graphicx",
+    "epsfig",
+    "amsmath",
+    "indentfirst",
+    "amsfonts",
+    "amssymb",
+    "amsthm",
+    "newlfont",
+    "longtable",
+    "cite",
+    "color",
+    "lipsum"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "semap",
+    "sbmac",
+    "portuguese",
+    "abstract",
+    "template"
+  ]
+}
