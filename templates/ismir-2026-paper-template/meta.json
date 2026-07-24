@@ -1,0 +1,41 @@
+{
+  "id": "ismir-2026-paper-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "4 months ago",
+  "author": {
+    "name": "ISMIR 2026 Scientific Program and Publications Team",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the International Society for Music Information Retrieval Conference (ISMIR) 2026. Provides double-blind submission support with automatic line numbering and author anonymization toggled via a single package option, one/two/three/multi-author title blocks, a branded first-page copyright/license notice, IEEE-style numbered citations, and dedicated AI Usage and Ethics Statement sections, based on a custom ismir document class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "fontenc",
+    "inputenc",
+    "ismir",
+    "amsmath",
+    "cite",
+    "url",
+    "graphicx",
+    "color"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "ismir",
+    "music-information-retrieval",
+    "template"
+  ]
+}

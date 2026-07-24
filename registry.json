@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-24",
+  "updated": "2026-07-25",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -3279,6 +3279,57 @@
       ],
       "author": {
         "name": "ISE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "ismir-2026-paper-template",
+      "name": "Ismir 2026 Paper Template",
+      "shortDescription": "Official LaTeX template for the International Society for Music Information Retrieval Conference (ISMIR) 2026. Provides double-blind submission support with automatic line numbering and author anonymization toggled via a single package option, one/two/three/multi-author title blocks, a branded first-page copyright/license notice, IEEE-style numbered citations, and dedicated AI Usage and Ethics Statement sections, based on a custom ismir document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "4 months ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "fontenc",
+        "inputenc",
+        "ismir",
+        "amsmath",
+        "cite",
+        "url",
+        "graphicx",
+        "color"
+      ],
+      "files": [
+        "latex/cc_by.eps",
+        "latex/cc_by.pdf",
+        "latex/cc_by.png",
+        "latex/cite.sty",
+        "latex/example.png",
+        "latex/IEEEtran.bst",
+        "latex/ismir.sty",
+        "latex/ISMIR2026_template.tex",
+        "latex/ISMIRtemplate.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ismir-2026-paper-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ismir-2026-paper-template",
+      "size": "212.7KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "ismir",
+        "music-information-retrieval",
+        "template"
+      ],
+      "author": {
+        "name": "ISMIR 2026 Scientific Program and Publications Team"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",
