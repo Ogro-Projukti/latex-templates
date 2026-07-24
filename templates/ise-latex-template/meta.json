@@ -1,0 +1,53 @@
+{
+  "id": "ise-latex-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "3 years ago",
+  "author": {
+    "name": "ISE",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the International Symposium on Energy: Energy Transition, Green Hydrogen and Sustainable Industry (ISE). Provides bilingual (Portuguese/English) title and language switching, custom abstract environment, author/affiliation blocks, formatted section/subsection headings with lettered subsection numbering, figure/table formatting, IEEE-style biblatex citations, and a branded fancy header with logo, based on a custom ISESettings style include.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "inputenc",
+    "fontenc",
+    "babel",
+    "times",
+    "graphicx",
+    "fancyhdr",
+    "lipsum",
+    "authblk",
+    "geometry",
+    "indentfirst",
+    "titlesec",
+    "amsmath",
+    "amssymb",
+    "amsfonts",
+    "caption",
+    "footmisc",
+    "biblatex",
+    "csquotes"
+  ],
+  "license": "LaTeX Project Public License 1.3c",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "ise",
+    "energy",
+    "sustainability",
+    "hydrogen",
+    "template"
+  ]
+}

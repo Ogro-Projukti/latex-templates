@@ -3227,6 +3227,65 @@
       }
     },
     {
+      "id": "ise-latex-template",
+      "name": "Ise Latex Template",
+      "shortDescription": "Official LaTeX template for the International Symposium on Energy: Energy Transition, Green Hydrogen and Sustainable Industry (ISE). Provides bilingual (Portuguese/English) title and language switching, custom abstract environment, author/affiliation blocks, formatted section/subsection headings with lettered subsection numbering, figure/table formatting, IEEE-style biblatex citations, and a branded fancy header with logo, based on a custom ISESettings style include.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "3 years ago",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "inputenc",
+        "fontenc",
+        "babel",
+        "times",
+        "graphicx",
+        "fancyhdr",
+        "lipsum",
+        "authblk",
+        "geometry",
+        "indentfirst",
+        "titlesec",
+        "amsmath",
+        "amssymb",
+        "amsfonts",
+        "caption",
+        "footmisc",
+        "biblatex",
+        "csquotes"
+      ],
+      "files": [
+        "ISESettings.tex",
+        "line.png",
+        "logo.png",
+        "main.tex",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/ise-latex-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/ise-latex-template",
+      "size": "97.9KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "ise",
+        "energy",
+        "sustainability",
+        "hydrogen",
+        "template"
+      ],
+      "author": {
+        "name": "ISE"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",

@@ -1,0 +1,84 @@
+
+
+
+%% This is the ISE LaTeX settings for authors of the The International Symposium on Energy: Energy Transition, Green Hydrogen and Sustainable Industry
+
+%% Support sites:
+%%% https://app.ciente.studio/ise2023/submissions
+
+%% Contributors:
+%% Darlene J. Dullius (2023)
+
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall the ISE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+
+%%% Margins
+
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+% Headings
+\pagestyle{fancy}
+\fancyhead{}
+\setlength{\headheight}{53.0188pt}
+\fancyhead[L]{\includegraphics[height=1.72cm]{logo.png}}
+\fancyhead[R]{\vspace{0.3cm}\shortstack{\textit{\fontsize{8.5}{10}\selectfont The International Symposium on Energy: Energy Transition, Green Hydrogen and Sustainable Industry} \\ \textit{\fontsize{8.5}{10}\selectfont 22-23 November 2023}}}
+\fancyhead[C]{\vspace{-0.2cm}\includegraphics[width=\headwidth]{line.png}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+% Description of the authors
+\renewcommand\Authfont{\fontsize{10}{13.2}\selectfont}
+\renewcommand\Affilfont{\fontsize{10}{12}\itshape}
+
+% Abstract
+\newenvironment{customabstract}%
+{\section*{\centering\bfseries\MakeUppercase{Abstract}}\fontsize{11pt}{13.2pt}\selectfont}%
+{}
+
+
+% indexation paragraph
+\setlength{\parindent}{1cm} 
+
+% Setting the style of section headings
+\titleformat*{\section}{\fontsize{11}{13.2}\selectfont\bfseries\fontfamily{ptm}\selectfont}
+\titleformat*{\subsection}{\fontsize{11}{13.2}\selectfont\itshape\fontfamily{ptm}\selectfont}
+\titleformat*{\subsubsection}{\fontsize{11}{13.2}\selectfont\itshape\fontfamily{ptm}\selectfont}
+
+%%% Title formatting subsection
+
+\titleformat{\subsection}[hang]{\normalfont\fontsize{11}{13.2}\selectfont\itshape}{\Alph{subsection}.}{0.5em}{}
+
+% Spacing after subsection
+\titlespacing*{\subsubsection}{1cm}{\baselineskip}{0.5\baselineskip} 
+
+
+% Formatting of the subsection title with 1cm indentation
+\titleformat{\subsubsection}[hang]{\normalfont\itshape\fontsize{11}{13.2}\selectfont}{\alph{subsubsection})}{1cm}{} 
+
+
+% Setting the style of references
+\renewcommand*{\bibfont}{\fontsize{11}{13.2}\selectfont\fontfamily{ptm}\selectfont}
+
+
+
+
+
+
+% Footnotes
+\renewcommand{\footnotesize}{\fontsize{9}{11}\selectfont}
+\renewcommand{\footnoterule}{\vspace*{-3pt}\hrule width 2in height 0.4pt \vspace*{2.6pt}}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+
+
+
+
+
