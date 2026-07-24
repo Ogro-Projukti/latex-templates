@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% COML26 SYSTEM FILE — DO NOT MODIFY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{article}
+
+% usepackages
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx} % For graphics
+\usepackage{fancyhdr} % Header handler
+\usepackage{geometry} % Controls paper geometry
+
+% margins
+\newgeometry{vmargin={30mm,30mm}, hmargin={25mm,25mm}} % Set the margins
+
+% header
+\pagestyle{fancy}
+\fancyhf{} % Clears headers before compilation
+\lhead{\textcolor[RGB]{57,162,126}{\small{\sffamily April 27--30, 2026\\[-3pt] Prague, Czech Republic}}} % Left header part
+\chead{} % Central header part
+\rhead{\includegraphics[height=20pt]{imgs/logo_coml.png}}
+\renewcommand{\headrulewidth}{1pt} % Controls header line thickness
+\setlength{\headheight}{24pt}
+
+% bibliography style
+%\bibliographystyle{IEEEtran} % IEEE bibliography style
+\bibliographystyle{plain}
+
+% new commands
+\renewcommand{\title}[1]{\begin{center}{\LARGE \section*{\textcolor[RGB]{24,47,78}{#1}}}\end{center}}
+
+% ==============================
+% AUTHORS & AFFILIATIONS SYSTEM
+% ==============================
+\newcommand{\authors}[1]{%
+  \begin{center}
+    #1
+  \end{center}
+}
+\newcommand{\aff}[1]{\textsuperscript{#1}}
+\newcommand{\affiliations}[1]{%
+  \vspace{-1pt}
+  \begin{center}
+    \small
+    #1
+  \end{center}
+}
+\newcommand{\affil}[2]{%
+  \textsuperscript{#1}\,#2\\
+}
+
+% ==============================
+% EMAILS SYSTEM
+% ==============================
+\newcommand{\email}[1]{\begin{center}{\small \texttt{\small #1}}\end{center}}
+
+% ==============================
+% KEYWORDS AND ACKNOWLEDGEMENT
+% ==============================
+\newcommand{\keywords}[1]{\subsubsection*{Keywords}#1}
+\newcommand{\acknowledgement}[1]{\subsubsection*{Acknowledgement}#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% END OF SYSTEM FILE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

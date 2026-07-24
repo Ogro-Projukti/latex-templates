@@ -1,0 +1,42 @@
+{
+  "id": "intercoml26-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "5 months ago",
+  "author": {
+    "name": "Jurij Ruzejnikov, Aleksej Gaj",
+    "github": ""
+  },
+  "description": "Official LaTeX template for extended abstract submissions to InterCoML (COST Action CA24136), 'NextGen Synergy: Control Theory & Machine Learning,' held in Prague, April 2026. Provides the required title, multi-author/multi-affiliation blocks, keyword and email fields, a styled fancy header with conference branding, and an acknowledgement command, based on a locked system style file.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "inputenc",
+    "xcolor",
+    "amssymb",
+    "amsmath",
+    "graphicx",
+    "fancyhdr",
+    "geometry"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "intercoml",
+    "control-theory",
+    "machine-learning",
+    "abstract",
+    "template"
+  ]
+}

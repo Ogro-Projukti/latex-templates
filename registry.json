@@ -2794,6 +2794,53 @@
       }
     },
     {
+      "id": "intercoml26-template",
+      "name": "Intercoml26 Template",
+      "shortDescription": "Official LaTeX template for extended abstract submissions to InterCoML (COST Action CA24136), 'NextGen Synergy: Control Theory & Machine Learning,' held in Prague, April 2026. Provides the required title, multi-author/multi-affiliation blocks, keyword and email fields, a styled fancy header with conference branding, and an acknowledgement command, based on a locked system style file.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "5 months ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "inputenc",
+        "xcolor",
+        "amssymb",
+        "amsmath",
+        "graphicx",
+        "fancyhdr",
+        "geometry"
+      ],
+      "files": [
+        "coml26-style.tex",
+        "imgs/logo_coml.png",
+        "main.tex",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/intercoml26-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/intercoml26-template",
+      "size": "54.2KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "intercoml",
+        "control-theory",
+        "machine-learning",
+        "abstract",
+        "template"
+      ],
+      "author": {
+        "name": "Jurij Ruzejnikov, Aleksej Gaj"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
