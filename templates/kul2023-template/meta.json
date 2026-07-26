@@ -1,0 +1,50 @@
+{
+  "id": "kul2023-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "3 years ago",
+  "author": {
+    "name": "Samuel Bengmark",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the Chalmers Conference on Teaching and Learning (KUL2023). Provides a one-column bilingual (English/Swedish) layout with dual abstract environments, multi-author email title blocks, table and figure support, and APA7-style citations via apacite, based on a custom KUL_style package built on the article class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "inputenc",
+    "hyperref",
+    "setspace",
+    "palatino",
+    "graphicx",
+    "float",
+    "titling",
+    "multirow",
+    "lscape",
+    "amsmath",
+    "amssymb",
+    "subcaption",
+    "geometry",
+    "babel",
+    "apacite",
+    "lipsum"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "kul2023",
+    "teaching-and-learning",
+    "bilingual",
+    "template"
+  ]
+}

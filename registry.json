@@ -4056,6 +4056,61 @@
       }
     },
     {
+      "id": "kul2023-template",
+      "name": "Kul2023 Template",
+      "shortDescription": "Official LaTeX template for the Chalmers Conference on Teaching and Learning (KUL2023). Provides a one-column bilingual (English/Swedish) layout with dual abstract environments, multi-author email title blocks, table and figure support, and APA7-style citations via apacite, based on a custom KUL_style package built on the article class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "3 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "inputenc",
+        "hyperref",
+        "setspace",
+        "palatino",
+        "graphicx",
+        "float",
+        "titling",
+        "multirow",
+        "lscape",
+        "amsmath",
+        "amssymb",
+        "subcaption",
+        "geometry",
+        "babel",
+        "apacite",
+        "lipsum"
+      ],
+      "files": [
+        "figures/example_figure.png",
+        "KUL_style.sty",
+        "main.tex",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/kul2023-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/kul2023-template",
+      "size": "39.7KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "kul2023",
+        "teaching-and-learning",
+        "bilingual",
+        "template"
+      ],
+      "author": {
+        "name": "Samuel Bengmark"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
