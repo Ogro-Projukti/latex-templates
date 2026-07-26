@@ -1,0 +1,40 @@
+{
+  "id": "kdmile-symposium-on-knowledge-discovery-mining-and-learning",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "3 months ago",
+  "author": {
+    "name": "Mirella M. Moro, Ricardo Cerri, Luiz Mershmann, Alexandre Plastino, Wagner Meira, André Carvalho",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the KDMiLe (Symposium on Knowledge Discovery, Mining and Learning). Provides a one-column ACM-Transactions-inspired layout with running headers/footers, multi-author/multi-institution affiliation blocks, abstract/CCS-concepts/keywords environments, custom theorem-like environments, narrow-figure and landscape table support, an appendix command, and Chicago-style author-year citations, based on a custom kdmile document class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "graphicx",
+    "url",
+    "fontenc",
+    "latexsym",
+    "comment",
+    "textcomp"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "kdmile",
+    "data-mining",
+    "machine-learning",
+    "template"
+  ]
+}

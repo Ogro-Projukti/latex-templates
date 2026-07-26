@@ -3961,6 +3961,52 @@
       }
     },
     {
+      "id": "kdmile-symposium-on-knowledge-discovery-mining-and-learning",
+      "name": "Kdmile Symposium On Knowledge Discovery Mining And Learning",
+      "shortDescription": "Official LaTeX template for the KDMiLe (Symposium on Knowledge Discovery, Mining and Learning). Provides a one-column ACM-Transactions-inspired layout with running headers/footers, multi-author/multi-institution affiliation blocks, abstract/CCS-concepts/keywords environments, custom theorem-like environments, narrow-figure and landscape table support, an appendix command, and Chicago-style author-year citations, based on a custom kdmile document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "3 months ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "graphicx",
+        "url",
+        "fontenc",
+        "latexsym",
+        "comment",
+        "textcomp"
+      ],
+      "files": [
+        "kdmile.bst",
+        "kdmile.cls",
+        "kdmileb.bib",
+        "template-kdmile.pdf",
+        "template-kdmile.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/kdmile-symposium-on-knowledge-discovery-mining-and-learning",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/kdmile-symposium-on-knowledge-discovery-mining-and-learning",
+      "size": "332.6KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "kdmile",
+        "data-mining",
+        "machine-learning",
+        "template"
+      ],
+      "author": {
+        "name": "Mirella M. Moro, Ricardo Cerri, Luiz Mershmann, Alexandre Plastino, Wagner Meira, André Carvalho"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
