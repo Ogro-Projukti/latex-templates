@@ -4007,6 +4007,55 @@
       }
     },
     {
+      "id": "knac-summer-student-proceedings-template-and-guide",
+      "name": "Knac Summer Student Proceedings Template And Guide",
+      "shortDescription": "Official LaTeX template for the Keck Northeast Astronomy Consortium (KNAC) Summer Student Research Symposium proceedings. Provides a single-column layout with student author and advisor fields, an abstract environment, figure and deluxetable (AASTeX-style) support, and either BibTeX-style or manual bibitem-based author-year citations via natbib, based on a custom knac document class built on top of a modified AASTeX class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "hyperref",
+        "geometry",
+        "latexsym",
+        "graphicx",
+        "amssymb",
+        "natbib",
+        "verbatim",
+        "newtxtext",
+        "newtxmath",
+        "times"
+      ],
+      "files": [
+        "doar21_sed.pdf",
+        "knac.cls",
+        "main.tex",
+        "references.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/knac-summer-student-proceedings-template-and-guide",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/knac-summer-student-proceedings-template-and-guide",
+      "size": "106.5KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "knac",
+        "astronomy",
+        "student-symposium",
+        "template"
+      ],
+      "author": {
+        "name": "KNAC Faculty"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",

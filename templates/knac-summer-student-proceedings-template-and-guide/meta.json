@@ -1,0 +1,44 @@
+{
+  "id": "knac-summer-student-proceedings-template-and-guide",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "KNAC Faculty",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the Keck Northeast Astronomy Consortium (KNAC) Summer Student Research Symposium proceedings. Provides a single-column layout with student author and advisor fields, an abstract environment, figure and deluxetable (AASTeX-style) support, and either BibTeX-style or manual bibitem-based author-year citations via natbib, based on a custom knac document class built on top of a modified AASTeX class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "hyperref",
+    "geometry",
+    "latexsym",
+    "graphicx",
+    "amssymb",
+    "natbib",
+    "verbatim",
+    "newtxtext",
+    "newtxmath",
+    "times"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "knac",
+    "astronomy",
+    "student-symposium",
+    "template"
+  ]
+}
