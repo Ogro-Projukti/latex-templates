@@ -1,0 +1,129 @@
+% The template needs to be compiled using LuaLaTeX or XeLaTeX
+
+\documentclass{article}
+\usepackage{jtdh}
+% \definecolor{Mycolor2}{HTML}{00F9DE}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[english]{babel} % Change to slovene if slovene paper
+\usepackage{url}   % simple URL typesetting
+\AtBeginDocument{\urlstyle{APACsame}}
+\usepackage[hang,flushmargin]{footmisc} % no indentation in footnotes
+\usepackage[colorlinks = true, linkcolor = black, urlcolor  = gray, citecolor = black, anchorcolor = black]{hyperref}
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[]{apacite}
+\usepackage{enumitem}
+\graphicspath{{img/}}
+% table styles
+\aboverulesep=0ex
+\belowrulesep=0ex
+\AtBeginDocument{%
+   \renewcommand{\BRetrievedFrom}{}
+}% Websites; note the space.
+
+%\addbibresource{references.bib} %Imports bibliography file 
+
+\title{Title of the paper}
+
+\author{
+  Name SURNAME,\textsuperscript{1} Name SURNAME\textsuperscript{1, 2}
+}
+\institutions{
+  \textsuperscript{1}Affiliation of the author(s) \par
+  \textsuperscript{2}Affiliation of the author(s)
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The recommended abstract length is 10 to 15 lines. The abstract is followed by 3--5 keywords in English (or the language of the paper).
+\end{abstract}
+\keywordseng{keyword 1, keyword 2, keyword 3}
+
+
+\section{Numbering, font, font size, line spacing, alignment, length}
+
+Use numbers for the numbering of titles and subtitles, always starting with 1 (1, 1.1, 1.1.1; please avoid using more than three levels). The recommended length of the paper is indicated on the conference webpage.
+
+
+\subsection{Referencing}
+
+Referencing in the main text should be as follows: \cite{leech1992corpora}. If a quote is provided, the page number is added like this: \cite[p.~107]{leech1992corpora} or \cite[pp.~107--108]{leech1992corpora}. If there are two authors, both are given: \cite{studije2005korpusnem}, but note that according to the APA standard (\href{https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date}{see here}), ampersands are used only in parenthetical citations, while narrative citations are written as follows: ``\citeA{studije2005korpusnem} show that\ldots'' If there are many authors, only the first name is given: \cite{biber1998corpus}, whereas all the authors are listed in the References section. Works of the same author from the same year are separated by adding letters (a, b, c, etc.) to the year of publication: \cite{erjavec-multext}. Several cited works by different authors are listed alphabetically, separated by semi-colons: \cite{erjavec-infotheca, tei}. When citing sources that are also available online, a URL as well as the reference (article, book etc.) are given. If the date is missing, cite the reference in the following way: \cite{creativecommons}.
+
+Some other citation examples:
+
+    \begin{itemize}
+        \item Book: \cite{biber1998corpus, studije2005korpusnem}
+        \item Journal article: \cite{biber1996investigating, erjavec-infotheca}
+        \item Article in an edited volume or conference proceedings: \cite{leech1992corpora, erjavec-multext}
+        \item Dictionary: \cite{sinclair1987collins, sskj}
+        \item Webpage: \cite{openwebspider, creativecommons, scott2008wordsmith, tei}
+    \end{itemize}
+
+An example of narrative citation: \citeA{biber1998corpus} claim\ldots
+
+Provide hyperlinks for all works cited that are (also) accessible online. If available, use persistent identifiers (DOIs or Handle URLs). Hyperlinks that are not persisten identifiers should be provided in the following way: Retrieved January 23, 2012, from \url{http://bos.zrc-sazu.si/sskj.html}. Each entry ends with a period unless it ends with a hyperlink. 
+
+\subsection{Referencing language resources} 
+Language resources, such as corpora, lexical databases, and language models, are listed together with all the other works cited in the References section. In terms of citation style, language resources are cited in the same way as books, which means that all the authors of the resource are listed. The repository in which the language resource is deposited is in terms of citation style treated in the same way as the publisher in the case of books. For instance: \cite{parliamentaryCorpus}. 
+
+If the same resource is available at different locations, cite the version that you have actually used in your work. For instance, in the case of the \textit{Gigafida 2.0} corpus, use \cite{gigafida-clarin} if you have accessed this corpus through a CLARIN.SI concordancer. On the other hand, use \cite{gigafida-cjvt} if you have accessed this corpus through the CJVT concordancer.
+
+When providing URLs, use a persistent identifier if available: \url{http://hdl.handle.net/11356/1748} for the \textit{siParl 3.0} \cite{parliamentaryCorpus} corpus.\footnote{By contrast, note that \url{https://www.clarin.si/repository/xmlui/handle/11356/1748} is not a persistent identifier.}
+
+\subsection{Footnotes, omissions, and longer quotations}
+Footnote numbers are placed after punctuation marks.\footnote{Footnote example text.} If the footnote consists of a hyperlink exclusively, there is no full stop at the end.
+
+For omissions in quotations we use slashes and ellipsis:  /\ldots/. The omission symbol is not needed at the beginning or at the end of the quotation. Longer quotations (more than three lines in length) should be set out as a separate paragraph in the quote environment There is no empty line before or after the paragraph containing a longer quotation. Example:
+
+\begin{quote}
+Da se je Ramovš zavzel za vpeljavo teh oblik – četudi pogojno – v oficielni pravopis, pa je bila posledica njegovega novega, samostojnega študija slovenskega jezika, pri katerem je odkril takoimenovani kratki nedoločnik kot prastaro, še predtrubarsko varianto dolgega nedoločnika \cite[p.~198]{vodusek1959}.
+\end{quote}
+
+\subsection{Tables and Figures}
+\subsubsection{Numbering and captioning of tables and figures}
+Tables and Figures should be numbered consecutively. In the text, references to Tables and Figures should be capitalised  (e.g. in Table \ref{slogi} we show\ldots). Table/Figure caption should be placed above the table/figure, it ends with a full stop.  In the tables, columns with text are left-aligned and volumns with numerical values are right-aligned. If needed, we use a comma to separate thousands and a period for decimals.
+\begin{table}[h]
+\caption{Caption.}
+\label{slogi}
+\begin{tabularx}{\textwidth}{X|X|r}
+\toprule
+\textit{Column 1} & \textit{Column 2} & \textit{Column 3 -- numerical values} \\ \midrule
+Row one          & Table text       & 1,900.12                                      \\
+Row two         & Table text       & 13,934.34                                     \\ \bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Special formatting}
+The suggested style for bulleted paragraphs is the following:
+\begin{itemize}
+    \item list, element 1;
+    \item list, element 2.
+\end{itemize}
+
+\acknowledgmenteng{
+Acknowledgment text.
+}
+
+\bibliographystyle{apacite}
+\urlstyle{same}
+\bibliography{references-eng}
+
+% \bibliography{references}  %%% Remove comment to use the external .bib file (using bibtex).
+%%% and comment out the ``thebibliography'' section.
+%\printbibliography
+
+\newpage
+\titleeng{Title in Slovene}
+\begin{abstracteng}
+At the end, on its own page, each article should have a title and abstract in Slovene (or in English if the article is written in Slovene). The abstract should be followed by 3--5 keywords in Slovene.  On the same page (at the bottom) is the licencing information.
+\end{abstracteng}
+
+\keywordseng{keyword 1, keyword 2, keyword 3}
+
+\end{document}

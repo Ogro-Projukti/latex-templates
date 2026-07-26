@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-25",
+  "updated": "2026-07-26",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -3826,6 +3826,70 @@
       ],
       "author": {
         "name": "Debora Alves"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "jtdh-predloga",
+      "name": "Jtdh Predloga",
+      "shortDescription": "Official LaTeX template for the Conference on Language Technologies and Digital Humanities (JTDH). Provides a compact custom page layout with sans-serif typography via IBM Plex, uppercase spaced section headings, English/Slovene abstract and keyword environments, APA-style citation and referencing via apacite, table and figure support, footnote and quote styling, and a Creative Commons license block, based on a custom jtdh style file requiring XeLaTeX or LuaLaTeX.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "inputenc",
+        "babel",
+        "url",
+        "footmisc",
+        "hyperref",
+        "booktabs",
+        "amsfonts",
+        "nicefrac",
+        "xcolor",
+        "graphicx",
+        "tabularx",
+        "apacite",
+        "enumitem",
+        "fontenc",
+        "fontspec",
+        "plex-otf",
+        "geometry",
+        "caption"
+      ],
+      "files": [
+        "apacite.bst",
+        "apacite.sty",
+        "img/cc-by-sa.pdf",
+        "jtdh-template-english.tex",
+        "jtdh-template-slovene.tex",
+        "jtdh.sty",
+        "references-eng.bib",
+        "references.bib",
+        "slovene.apc"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/jtdh-predloga",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/jtdh-predloga",
+      "size": "258.8KB",
+      "compatibleWith": [
+        "xelatex",
+        "lualatex"
+      ],
+      "tags": [
+        "conference",
+        "jtdh",
+        "digital-humanities",
+        "slovene",
+        "abstract",
+        "template"
+      ],
+      "author": {
+        "name": "Špela Arhar Holdt, Jakob Lenardič, Timotej Knez"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",

@@ -1,0 +1,54 @@
+{
+  "id": "jtdh-predloga",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "Špela Arhar Holdt, Jakob Lenardič, Timotej Knez",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the Conference on Language Technologies and Digital Humanities (JTDH). Provides a compact custom page layout with sans-serif typography via IBM Plex, uppercase spaced section headings, English/Slovene abstract and keyword environments, APA-style citation and referencing via apacite, table and figure support, footnote and quote styling, and a Creative Commons license block, based on a custom jtdh style file requiring XeLaTeX or LuaLaTeX.",
+  "compatibleWith": [
+    "xelatex",
+    "lualatex"
+  ],
+  "packages": [
+    "inputenc",
+    "babel",
+    "url",
+    "footmisc",
+    "hyperref",
+    "booktabs",
+    "amsfonts",
+    "nicefrac",
+    "xcolor",
+    "graphicx",
+    "tabularx",
+    "apacite",
+    "enumitem",
+    "fontenc",
+    "fontspec",
+    "plex-otf",
+    "geometry",
+    "caption"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "jtdh",
+    "digital-humanities",
+    "slovene",
+    "abstract",
+    "template"
+  ]
+}
