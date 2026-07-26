@@ -3897,6 +3897,70 @@
       }
     },
     {
+      "id": "juliacon-proceedings-template",
+      "name": "Juliacon Proceedings Template",
+      "shortDescription": "Official LaTeX proceedings template for JuliaCon. Provides a two-column IJCA-inspired layout with a branded logo header, multi-author/multi-affiliation support via authblk, abstract/terms/keywords environments, custom theorem-like environments, narrow-figure and landscape table support, a dedicated syntax-highlighted Julia code listing environment, and BibTeX-based referencing, based on a custom juliacon document class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "a year ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "helvet",
+        "latexsym",
+        "url",
+        "inputenc",
+        "fontenc",
+        "times",
+        "bm",
+        "graphicx",
+        "hyperref",
+        "authblk",
+        "caption",
+        "listings",
+        "xcolor",
+        "textcomp",
+        "amssymb",
+        "eurosym",
+        "calc"
+      ],
+      "files": [
+        "bib.tex",
+        "header.tex",
+        "jlcode.sty",
+        "journal_dat.tex",
+        "juliacon.bst",
+        "juliacon.cls",
+        "juliagraphs.png",
+        "logojuliacon.pdf",
+        "paper.tex",
+        "paper.yml",
+        "prep.rb",
+        "ref.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/juliacon-proceedings-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/juliacon-proceedings-template",
+      "size": "106.9KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "juliacon",
+        "julia",
+        "proceedings",
+        "template"
+      ],
+      "author": {
+        "name": "JuliaCon Proceedings Editors"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
