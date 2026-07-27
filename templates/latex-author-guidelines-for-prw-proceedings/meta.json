@@ -1,0 +1,47 @@
+{
+  "id": "latex-author-guidelines-for-prw-proceedings",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "3 years ago",
+  "author": {
+    "name": "vetmeduni | Computational Medicince",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the PRW (Pattern Recognition Workshop) Proceedings, based on the CVPR/ICCV template. Provides a two-column letter-paper layout with review-mode line rulers and confidentiality banner, paper-ID watermarking, an abstract environment, teaser and subfigure support via cleveref-aware captions, and numbered bracketed citations, based on a custom cvpr document class option package built on the article class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "cvpr",
+    "graphicx",
+    "amsmath",
+    "amssymb",
+    "booktabs",
+    "cleveref",
+    "cite",
+    "xspace",
+    "silence",
+    "etoolbox",
+    "caption",
+    "subcaption",
+    "url"
+  ],
+  "license": "LaTeX Project Public License 1.3c",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "prw",
+    "pattern-recognition",
+    "cvpr-style",
+    "template"
+  ]
+}

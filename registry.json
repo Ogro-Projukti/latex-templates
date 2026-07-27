@@ -4213,6 +4213,62 @@
       }
     },
     {
+      "id": "latex-author-guidelines-for-prw-proceedings",
+      "name": "Latex Author Guidelines For Prw Proceedings",
+      "shortDescription": "Official LaTeX template for the PRW (Pattern Recognition Workshop) Proceedings, based on the CVPR/ICCV template. Provides a two-column letter-paper layout with review-mode line rulers and confidentiality banner, paper-ID watermarking, an abstract environment, teaser and subfigure support via cleveref-aware captions, and numbered bracketed citations, based on a custom cvpr document class option package built on the article class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "3 years ago",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "cvpr",
+        "graphicx",
+        "amsmath",
+        "amssymb",
+        "booktabs",
+        "cleveref",
+        "cite",
+        "xspace",
+        "silence",
+        "etoolbox",
+        "caption",
+        "subcaption",
+        "url"
+      ],
+      "files": [
+        "info.json",
+        "latex/cvpr.sty",
+        "latex/egbib.bib",
+        "latex/ieee_fullname.bst",
+        "latex/Makefile",
+        "latex/PaperForReview.pdf",
+        "latex/PaperForReview.tex",
+        "latex/README.md"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/latex-author-guidelines-for-prw-proceedings",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/latex-author-guidelines-for-prw-proceedings",
+      "size": "198.8KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "prw",
+        "pattern-recognition",
+        "cvpr-style",
+        "template"
+      ],
+      "author": {
+        "name": "vetmeduni | Computational Medicince"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
