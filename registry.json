@@ -820,6 +820,42 @@
       }
     },
     {
+      "id": "exhilp-2023-abstract",
+      "name": "Exhilp 2023 Abstract",
+      "shortDescription": "One-page academic abstract template for the 5th Extremely High Intensity Laser Physics conference, including title, author affiliations, equation support, figure placement, and references.",
+      "category": "conference",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "ExHILP 2023 abstract template",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "amsmath",
+        "graphicx",
+        "geometry"
+      ],
+      "files": [
+        "abstract_ExHILP2023.tex",
+        "fig.jpg",
+        "info.json"
+      ],
+      "hasPreview": false,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/exhilp-2023-abstract",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/exhilp-2023-abstract",
+      "size": "771.5KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Chul Min Kim"
+      },
+      "contributorProfile": {
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
+      }
+    },
+    {
       "id": "ffk2025-abstract-template",
       "name": "Ffk2025 Abstract Template",
       "shortDescription": "Official one-page abstract template for the 10th International Conference on Precision Physics and Fundamental Physical Constants (FFK 2025). Designed for conference abstract submissions with support for author affiliations, figures, acknowledgments, and references.",

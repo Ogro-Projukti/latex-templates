@@ -1,0 +1,28 @@
+{
+  "id": "exhilp-2023-abstract",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": false,
+  "previewImagePath": "",
+  "lastUpdated": "ExHILP 2023 abstract template",
+  "author": {
+    "name": "Chul Min Kim",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Toufiq Ahmed",
+    "github": "https://github.com/ahmedtoufiq59"
+  },
+  "description": "One-page academic abstract template for the 5th Extremely High Intensity Laser Physics conference, including title, author affiliations, equation support, figure placement, and references.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "amsmath",
+    "graphicx",
+    "geometry"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
