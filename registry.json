@@ -186,6 +186,50 @@
       }
     },
     {
+      "id": "3dv-2021-author-kit",
+      "name": "3dv 2021 Author Kit",
+      "shortDescription": "Official-style 3DV 2021 conference paper template with review and final submission files, bibliography support, and IEEE-style formatting.",
+      "category": "conference",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "3DV 2021 author kit",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "times",
+        "epsfig",
+        "graphicx",
+        "amsmath",
+        "amssymb"
+      ],
+      "files": [
+        "3dv.sty",
+        "3dv_eso.sty",
+        "README.txt",
+        "egbib.bib",
+        "egpaper_final.tex",
+        "egpaper_for_review.tex",
+        "eso-pic.sty",
+        "ieee_fullname.bst",
+        "info.json"
+      ],
+      "hasPreview": false,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/3dv-2021-author-kit",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/3dv-2021-author-kit",
+      "size": "78.6KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "3DV2021 Program Chairs"
+      },
+      "contributorProfile": {
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
+      }
+    },
+    {
       "id": "abstract-template-oecs19",
       "name": "Abstract Template Oecs19",
       "shortDescription": "Official one-page abstract template for the 19th International Conference on Optics of Excitons in Confined Systems (OECS 19), Warsaw, Poland. Supports multiple author affiliations, figures, acknowledgments, and bibliography.",

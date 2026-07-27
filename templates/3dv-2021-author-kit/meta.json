@@ -1,0 +1,30 @@
+{
+  "id": "3dv-2021-author-kit",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": false,
+  "previewImagePath": "",
+  "lastUpdated": "3DV 2021 author kit",
+  "author": {
+    "name": "3DV2021 Program Chairs",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Toufiq Ahmed",
+    "github": "https://github.com/ahmedtoufiq59"
+  },
+  "description": "Official-style 3DV 2021 conference paper template with review and final submission files, bibliography support, and IEEE-style formatting.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "times",
+    "epsfig",
+    "graphicx",
+    "amsmath",
+    "amssymb"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
