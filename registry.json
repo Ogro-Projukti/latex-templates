@@ -347,6 +347,48 @@
       }
     },
     {
+      "id": "acii-2022-conference-paper",
+      "name": "Acii 2022 Conference Paper",
+      "shortDescription": "IEEE-style conference paper template for ACII 2022, including title, authors, abstract, keywords, figures, tables, equations, ethical impact statement, acknowledgment, and references.",
+      "category": "conference",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "ACII 2022 template",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "cite",
+        "amsmath",
+        "amssymb",
+        "amsfonts",
+        "algorithmic",
+        "graphicx",
+        "textcomp",
+        "xcolor"
+      ],
+      "files": [
+        "ACII2022-template.tex",
+        "IEEEtran.cls",
+        "fig1.png",
+        "info.json"
+      ],
+      "hasPreview": false,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/acii-2022-conference-paper",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/acii-2022-conference-paper",
+      "size": "296.5KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Desmond Ong"
+      },
+      "contributorProfile": {
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
+      }
+    },
+    {
       "id": "acii-2023-conference-paper",
       "name": "Acii 2023 Conference Paper",
       "shortDescription": "IEEE-style conference paper template for ACII 2023, including title, authors, abstract, keywords, figures, tables, equations, ethical impact statement, acknowledgments, and references.",

@@ -1,0 +1,34 @@
+{
+  "id": "acii-2022-conference-paper",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": false,
+  "previewImagePath": "",
+  "lastUpdated": "ACII 2022 template",
+  "author": {
+    "name": "Desmond Ong",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Toufiq Ahmed",
+    "github": "https://github.com/ahmedtoufiq59"
+  },
+  "description": "IEEE-style conference paper template for ACII 2022, including title, authors, abstract, keywords, figures, tables, equations, ethical impact statement, acknowledgment, and references.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "cite",
+    "amsmath",
+    "amssymb",
+    "amsfonts",
+    "algorithmic",
+    "graphicx",
+    "textcomp",
+    "xcolor"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
+
