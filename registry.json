@@ -4704,6 +4704,70 @@
       }
     },
     {
+      "id": "lisbon-laser-symposium-papertemplate",
+      "name": "Lisbon Laser Symposium Papertemplate",
+      "shortDescription": "Official LaTeX template for full paper submissions to the LISBON International Symposium on Applications of Laser and Imaging Techniques to Fluid Mechanics. Provides a single-column A4-landscape-derived (4:3 aspect ratio) layout with custom running headers/footers and first-page banner, custom title/author/address/abstract commands, palatino-styled equation numbering, and APA-style citations via apacite/natbib, based on a custom LxSymp_2026_Paper_Format document class built on extarticle.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 months ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "fontenc",
+        "mathpazo",
+        "lmodern",
+        "textcomp",
+        "graphicx",
+        "color",
+        "float",
+        "ulem",
+        "url",
+        "inputenc",
+        "amsmath",
+        "amssymb",
+        "amsfonts",
+        "calc",
+        "hyperref",
+        "array",
+        "booktabs",
+        "caption",
+        "apacite",
+        "natbib",
+        "palatino",
+        "nccmath",
+        "titlesec"
+      ],
+      "files": [
+        "LISBON_LaserSymposium_2026_paper_template.tex",
+        "LxSymp2026_Bib.bib",
+        "LxSymp_2026_Paper_Format.cls",
+        "Picture 1.jpg",
+        "Picture 2.png",
+        "Picture 3.png"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/lisbon-laser-symposium-papertemplate",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/lisbon-laser-symposium-papertemplate",
+      "size": "819.2KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "lisbon-laser-symposium",
+        "fluid-mechanics",
+        "laser-imaging",
+        "template"
+      ],
+      "author": {
+        "name": "LISBON Laser Symposium"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",

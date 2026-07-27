@@ -1,0 +1,57 @@
+{
+  "id": "lisbon-laser-symposium-papertemplate",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 months ago",
+  "author": {
+    "name": "LISBON Laser Symposium",
+    "github": ""
+  },
+  "description": "Official LaTeX template for full paper submissions to the LISBON International Symposium on Applications of Laser and Imaging Techniques to Fluid Mechanics. Provides a single-column A4-landscape-derived (4:3 aspect ratio) layout with custom running headers/footers and first-page banner, custom title/author/address/abstract commands, palatino-styled equation numbering, and APA-style citations via apacite/natbib, based on a custom LxSymp_2026_Paper_Format document class built on extarticle.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "fontenc",
+    "mathpazo",
+    "lmodern",
+    "textcomp",
+    "graphicx",
+    "color",
+    "float",
+    "ulem",
+    "url",
+    "inputenc",
+    "amsmath",
+    "amssymb",
+    "amsfonts",
+    "calc",
+    "hyperref",
+    "array",
+    "booktabs",
+    "caption",
+    "apacite",
+    "natbib",
+    "palatino",
+    "nccmath",
+    "titlesec"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "lisbon-laser-symposium",
+    "fluid-mechanics",
+    "laser-imaging",
+    "template"
+  ]
+}
