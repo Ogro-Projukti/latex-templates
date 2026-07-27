@@ -1,0 +1,45 @@
+{
+  "id": "latex-template-for-paper-submissions-to-the-icon-masted-icsf-and-other-ancs-conferences",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "Academy of Cognitive and Natural Sciences",
+    "github": ""
+  },
+  "description": "Official LaTeX template for paper submissions to the ICon-MaSTEd, ICSF, and other ANCS conferences, based on the IOP Journal of Physics: Conference Series (jpconf) class. Provides a single-column A4 layout with numbered superscript author/affiliation blocks, an abstract environment, sequential or section-based equation/figure/table numbering, custom cross-reference commands, an appendix mechanism, and numeric bracketed citations via iopart-num-long, based on the jpconf document class extended with the iopams package for bold Greek letters and extra AMS symbols.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "amsmath",
+    "hyperref",
+    "graphicx",
+    "enumitem",
+    "multirow",
+    "iopams",
+    "cite",
+    "amsgen",
+    "amsfonts",
+    "amssymb",
+    "amsbsy"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "iop",
+    "jpconf",
+    "ancs",
+    "template"
+  ]
+}

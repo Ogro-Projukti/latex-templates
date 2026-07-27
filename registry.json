@@ -4564,6 +4564,75 @@
       }
     },
     {
+      "id": "latex-template-for-paper-submissions-to-the-icon-masted-icsf-and-other-ancs-conferences",
+      "name": "Latex Template For Paper Submissions To The Icon Masted Icsf And Other Ancs Conferences",
+      "shortDescription": "Official LaTeX template for paper submissions to the ICon-MaSTEd, ICSF, and other ANCS conferences, based on the IOP Journal of Physics: Conference Series (jpconf) class. Provides a single-column A4 layout with numbered superscript author/affiliation blocks, an abstract environment, sequential or section-based equation/figure/table numbering, custom cross-reference commands, an appendix mechanism, and numeric bracketed citations via iopart-num-long, based on the jpconf document class extended with the iopams package for bold Greek letters and extra AMS symbols.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "amsmath",
+        "hyperref",
+        "graphicx",
+        "enumitem",
+        "multirow",
+        "iopams",
+        "cite",
+        "amsgen",
+        "amsfonts",
+        "amssymb",
+        "amsbsy"
+      ],
+      "files": [
+        "example.pdf",
+        "example.tex",
+        "example_bibliography.bib",
+        "img/acm.png",
+        "img/franklinmodeld.jpg",
+        "img/ieee.png",
+        "img/name-eps-converted-to.pdf",
+        "img/name.eps",
+        "img/name.pdf",
+        "img/ojs.png",
+        "img/overleaf_1.png",
+        "img/overleaf_2.png",
+        "img/overleaf_3.png",
+        "img/overleaf_4.png",
+        "img/photo_cc_.png",
+        "img/sciencedirect.png",
+        "img/scopus.png",
+        "img/wos.png",
+        "iopams.sty",
+        "iopart-num-long.bst",
+        "jpconf.cls",
+        "jpconf11.clo",
+        "Makefile"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/latex-template-for-paper-submissions-to-the-icon-masted-icsf-and-other-ancs-conferences",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/latex-template-for-paper-submissions-to-the-icon-masted-icsf-and-other-ancs-conferences",
+      "size": "18.9MB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "iop",
+        "jpconf",
+        "ancs",
+        "template"
+      ],
+      "author": {
+        "name": "Academy of Cognitive and Natural Sciences"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",
