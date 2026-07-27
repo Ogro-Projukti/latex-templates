@@ -1,0 +1,34 @@
+{
+  "id": "advml-frontiers-2024-conference-paper",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": false,
+  "previewImagePath": "",
+  "lastUpdated": "AdvML Frontiers 2024 template",
+  "author": {
+    "name": "AdvML-Frontiers",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Toufiq Ahmed",
+    "github": "https://github.com/ahmedtoufiq59"
+  },
+  "description": "Conference paper template for AdvML Frontiers 2024 supporting regular, position, and demo paper tracks with formatting for figures, tables, equations, appendices, and references.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "inputenc",
+    "fontenc",
+    "hyperref",
+    "url",
+    "booktabs",
+    "amsfonts",
+    "nicefrac",
+    "microtype",
+    "xcolor"
+  ],
+  "license": "Creative Commons CC BY 4.0"
+}
