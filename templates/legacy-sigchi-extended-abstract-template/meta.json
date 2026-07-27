@@ -1,0 +1,60 @@
+{
+  "id": "legacy-sigchi-extended-abstract-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "6 years ago",
+  "author": {
+    "name": "Association for Computing Machinery (ACM)",
+    "github": ""
+  },
+  "description": "Legacy LaTeX template for ACM SIGCHI Extended Abstract articles, retained for authors working on legacy documents after ACM's retirement of the format in favor of sigconf. Provides a landscape-orientation two-column layout with a wide left margin, sidebar/marginfigure/margintable environments for marginal content, CCS-concepts and keywords sections, teaser figures, and numeric or author-year citations via natbib, based on the acmart document class with the sigchi-a and nonacm options.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "acmart",
+    "xkeyval",
+    "xstring",
+    "iftex",
+    "microtype",
+    "etoolbox",
+    "booktabs",
+    "refcount",
+    "totpages",
+    "environ",
+    "textcase",
+    "natbib",
+    "graphicx",
+    "xcolor",
+    "geometry",
+    "manyfoot",
+    "cmap",
+    "caption",
+    "float",
+    "fancyhdr",
+    "comment",
+    "draftwatermark",
+    "libertine",
+    "zi4",
+    "newtxmath",
+    "balance"
+  ],
+  "license": "Other (as stated in the work)",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "acm",
+    "sigchi",
+    "extended-abstract",
+    "legacy"
+  ]
+}

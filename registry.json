@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -4626,6 +4626,77 @@
       ],
       "author": {
         "name": "Academy of Cognitive and Natural Sciences"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "legacy-sigchi-extended-abstract-template",
+      "name": "Legacy Sigchi Extended Abstract Template",
+      "shortDescription": "Legacy LaTeX template for ACM SIGCHI Extended Abstract articles, retained for authors working on legacy documents after ACM's retirement of the format in favor of sigconf. Provides a landscape-orientation two-column layout with a wide left margin, sidebar/marginfigure/margintable environments for marginal content, CCS-concepts and keywords sections, teaser figures, and numeric or author-year citations via natbib, based on the acmart document class with the sigchi-a and nonacm options.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "6 years ago",
+      "license": "Other (as stated in the work)",
+      "packages": [
+        "acmart",
+        "xkeyval",
+        "xstring",
+        "iftex",
+        "microtype",
+        "etoolbox",
+        "booktabs",
+        "refcount",
+        "totpages",
+        "environ",
+        "textcase",
+        "natbib",
+        "graphicx",
+        "xcolor",
+        "geometry",
+        "manyfoot",
+        "cmap",
+        "caption",
+        "float",
+        "fancyhdr",
+        "comment",
+        "draftwatermark",
+        "libertine",
+        "zi4",
+        "newtxmath",
+        "balance"
+      ],
+      "files": [
+        "ACM-Reference-Format.bbx",
+        "ACM-Reference-Format.bst",
+        "ACM-Reference-Format.cbx",
+        "ACM-Reference-Format.dbx",
+        "acmart.cls",
+        "acmart.pdf",
+        "legacy-sigchi-a.tex",
+        "README",
+        "sample-base.bib",
+        "sample-franklin.png"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/legacy-sigchi-extended-abstract-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/legacy-sigchi-extended-abstract-template",
+      "size": "1.2MB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "acm",
+        "sigchi",
+        "extended-abstract",
+        "legacy"
+      ],
+      "author": {
+        "name": "Association for Computing Machinery (ACM)"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",
