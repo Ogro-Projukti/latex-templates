@@ -4768,6 +4768,65 @@
       }
     },
     {
+      "id": "log-conference-2024",
+      "name": "Log Conference 2024",
+      "shortDescription": "Official LaTeX template for the Learning on Graphs (LoG) Conference 2024, based on the NeurIPS-derived log_2024 style file. Provides a single-column one-inch-margin letter-paper layout with review/preprint/eatrack modes, anonymized double-blind submission support with line numbers, running-title headers, a boxed title bar with conference notice footer, and numeric citations via natbib (or optional biblatex), based on the article document class extended with the log_2024 style package.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2 years ago",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "log_2024",
+        "booktabs",
+        "multirow",
+        "amsfonts",
+        "graphicx",
+        "duckuments",
+        "natbib",
+        "xspace",
+        "amsmath",
+        "inputenc",
+        "fontenc",
+        "url",
+        "microtype",
+        "etoolbox",
+        "xcolor",
+        "hyperref",
+        "geometry",
+        "caption",
+        "fancyhdr",
+        "lineno"
+      ],
+      "files": [
+        "log_2024.pdf",
+        "log_2024.sty",
+        "log_2024.tex",
+        "reference.bib"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/log-conference-2024",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/log-conference-2024",
+      "size": "224.6KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "log",
+        "machine-learning",
+        "graphs",
+        "template"
+      ],
+      "author": {
+        "name": "Vignesh Ram Somnath"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",

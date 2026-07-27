@@ -1,0 +1,54 @@
+{
+  "id": "log-conference-2024",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2 years ago",
+  "author": {
+    "name": "Vignesh Ram Somnath",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the Learning on Graphs (LoG) Conference 2024, based on the NeurIPS-derived log_2024 style file. Provides a single-column one-inch-margin letter-paper layout with review/preprint/eatrack modes, anonymized double-blind submission support with line numbers, running-title headers, a boxed title bar with conference notice footer, and numeric citations via natbib (or optional biblatex), based on the article document class extended with the log_2024 style package.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "log_2024",
+    "booktabs",
+    "multirow",
+    "amsfonts",
+    "graphicx",
+    "duckuments",
+    "natbib",
+    "xspace",
+    "amsmath",
+    "inputenc",
+    "fontenc",
+    "url",
+    "microtype",
+    "etoolbox",
+    "xcolor",
+    "hyperref",
+    "geometry",
+    "caption",
+    "fancyhdr",
+    "lineno"
+  ],
+  "license": "LaTeX Project Public License 1.3c",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "log",
+    "machine-learning",
+    "graphs",
+    "template"
+  ]
+}
