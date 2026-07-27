@@ -4163,6 +4163,56 @@
       }
     },
     {
+      "id": "latell26template",
+      "name": "Latell26template",
+      "shortDescription": "Official LaTeX template for the LaTeLL 2026 conference proceedings. Provides a two-column A4 layout with review-mode line numbers and confidentiality banner, blind-review-compatible title/author blocks, an abstract environment, resized figure/table captions, and natbib-based author-year citations with backward-compatible cite/newcite/shortcite aliases, based on a custom latell style package (derived from ACL-IJCNLP 2021) built on the article class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "13 days ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "latell",
+        "times",
+        "latexsym",
+        "microtype",
+        "hyperref",
+        "xcolor",
+        "caption",
+        "natbib",
+        "etoolbox"
+      ],
+      "files": [
+        "acl_natbib.bst",
+        "anthology.bib",
+        "Instructions_for_LaTeLL_2026_Proceedings.pdf",
+        "latell.bib",
+        "latell.sty",
+        "latell.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/latell26template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/latell26template",
+      "size": "32.2MB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "latell",
+        "linguistics",
+        "acl-style",
+        "template"
+      ],
+      "author": {
+        "name": "LaTeLL OC"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
       "id": "mom-2026-challenge-template",
       "name": "Mom 2026 Challenge Template",
       "shortDescription": "Official LaTeX template for preparing solution papers for the 2026 Model Management (MoM) Challenge using the ACM SIGCONF format.",

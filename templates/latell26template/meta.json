@@ -1,0 +1,43 @@
+{
+  "id": "latell26template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "13 days ago",
+  "author": {
+    "name": "LaTeLL OC",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the LaTeLL 2026 conference proceedings. Provides a two-column A4 layout with review-mode line numbers and confidentiality banner, blind-review-compatible title/author blocks, an abstract environment, resized figure/table captions, and natbib-based author-year citations with backward-compatible cite/newcite/shortcite aliases, based on a custom latell style package (derived from ACL-IJCNLP 2021) built on the article class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "latell",
+    "times",
+    "latexsym",
+    "microtype",
+    "hyperref",
+    "xcolor",
+    "caption",
+    "natbib",
+    "etoolbox"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "latell",
+    "linguistics",
+    "acl-style",
+    "template"
+  ]
+}
