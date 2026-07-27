@@ -1,0 +1,26 @@
+{
+  "id": "acra-2020-robotics-automation",
+  "version": "1.0.0",
+  "category": "conference",
+  "preview": false,
+  "previewImagePath": "",
+  "lastUpdated": "ACRA 2020 template",
+  "author": {
+    "name": "wafa johal",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Toufiq Ahmed",
+    "github": "https://github.com/ahmedtoufiq59"
+  },
+  "description": "Conference paper template for ACRA 2020, the Australasian Conference on Robotics and Automation, including two-column formatting, ACRA style support, named citations, and bibliography formatting.",
+  "compatibleWith": [
+    "tectonic",
+    "pdflatex",
+    "xelatex"
+  ],
+  "packages": [
+    "acra"
+  ],
+  "license": "LaTeX Project Public License 1.3c"
+}

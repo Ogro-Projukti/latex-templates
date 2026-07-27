@@ -396,6 +396,43 @@
       }
     },
     {
+      "id": "acra-2020-robotics-automation",
+      "name": "Acra 2020 Robotics Automation",
+      "shortDescription": "Conference paper template for ACRA 2020, the Australasian Conference on Robotics and Automation, including two-column formatting, ACRA style support, named citations, and bibliography formatting.",
+      "category": "conference",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "ACRA 2020 template",
+      "license": "LaTeX Project Public License 1.3c",
+      "packages": [
+        "acra"
+      ],
+      "files": [
+        "acra.sty",
+        "info.json",
+        "main.tex",
+        "named.bst",
+        "references.bib",
+        "universe.jpg"
+      ],
+      "hasPreview": false,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/acra-2020-robotics-automation",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/acra-2020-robotics-automation",
+      "size": "77.9KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "wafa johal"
+      },
+      "contributorProfile": {
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
+      }
+    },
+    {
       "id": "advml-frontiers-2024-conference-paper",
       "name": "Advml Frontiers 2024 Conference Paper",
       "shortDescription": "Conference paper template for AdvML Frontiers 2024 supporting regular, position, and demo paper tracks with formatting for figures, tables, equations, appendices, and references.",
