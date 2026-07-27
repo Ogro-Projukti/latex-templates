@@ -347,6 +347,57 @@
       }
     },
     {
+      "id": "acm-dis-2020-extended-abstract",
+      "name": "Acm Dis 2020 Extended Abstract",
+      "shortDescription": "Official ACM SIGCHI extended abstract template for DIS 2020, including ACM formatting, CCS concepts, figures, tables, bibliography, and reference style.",
+      "category": "conference",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "ACM DIS 2020 Extended Abstract template",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "fontenc",
+        "textcomp",
+        "helvet",
+        "graphicx",
+        "balance",
+        "booktabs",
+        "ccicons",
+        "ragged2e",
+        "hyperref"
+      ],
+      "files": [
+        "info.json",
+        "sigchi-latex-extended-abstracts/LaTeX SIGCHI Extended Abstract.pdf",
+        "sigchi-latex-extended-abstracts/SIGCHI-Reference-Format.bst",
+        "sigchi-latex-extended-abstracts/acmcopyright.sty",
+        "sigchi-latex-extended-abstracts/extended-abstract.pdf",
+        "sigchi-latex-extended-abstracts/extended-abstract.tex",
+        "sigchi-latex-extended-abstracts/figures/cats.png",
+        "sigchi-latex-extended-abstracts/figures/map.png",
+        "sigchi-latex-extended-abstracts/figures/sigchi-logo.png",
+        "sigchi-latex-extended-abstracts/preview.png",
+        "sigchi-latex-extended-abstracts/sample.bib",
+        "sigchi-latex-extended-abstracts/sigchi-ext.cls"
+      ],
+      "hasPreview": false,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/acm-dis-2020-extended-abstract",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/acm-dis-2020-extended-abstract",
+      "size": "3.4MB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "ACM DIS2020 committee"
+      },
+      "contributorProfile": {
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
+      }
+    },
+    {
       "id": "acm-mile-high-video-conference-2023-abstract",
       "name": "Acm Mile High Video Conference 2023 Abstract",
       "shortDescription": "ACM acmart-based short paper and abstract template for the Mile-High Video Conference 2023, including MHV 2023 metadata, CCS concepts, keywords, acknowledgments, and ACM reference formatting.",

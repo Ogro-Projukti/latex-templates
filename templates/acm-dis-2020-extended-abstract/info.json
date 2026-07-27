@@ -1,0 +1,11 @@
+{
+  "title": "ACM DIS2020 Extended Abstracts Submission Template",
+  "author": "ACM DIS2020 committee",
+  "last_updated": "7 years ago",
+  "license": "Creative Commons CC BY 4.0",
+  "abstract": "ACM DIS2020 Extended Abstracts paper format.\nFor more information see https://dis.acm.org/2020/",
+  "tags": [],
+  "open_as_template_url": "https://www.overleaf.com/project/new/template/12854?id=37931633&latexEngine=pdflatex&mainFile=sigchi-latex-extended-abstracts%2Fextended-abstract.tex&templateName=ACM+DIS2020+Extended+Abstracts+Submission+Template&texImage=texlive-full%3A2025.1",
+  "folder_name": "acm-dis2020-extended-abstracts-submission-template",
+  "template_url": "https://www.overleaf.com/latex/templates/acm-dis2020-extended-abstracts-submission-template/hfqfcctxqfbz"
+}
