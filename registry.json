@@ -4808,6 +4808,50 @@
         "name": "Siddartho Sarker Bipro",
         "github": "https://github.com/Siddhatho"
       }
+    },
+    {
+      "id": "warsaw-summer-school-advanced-optical-imaging-2024-abstract",
+      "name": "Warsaw Summer School Advanced Optical Imaging 2024 Abstract",
+      "shortDescription": "Academic abstract template for the Warsaw Summer School on Advanced Optical Imaging 2024, including title, author affiliations, section formatting, figure support, funding section, and references.",
+      "category": "conference",
+      "contributor": "Toufiq Ahmed",
+      "version": "1.0.0",
+      "lastUpdated": "Warsaw Summer School on Advanced Optical Imaging 2024 template",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "titlesec",
+        "tocbibind",
+        "epsf",
+        "exscale",
+        "times",
+        "babel",
+        "graphicx",
+        "amsmath",
+        "fancyhdr",
+        "caption"
+      ],
+      "files": [
+        "Candela-WSSAOI2024-abstract.tex",
+        "aoi-abstract.tex",
+        "images/Figure.png",
+        "info.json"
+      ],
+      "hasPreview": false,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/warsaw-summer-school-advanced-optical-imaging-2024-abstract",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/warsaw-summer-school-advanced-optical-imaging-2024-abstract",
+      "size": "823.5KB",
+      "compatibleWith": [
+        "tectonic",
+        "pdflatex",
+        "xelatex"
+      ],
+      "author": {
+        "name": "Piotr Wegrzyn"
+      },
+      "contributorProfile": {
+        "name": "Toufiq Ahmed",
+        "github": "https://github.com/ahmedtoufiq59"
+      }
     }
   ]
 }
