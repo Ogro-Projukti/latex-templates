@@ -1,0 +1,44 @@
+{
+  "id": "language-resources-and-evaluation-conference-2020-latex-template",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "7 years ago",
+  "author": {
+    "name": "LREC 2020 Organizers",
+    "github": ""
+  },
+  "description": "Official LaTeX template for the Language Resources and Evaluation Conference (LREC) 2020. Provides a two-column A4 layout with a custom title/author/affiliation block, an integrated abstract-and-keywords environment, separate bibliographical and language-resource reference lists via multibib, custom section heading styles, and parenthetical/narrative citation commands, based on a custom lrec style package built on the article class.",
+  "compatibleWith": [
+    "pdflatex"
+  ],
+  "packages": [
+    "lrec",
+    "multibib",
+    "graphicx",
+    "tabularx",
+    "soul",
+    "epstopdf",
+    "inputenc",
+    "hyperref",
+    "xstring",
+    "color"
+  ],
+  "license": "Creative Commons CC BY 4.0",
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "maintainer": {
+    "name": "OgroProjukti",
+    "github": "https://github.com/OgroProjukti"
+  },
+  "category": "conference",
+  "tags": [
+    "conference",
+    "lrec",
+    "language-resources",
+    "evaluation",
+    "template"
+  ]
+}

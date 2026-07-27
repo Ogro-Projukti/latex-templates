@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-07-26",
+  "updated": "2026-07-27",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -4104,6 +4104,58 @@
       ],
       "author": {
         "name": "Samuel Bengmark"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "language-resources-and-evaluation-conference-2020-latex-template",
+      "name": "Language Resources And Evaluation Conference 2020 Latex Template",
+      "shortDescription": "Official LaTeX template for the Language Resources and Evaluation Conference (LREC) 2020. Provides a two-column A4 layout with a custom title/author/affiliation block, an integrated abstract-and-keywords environment, separate bibliographical and language-resource reference lists via multibib, custom section heading styles, and parenthetical/narrative citation commands, based on a custom lrec style package built on the article class.",
+      "category": "conference",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "7 years ago",
+      "license": "Creative Commons CC BY 4.0",
+      "packages": [
+        "lrec",
+        "multibib",
+        "graphicx",
+        "tabularx",
+        "soul",
+        "epstopdf",
+        "inputenc",
+        "hyperref",
+        "xstring",
+        "color"
+      ],
+      "files": [
+        "languageresource.bib",
+        "lrec.bst",
+        "lrec.sty",
+        "lrec2020W-image1.eps",
+        "lrec2020W-image1.pdf",
+        "lrec2020W-xample-kc.bib",
+        "lrec2020W-xample-kc.tex"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/language-resources-and-evaluation-conference-2020-latex-template",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/language-resources-and-evaluation-conference-2020-latex-template",
+      "size": "522.9KB",
+      "compatibleWith": [
+        "pdflatex"
+      ],
+      "tags": [
+        "conference",
+        "lrec",
+        "language-resources",
+        "evaluation",
+        "template"
+      ],
+      "author": {
+        "name": "LREC 2020 Organizers"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",
