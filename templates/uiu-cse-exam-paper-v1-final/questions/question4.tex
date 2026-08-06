@@ -1,0 +1,37 @@
+% =====================================================================
+% QUESTION 4 — File I/O  (5 marks)
+% Demonstrates: plain prose + task bullets + before/after file table
+% =====================================================================
+\question{4}{5}
+
+\noindent The text file \texttt{src/transactions.txt} contains several lines,
+one purchase per line. Each line stores a customer ID (string), the customer
+name (string), and the purchase amount (double), separated by a single space.
+A sample input is shown in the left column below.
+
+\noindent Write a Java program that:
+\begin{itemize}[itemsep=2pt, topsep=4pt]
+    \item reads \texttt{src/transactions.txt} line by line, \hfill [1]
+    \item writes every customer ID and name to \texttt{src/customers.txt}, \hfill [1]
+    \item writes the customer name and amount to \texttt{src/summary.txt},
+          but only for purchases above \texttt{5000.0}, \hfill [2]
+    \item prints ``Processed N records.'' once all records are read. \hfill [1]
+\end{itemize}
+
+\noindent For the sample input below, your program must produce the output
+file shown on the right (purchases that are skipped appear as ---).
+
+\vspace{0.3cm}
+% plain tabular (not tabularx): this table has no X column, and tabularx's
+% natural-width measuring pass overflows even when the columns fit.
+{\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{|>{\raggedright\arraybackslash\ttfamily\small}p{0.40\textwidth}|>{\raggedright\arraybackslash\ttfamily\small}p{0.50\textwidth}|}
+\hline
+\textbf{\texttt{transactions.txt} (input)} & \textbf{\texttt{summary.txt} (output)} \\ \hline
+C-101 Ayesha 2400.0  & --- \\ \hline
+C-102 Tanvir 12400.0 & Tanvir 12400.0 \\ \hline
+C-103 Rakib 8700.0   & Rakib 8700.0 \\ \hline
+C-104 Samia 15600.0  & Samia 15600.0 \\ \hline
+C-105 Nadia 3400.0   & --- \\ \hline
+C-106 Farhan 1900.0  & --- \\ \hline
+\end{tabular}}

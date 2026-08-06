@@ -1,0 +1,54 @@
+% =====================================================================
+% QUESTION 3 — Collections framework task list  (5 marks)
+% Demonstrates: \javafile skeleton + plain itemize with per-task marks
+% =====================================================================
+\question{3}{5}
+
+\noindent You are given a class \texttt{Product} that models a store item.
+Inside the \texttt{main} method of \texttt{Inventory}, complete the five
+tasks below using the Java Collections Framework. At least one
+\texttt{ArrayList} must be used.
+
+\begin{javafile}{Inventory.java}
+class Product {
+    private String name;
+    private double unitPrice;
+    private int quantity;
+
+    public Product(String name, double unitPrice, int quantity) {
+        this.name = name;
+        this.unitPrice = unitPrice;
+        this.quantity = quantity;
+    }
+
+    public String getName()      { return name; }
+    public double getUnitPrice() { return unitPrice; }
+    public int    getQuantity()  { return quantity; }
+
+    public double totalPrice() {
+        return unitPrice * quantity;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (" + quantity + " @ " + unitPrice + ")";
+    }
+}
+
+public class Inventory {
+    public static void main(String[] args) {
+        // ---------- Complete tasks (i) to (v) below ----------
+    }
+}
+\end{javafile}
+
+\noindent\textbf{Tasks:}
+\begin{enumerate}[label=(\roman*), itemsep=2pt, topsep=4pt]
+    \item Declare an \texttt{ArrayList<Product>} named \texttt{products}. \hfill [1]
+    \item Insert three products: \texttt{"Pen", 5.0, 100},
+          \texttt{"Notebook", 40.0, 25} and \texttt{"Eraser", 3.0, 200}. \hfill [1]
+    \item Sort \texttt{products} in descending order of \texttt{totalPrice()}. \hfill [1]
+    \item Remove every product whose quantity is less than \texttt{30}. \hfill [1]
+    \item Print each remaining product, then print the total inventory value
+          (the sum of all \texttt{totalPrice()} values). \hfill [1]
+\end{enumerate}

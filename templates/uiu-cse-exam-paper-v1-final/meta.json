@@ -1,5 +1,5 @@
 {
-  "id": "uiu-cse-exam-paper-v1",
+  "id": "uiu-cse-exam-paper-v1-final",
   "version": "1.0.0",
   "preview": true,
   "previewImagePath": "preview.png",
@@ -12,7 +12,7 @@
     "name": "Siddartho Sarker Bipro",
     "github": "https://github.com/Siddhatho"
   },
-  "description": "Version 1 of the UIU CSE Examination Question Paper template. Features a traditional university exam layout with institutional branding, mark distribution, Java code listings, assessment tables, and learning outcome mapping.",
+  "description": "Version 1 of the UIU CSE Final Examination Question Paper template of Object Oriented Programming. Features a traditional university exam layout with institutional branding, mark distribution, Java code listings, assessment tables, and learning outcome mapping.",
   "compatibleWith": [
     "pdflatex",
     "xelatex",

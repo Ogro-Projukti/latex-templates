@@ -1,0 +1,58 @@
+% =====================================================================
+% QUESTION 2 — custom exceptions & try-catch-finally  (3 + 3 + 4 = 10 marks)
+% Demonstrates: \javafile skeleton + \iotable trace table
+% =====================================================================
+\question{2}{3 + 3 + 4 = 10}
+
+\noindent A bank account starts with a balance of \texttt{5000.0}. Complete
+the skeleton program \texttt{Bank.java} below so that a withdrawal larger
+than the current balance raises a user-defined exception, and every
+transaction is reported as finished.
+
+\begin{javafile}{Bank.java}
+// Bank.java -- complete the three marked sections
+class InsufficientFundsException extends Exception {
+    // ---------------- (a) Write your code here ----------------
+}
+
+public class Bank {
+    private double balance;
+
+    public Bank(double initialBalance) {
+        this.balance = initialBalance;
+    }
+
+    public void withdraw(double amount) throws InsufficientFundsException {
+        // ---------------- (b) Write your code here ----------------
+    }
+
+    public static void main(String[] args) {
+        // ---------------- (c) Write your code here ----------------
+    }
+}
+\end{javafile}
+
+\subquestion{a}{3}
+Write the \texttt{InsufficientFundsException} class. It must extend
+\texttt{Exception} and store a descriptive message that can later be read
+with \texttt{getMessage()}.
+
+\subquestion{b}{3}
+Complete the \texttt{withdraw} method. If \texttt{amount} exceeds
+the current balance, throw \texttt{Insufficient\-Funds\-Exception} with the
+message ``Withdrawal amount exceeds current balance.'' Otherwise, deduct
+\texttt{amount} from the balance.
+
+\subquestion{c}{4}
+Complete the \texttt{main} method. Create a \texttt{Bank} object with
+balance \texttt{5000.0}, call \texttt{withdraw(2000.0)} and
+\texttt{withdraw(7000.0)} inside a \texttt{try} block, catch the custom
+exception and print its message, and use a \texttt{finally} block that
+always prints ``Transaction processing completed.''
+
+\noindent Trace the program for the two calls and complete the table below.
+
+\begin{iotable}
+withdraw(2000.0) from a balance of 5000.0 & Withdrawal successful. Remaining balance: 3000.0. \newline Transaction processing completed. \\ \hline
+withdraw(7000.0) from a balance of 5000.0 & Insufficient\-Funds\-Exception: Withdrawal amount exceeds current balance. \newline Transaction processing completed. \\ \hline
+\end{iotable}

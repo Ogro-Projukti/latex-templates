@@ -1,0 +1,74 @@
+% =====================================================================
+% QUESTION 1 — abstract classes & interfaces  (4 + 6 = 10 marks)
+% Demonstrates: \javafile, \splitcode, \expectedoutput
+% =====================================================================
+\question{1}{4 + 6 = 10}
+
+\subquestion{a}{4}
+\textbf{Find and correct the errors.} The file \texttt{Shape.java} below is
+meant to declare an abstract class \texttt{Shape} that implements the
+\texttt{Comparable} interface. It contains \textbf{three} errors. For each
+error, state what is wrong and write the corrected line.
+
+\begin{javafile}{Shape.java}
+public abstract class Shape implements Comparable<Shape> {
+    protected String name;
+
+    public Shape(String name) {
+        this.name = name;
+    }
+
+    // ERROR 1: an abstract method must not have a body
+    public abstract double area() {
+        return 0.0;
+    }
+
+    // ERROR 2: a method declaration is missing its parentheses
+    abstract void printName;
+
+    // ERROR 3: an overriding method cannot reduce visibility
+    int compareTo(Shape other) {
+        return Double.compare(area(), other.area());
+    }
+}
+\end{javafile}
+
+\subquestion{b}{6}
+The interface \texttt{Operation} and its implementation \texttt{Calculator}
+are given on the left. Complete the code on the right so that the program
+prints the result of \texttt{apply(8, 12)}.
+
+\begin{splitcode}{Given Code}{Complete the Code}
+\begin{lstlisting}
+interface Operation {
+    int apply(int a, int b);
+}
+
+class Calculator implements Operation {
+    @Override
+    public int apply(int a, int b) {
+        return a + b;
+    }
+}
+\end{lstlisting}
+\splitdivider
+\begin{lstlisting}
+public class Main {
+    public static void main(String[] args) {
+        // 1. Declare an Operation reference that
+        //    points to a new Calculator object.
+        // 2. Call apply(8, 12) and print the result.
+        //
+        // WRITE YOUR CODE HERE
+    }
+}
+\end{lstlisting}
+\end{splitcode}
+
+\vspace{0.2cm}
+\noindent When completed correctly, the program must produce the console
+output shown below.
+
+\begin{expectedoutput}
+> Result: 20
+\end{expectedoutput}

@@ -1,0 +1,54 @@
+% =====================================================================
+% QUESTION 5 — class hierarchy & UML diagram  (6 + 4 = 10 marks)
+% Demonstrates: \umlclass, inheritance arrows, \expectedoutput
+% =====================================================================
+\question{5}{6 + 4 = 10}
+
+\noindent The UML diagram below shows a three-level inheritance hierarchy
+for a small shop. Implement the hierarchy in Java and complete the tasks
+that follow. Coordinates given to \texttt{\textbackslash umlclass} are in
+cm, measured from the origin of the diagram.
+
+\begin{center}
+\begin{tikzpicture}
+    \umlclass{Product}
+             {\texttt{- name : String}\\ \texttt{- price : double}}
+             {\texttt{+ Product(name, price)}\\ \texttt{+ getPrice() : double}\\ \texttt{+ describe() : String}}
+             {0}{0}
+    \umlclass{Category}
+             {\texttt{- categoryName : String}}
+             {\texttt{+ Category(name, price, categoryName)}\\ \texttt{+ describe() : String}}
+             {0}{-4.5}
+    \umlclass{Subcategory1}
+             {\texttt{- subName : String}}
+             {\texttt{+ Subcategory1(name, price, categoryName, subName)}\\ \texttt{+ describe() : String}}
+             {-3.5}{-9}
+    \umlclass{Subcategory2}
+             {\texttt{- subName : String}}
+             {\texttt{+ Subcategory2(name, price, categoryName, subName)}\\ \texttt{+ describe() : String}}
+             {3.5}{-9}
+    \draw[inherits] (Category) -- (Product);
+    \draw[inherits] (Subcategory1) -- (Category);
+    \draw[inherits] (Subcategory2) -- (Category);
+\end{tikzpicture}
+\end{center}
+
+\subquestion{a}{6}
+Implement \texttt{Product}, \texttt{Category}, \texttt{Subcategory1} and
+\texttt{Subcategory2} exactly as shown in the diagram. Every subclass must
+call its parent constructor with \texttt{super(...)} and override
+\texttt{describe()} so that it appends its own field to the parent's
+description.
+
+\subquestion{b}{4}
+Write a \texttt{main} method that creates one object of each class, stores
+all four in a \texttt{Product[]} array, and prints the result of
+\texttt{describe()} for each element. The expected console output is shown
+below.
+
+\begin{expectedoutput}
+> Pen (price: 5.0)\\
+> Pen (price: 5.0) | Category: Stationery\\
+> Pen (price: 5.0) | Category: Stationery | Sub: Writing\\
+> Pen (price: 5.0) | Category: Stationery | Sub: Packing
+\end{expectedoutput}
