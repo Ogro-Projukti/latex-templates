@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updated": "2026-08-06",
+  "updated": "2026-08-08",
   "templates": [
     {
       "id": "11th-workshop-space-engineering-technology",
@@ -5081,19 +5081,19 @@
         "graphicx"
       ],
       "files": [
-        "main.pdf",
         "main.tex",
-        "questions/question1.tex",
-        "questions/question2.tex",
-        "questions/question3.tex",
-        "questions/question4.tex",
-        "questions/question5.tex",
+        "sample.pdf",
+        "sample_questions/question1.tex",
+        "sample_questions/question2.tex",
+        "sample_questions/question3.tex",
+        "sample_questions/question4.tex",
+        "sample_questions/question5.tex",
         "uiu_logo.png"
       ],
       "hasPreview": true,
       "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/uiu-cse-exam-paper-v1-final",
       "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/uiu-cse-exam-paper-v1-final",
-      "size": "374.6KB",
+      "size": "374.9KB",
       "compatibleWith": [
         "pdflatex",
         "xelatex",
@@ -5116,6 +5116,79 @@
       "author": {
         "name": "Md Mahmudul Hasan",
         "github": "https://github.com/MahmudulHasn"
+      },
+      "contributorProfile": {
+        "name": "Siddartho Sarker Bipro",
+        "github": "https://github.com/Siddhatho"
+      }
+    },
+    {
+      "id": "uiu-cse-fydp-report-v1",
+      "name": "Uiu Cse Fydp Report V1",
+      "shortDescription": "Draft template for the Final Year Design Project (FYDP) Report in the BSCSE program of the Department of Computer Science and Engineering at United International University, Dhaka. Features a structured report layout with title page, abstract, acknowledgements, publications, table of contents, list of figures/tables, chaptered content (introduction, background, design, implementation, SIC, conclusion), and bibliography.",
+      "category": "Report/Thesis",
+      "contributor": "Siddartho Sarker Bipro",
+      "version": "1.0.0",
+      "lastUpdated": "2026-08-08",
+      "license": "CC BY 4.0",
+      "packages": [
+        "makeidx",
+        "url",
+        "natbib",
+        "framed",
+        "graphicx",
+        "longtable",
+        "amsfonts",
+        "amsmath",
+        "algorithm2e",
+        "hyperref",
+        "geometry",
+        "setspace",
+        "fancyhdr"
+      ],
+      "files": [
+        "0.0.title.tex",
+        "0.1.abstract.tex",
+        "0.2.ack.tex",
+        "0.3.pub.tex",
+        "1.intro.tex",
+        "2.back.tex",
+        "3.design.tex",
+        "4.implementation.tex",
+        "5.sic.tex",
+        "6.conclusion.tex",
+        "fydp.bib",
+        "fydp.idx",
+        "fydp.lof",
+        "fydp.lot",
+        "fydp.pdf",
+        "fydp.tex",
+        "uiu.png"
+      ],
+      "hasPreview": true,
+      "sourceUrl": "https://github.com/Ogro-Projukti/latex-templates/tree/main/templates/uiu-cse-fydp-report-v1",
+      "baseUrl": "https://raw.githubusercontent.com/Ogro-Projukti/latex-templates/main/templates/uiu-cse-fydp-report-v1",
+      "size": "367.7KB",
+      "compatibleWith": [
+        "pdflatex",
+        "xelatex",
+        "tectonic"
+      ],
+      "tags": [
+        "FYDP",
+        "final year design project",
+        "report",
+        "thesis",
+        "university",
+        "UIU",
+        "computer science",
+        "engineering",
+        "education",
+        "academic",
+        "bachelor thesis"
+      ],
+      "author": {
+        "name": "Swakkhar Shatabda"
       },
       "contributorProfile": {
         "name": "Siddartho Sarker Bipro",

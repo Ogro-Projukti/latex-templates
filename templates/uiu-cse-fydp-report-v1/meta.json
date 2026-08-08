@@ -1,0 +1,51 @@
+{
+  "id": "uiu-cse-fydp-report-v1",
+  "version": "1.0.0",
+  "preview": true,
+  "previewImagePath": "preview.png",
+  "lastUpdated": "2026-08-08",
+  "author": {
+    "name": "Swakkhar Shatabda",
+    "github": ""
+  },
+  "contributor": {
+    "name": "Siddartho Sarker Bipro",
+    "github": "https://github.com/Siddhatho"
+  },
+  "description": "Draft template for the Final Year Design Project (FYDP) Report in the BSCSE program of the Department of Computer Science and Engineering at United International University, Dhaka. Features a structured report layout with title page, abstract, acknowledgements, publications, table of contents, list of figures/tables, chaptered content (introduction, background, design, implementation, SIC, conclusion), and bibliography.",
+  "compatibleWith": [
+    "pdflatex",
+    "xelatex",
+    "tectonic"
+  ],
+  "packages": [
+    "makeidx",
+    "url",
+    "natbib",
+    "framed",
+    "graphicx",
+    "longtable",
+    "amsfonts",
+    "amsmath",
+    "algorithm2e",
+    "hyperref",
+    "geometry",
+    "setspace",
+    "fancyhdr"
+  ],
+  "license": "CC BY 4.0",
+  "tags": [
+    "FYDP",
+    "final year design project",
+    "report",
+    "thesis",
+    "university",
+    "UIU",
+    "computer science",
+    "engineering",
+    "education",
+    "academic",
+    "bachelor thesis"
+  ],
+  "category": "Report/Thesis"
+}
