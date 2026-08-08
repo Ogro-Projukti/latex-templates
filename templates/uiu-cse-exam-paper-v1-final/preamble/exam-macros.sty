@@ -1,0 +1,154 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{exam-macros}[2026/08/09 UIU CSE Exam Paper macros]
+
+\makeatletter
+
+% ============================================================
+% Required packages
+% ============================================================
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{listings}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{framed}
+\RequirePackage{tikz}
+\RequirePackage{enumitem}
+\RequirePackage{array}
+\usetikzlibrary{arrows.meta,positioning,shapes.multipart}
+
+% ============================================================
+% Code listing style (Java)
+% ============================================================
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{codebg}{rgb}{0.97,0.97,0.97}
+
+\lstdefinestyle{examjava}{
+  language=Java,
+  backgroundcolor=\color{codebg},
+  basicstyle=\small\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen}\itshape,
+  stringstyle=\color{mauve},
+  showstringspaces=false,
+  columns=flexible,
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  numbers=none,
+  frame=single,
+  rulecolor=\color{black!30},
+  xleftmargin=2pt,
+  xrightmargin=2pt,
+}
+\lstset{style=examjava}
+
+% ============================================================
+% \question{num}{marks}
+% Usage: \question{1}{4 + 6 = 10}
+% ============================================================
+\newcommand{\question}[2]{%
+  \section*{QUESTION #1 \hfill [#2 Marks]}%
+}
+
+% ============================================================
+% \subquestion{letter}{marks}
+% Usage: \subquestion{a}{4}
+% ============================================================
+\newcommand{\subquestion}[2]{%
+  \vspace{2pt}
+  \subsection*{#1) \hfill [#2 Marks]}%
+}
+
+% ============================================================
+% javafile environment
+% Usage: \begin{javafile}{Shape.java} ... code ... \end{javafile}
+% Renders a titled code box. Fixed: no duplicate/flattened output.
+% ============================================================
+\lstnewenvironment{javafile}[1]{%
+  \lstset{style=examjava, title={\ttfamily\bfseries #1}}%
+}{}
+
+% ============================================================
+% splitcode environment
+% Usage:
+%   \begin{splitcode}{Given Code}{Complete the Code}
+%   \begin{lstlisting} ... \end{lstlisting}
+%   \splitdivider
+%   \begin{lstlisting} ... \end{lstlisting}
+%   \end{splitcode}
+% ============================================================
+\newcommand{\splitcode@righttitle}{}
+\newenvironment{splitcode}[2]{%
+  \renewcommand{\splitcode@righttitle}{#2}%
+  \noindent
+  \begin{minipage}[t]{0.48\textwidth}
+  \textbf{#1}\par\vspace{4pt}
+}{%
+  \end{minipage}%
+}
+\newcommand{\splitdivider}{%
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.48\textwidth}
+  \textbf{\splitcode@righttitle}\par\vspace{4pt}
+}
+
+% ============================================================
+% iotable environment
+% Usage:
+%   \begin{iotable}
+%   Sample Input text & Expected output text \\ \hline
+%   \end{iotable}
+% ============================================================
+\newenvironment{iotable}{%
+  \vspace{4pt}
+  \begin{center}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|p{0.40\textwidth}|p{0.50\textwidth}|}
+  \hline
+  \textbf{Sample Input} & \textbf{Output} \\ \hline
+}{%
+  \end{tabular}
+  \end{center}
+}
+
+% ============================================================
+% expectedoutput environment
+% Usage: \begin{expectedoutput} > Result: 20 \end{expectedoutput}
+% ============================================================
+\newenvironment{expectedoutput}{%
+  \vspace{4pt}
+  \noindent\textbf{Sample Output}\par\vspace{2pt}
+  \begin{framed}
+  \ttfamily\small\noindent
+}{%
+  \end{framed}
+}
+
+% ============================================================
+% \umlclass{Name}{fields}{methods}{x}{y}
+% Usage: \umlclass{Product}{- name : String}{+ getPrice() : double}{0}{0}
+% Must be used inside a tikzpicture.
+% ============================================================
+\tikzset{
+  umlbox/.style={
+    draw, rectangle split, rectangle split parts=3,
+    rectangle split every empty part={},
+    text width=3.4cm, font=\scriptsize, align=left,
+    anchor=north west
+  },
+  inherits/.style={-{Triangle[open, length=8pt, width=6pt]}, thick}
+}
+
+\newcommand{\umlclass}[5]{%
+  \node[umlbox] (#1) at (#4,#5) {%
+    \centering\textbf{#1}
+    \nodepart{second} #2
+    \nodepart{third} #3
+  };%
+}
+
+\makeatother
+\endinput
